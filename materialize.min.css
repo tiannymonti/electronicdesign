@@ -20,11 +20,9 @@
 				min-height: 100vh;
 				flex-direction: column;
 			}
-			header{ 
-				background-image: url("carros.jpg"); 
+			header{  
 				color: white;
-				text-align: center;
-				font-family: helvetica;
+				font-family: 'Baloo Paaji', cursive;
 				padding-top: 1em;
 				top: 0;
 				left: 0;
@@ -33,16 +31,23 @@
 
 			header > img{
 				border-radius: 50%;
+				vertical-align: text-top;
 				border-style: solid;
 				border-color: black;
-				padding-bottom: 0;
+				margin-top: -0.5em;
+				margin-bottom: 0.5em;
+				margin-left: 2em;
+				margin-right: 1em;
+				width: 3em;
+				height: 3em;
+				float: left;
 			}
 
 			header > h1{
-				padding-top: 0;
-				font-size: 5em;
-				padding-bottom: 0.00001em;		
-				font-weight: bold;
+				margin-top: -0.2em;
+				font-size: 2.5em;
+				margin-bottom: 0.1em;	
+				vertical-align: middle;	
 			}
 			
 			main {
@@ -52,7 +57,7 @@
 		    #division{
 				padding-top: 0;
 				padding-bottom: 0;
-				font-size: 3em;
+				font-size: 0.2em;
 				border: 0;
 				text-align: center;
 			}
