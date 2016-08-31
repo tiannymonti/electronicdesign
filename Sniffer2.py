@@ -3,7 +3,7 @@ import mysql.connector
 ##import mysql
 
 from socket import*
-IPserver = "181.52.77.178"
+IPserver = "localhost"
 Portserver = 5610
 
 SockServer = socket(AF_INET, SOCK_RAW, IPPROTO_UDP) # RAW socket
@@ -34,7 +34,7 @@ while True:
             latitud = latInt + "." + latDec
             longitud = longInt + "." + longDec
 
-            bd = mysql.connector.connect(user='root', password='1234',
+            bd = mysql.connector.connect(user='root', password='',
                 host='localhost', database='coordenadas')
 
             cursor = bd.cursor()
