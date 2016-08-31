@@ -25,7 +25,7 @@
 	 </header>
 	 <main>
 		<div class="row">
-		<div id="googleMap" style="width:100%;height:62.5em;"></div>
+		<div id="googleMap" style="width:100%;height:50em;"></div>
 		<div class="divider"></div>
 		<div class="col s4" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="dia">23</span><span class="flow-text">.</span><span class="flow-text" id="mes">08</span><span class="flow-text">.</span><span class="flow-text" id="yr">2016</span><span class="flow-text">, </span><span class="flow-text" id="hora">14</span><span class="flow-text">:</span><span class="flow-text" id="min">14</span><span class="flow-text">:</span><span class="flow-text" id="seg">14</span></div>
 		<div class="col s4 push-s4" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud">00000000</span></div>
