@@ -5,7 +5,7 @@ import mysql.connector
 
 from socket import*
 IPserver = "172.31.21.200"
-Portserver = 5610
+Portserver = 5601
 
 SockServer = socket(AF_INET, SOCK_DGRAM) 
 SockServer.bind((IPserver, Portserver))
@@ -21,13 +21,11 @@ while True:
     print (repr(data1))
     
     n = data1.find('>RPV')
-    print(n)
     n1 = data1.find('>RTM')
-    print(n1)
     
     data2 = data1[n1:32 + n1]
     data = data1[n:34 + n]
-    if n > 0:
+    if n >= 0:
         if data[0:4] == ">RPV":
             print("Coordenadas Recibidas!" + data)
             latInt = data[9:12]
@@ -37,7 +35,7 @@ while True:
             latitud = latInt + "." + latDec
             longitud = longInt + "." + longDec
 
-            bd = mysql.connector.connect(user='root', password='',
+            bd = mysql.connector.connect(user='root', password='1234',
                 host='localhost', database='coordenadas')
 
             cursor = bd.cursor()
@@ -48,7 +46,7 @@ while True:
             bd.commit()
             cursor.close()
             bd.close()
-    elif (n1 > 0):
+    elif (n1 >= 0):
         if data2[0:4] == ">RTM":
             hora = data2[4:6]
             minu= data2[6:8]

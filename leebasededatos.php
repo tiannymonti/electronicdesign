@@ -1,7 +1,7 @@
 <?php
 
     // Create connection
-    $tion = mysqli_connect("localhost", "root", "", "coordenadas");
+    $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
     // Check connection
     if ($tion->connect_error) {
         die("Connection failed: " . $tion->connect_error);
