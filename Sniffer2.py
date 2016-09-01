@@ -1,12 +1,11 @@
 ## Sniffer
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
 import mysql.connector
 ##import mysql
 
 from socket import*
 IPserver = "172.31.21.200"
-Portserver = 5610
+Portserver = 123
 
 SockServer = socket(AF_INET, SOCK_RAW, IPPROTO_UDP) # RAW socket
 SockServer.bind((IPserver, Portserver))
