@@ -3,7 +3,7 @@ import mysql.connector
 ##import mysql
 
 from socket import*
-IPserver = "localhost"
+IPserver = "172.31.21.200"
 Portserver = 5610
 
 SockServer = socket(AF_INET, SOCK_RAW, IPPROTO_UDP) # RAW socket
