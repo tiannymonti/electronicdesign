@@ -21,7 +21,9 @@ while True:
     print (repr(data1))
     
     n = data1.find('>RPV')
+    print(n)
     n1 = data1.find('>RTM')
+    print(n1)
     
     data2 = data1[n1:32 + n1]
     data = data1[n:34 + n]
