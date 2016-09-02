@@ -7,7 +7,7 @@ from socket import*
 IPserver = "172.31.21.200"
 Portserver = 123
 
-SockServer = socket(AF_INET, SOCK_RAW, IPPROTO_UDP) # RAW socket
+SockServer = socket(AF_INET, SOCK_DGRAM) # RAW socket
 SockServer.bind((IPserver, Portserver))
 
 #recibir un paquete en un RAW socket
@@ -15,7 +15,7 @@ while True:
     print("A la espera de paquete...")
     data1, addr = SockServer.recvfrom(1024)
     data1 = str(data1)
-    data1=data1.decode('utf-8')
+    #data1=data1.decode('utf-8')
     print("Paquete recibido desde " + str(addr))
     print("Informacion Recibida: " + data1)
     print ('Received', repr(data1))
