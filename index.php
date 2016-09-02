@@ -107,7 +107,7 @@ var myPositions = [];
 					icons: [{
 						icon: lineSymbol,
 						offset: '0',
-						repeat: '10px'
+						repeat: '3px'
 					}],
 				});
  
