@@ -69,6 +69,7 @@ var map;
 var myCenter;
 var marker;
 var myVal = consulta();
+var myPositions = new myPositions();
 	function consulta(){
 		
 		$.ajax({
@@ -86,11 +87,13 @@ var myVal = consulta();
 					document.getElementById("min").innerHTML = data.min;
 					document.getElementById("seg").innerHTML = data.seg;
 
-					myCenter = new google.maps.LatLng(data.latitud, data.longitud);					
+					myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
+					myPositions.push({data.latitud, data.longitud});    				
 				},
 		});
 		
 	}
+	
 	var refresh = setInterval(function(){
 		consulta();
 		marker.setPosition(myCenter);
@@ -128,6 +131,17 @@ google.maps.event.addListener(map, 'click', function(event) {
    map.setZoom(9);
    map.setCenter(marker.getPosition());
   });
+ 
+  var myPath = new google.maps.Polyline({
+    path: myPositions,
+    geodesic: true,
+    strokeColor: '#FF0000',
+    strokeOpacity: 1.0,
+    strokeWeight: 2
+  });
+ 
+  myPath.setMap(map);
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
