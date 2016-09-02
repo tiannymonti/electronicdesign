@@ -5,9 +5,9 @@ import mysql.connector
 
 from socket import*
 IPserver = "172.31.21.200"
-Portserver = 123
+Portserver = 5610
 
-SockServer = socket(AF_INET, SOCK_DGRAM) # RAW socket
+SockServer = socket(AF_INET, SOCK_DGRAM) 
 SockServer.bind((IPserver, Portserver))
 
 #recibir un paquete en un RAW socket
