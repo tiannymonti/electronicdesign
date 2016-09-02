@@ -18,7 +18,7 @@ while True:
     #data1=data1.decode('utf-8')
     print("Paquete recibido desde " + str(addr))
     print("Informacion Recibida: " + data1)
-    print ('Received', repr(data1))
+    print (repr(data1))
     
     n = data1.find('>RPV')
     n1 = data1.find('>RTM')
