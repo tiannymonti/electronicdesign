@@ -15,7 +15,7 @@ while True:
     print("A la espera de paquete...")
     data1, addr = SockServer.recvfrom(1024)
     data1 = str(data1)
-    #data=data1.decode('utf-8')
+    data=data1.decode('utf-8')
     print("Paquete recibido desde " + str(addr))
     print("Informacion Recibida: " + data1)
     print ('Received', repr(data1))
