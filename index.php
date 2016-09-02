@@ -93,12 +93,12 @@ var myPositions = [];
 		});
 		
 				  var myPath = new google.maps.Polyline({
-    path: myPositions,
-    geodesic: true,
-    strokeColor: '#FF0000',
-    strokeOpacity: 1.0,
-    strokeWeight: 2
-  });
+					path: myPositions,
+					geodesic: true,
+					strokeColor: '#0000FF',
+					strokeOpacity: 1.0,
+					strokeWeight: 2
+				});
  
   myPath.setMap(map);
 		
@@ -134,6 +134,7 @@ var mapProp = {
 
 marker=new google.maps.Marker({
   position:myCenter,
+  icon: 'res/carnavicon.png'
   });
 
 marker.setMap(map);
@@ -142,15 +143,6 @@ google.maps.event.addListener(map, 'click', function(event) {
    map.setCenter(marker.getPosition());
   });
  
-  //var myPath = new google.maps.Polyline({
-    //path: myPositions,
-    //geodesic: true,
-    //strokeColor: '#FF0000',
-    //strokeOpacity: 1.0,
-    //strokeWeight: 2
-  //});
- 
-  //myPath.setMap(map);
 
 }
 
