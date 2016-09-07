@@ -14,8 +14,6 @@
 	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet"> 	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <!--Caendario-->
-      <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ >
     </head>
 
     <body>
@@ -36,10 +34,6 @@
 		<div class="row">
 			<div class="input-field col s6">
 				<input type="date" class="datepicker">
-<!--
-				<input type="text" id="datetimepicker3"/>
-				<input type="button" onclick="$('#datetimepicker3').datetimepicker({value:'2011/12/11 12:00'})" value="Inicio"/><br><br>
--->
 			</div>
 		</div>
 		 
@@ -88,6 +82,10 @@
 			clear: 'Clear selection',
 			close: 'Cancel',
 		});
+		
+		onClose: function() {
+		$('.datepicker').blur();
+		}
 
     </script>
 
