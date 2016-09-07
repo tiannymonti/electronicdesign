@@ -34,19 +34,19 @@
 		 <div class="row">
 		 <form class="col s12">
 		<div class="row">
-			<div class="input-field col s4">
+			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
 				<input id="iniciod" type="text" class="datepicker">
 			</div>
-			<div class="input-field col s4">
+			<div class="input-field col s3">
 				<label for="inicioh">Hora de inicio</label>				
 				<input id="inicioh" type="text" class="timepicker">
 			</div>
-			<div class="input-field col s4">
+			<div class="input-field col s3">
 				<label for="find">Fecha final</label>			
 				<input id="find" type="text" class="datepicker">
 			</div>
-			<div class="input-field col s4">
+			<div class="input-field col s3">
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="timepicker">
 			</div>			
