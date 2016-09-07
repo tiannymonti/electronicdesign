@@ -138,8 +138,6 @@
 		var pickert2 = $tinput2.pickatime('picker')
 		
 		 function toggleFunction() {
-            //stopPropagation();
-            //preventDefault();
             picker1.open();
             pickert1.open();
             picker2.open();
@@ -168,7 +166,7 @@
             
             $.ajax({
                 data:  parametros,
-                url:   'ejemplo_ajax_proceso.php',
+                url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
                         $("#division").html("Procesando, espere por favor...");
