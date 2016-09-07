@@ -23,9 +23,9 @@
 		<div class="nav-wrapper">
 		<a href="#!" class="brand-logo"><i class="material-icons">cloud</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu puto carro</span></a>        
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li><a href="sass.html">Sass</a></li>
-			<li><a href="badges.html">Components</a></li>
-			<li><a href="collapsible.html">JavaScript</a></li>
+			<li class="active"><a href="index.php">Ahora</a></li>
+			<li><a href="badges.html">Historicos</a></li>
+			<li><a href="#division">Fin</a></li>
 		</ul>
 		</div>
 	</nav>
@@ -39,7 +39,7 @@
 		</div>
 	  </main>	
 	  
-        <footer class="page-footer light-blue darken-4">
+        <footer name="abajo" class="page-footer light-blue darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
