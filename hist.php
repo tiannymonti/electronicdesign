@@ -173,12 +173,6 @@
         //});
 			
     </script>
-<!--
-    <?php
-		$variablePHP = “<script> document.write(variableJS) </script>”;
-		echo “variablePHP = “.$variablePHP;
-	?> 
--->
 
    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>-->
 
