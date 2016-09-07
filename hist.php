@@ -50,8 +50,8 @@
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker">
 			</div>		
-			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" style="float: center">Submit
-				<i class="material-icons right ">send</i>
+			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action">Submit
+				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
 		</form>
@@ -107,15 +107,6 @@
 		});
 		var picker1 = $input1.pickadate('picker')
 		
-		 //$('#trigger1').click( function( e ) {
-            //e.stopPropagation();
-            //e.preventDefault();
-            //picker1.open();
-            //var fecha = picker1.get('select', 'yyyy/mm/dd');
-            //var res = fecha.split("/"); 
-            
-        //});
-		
 		var $tinput1 = $('.start-timepicker').pickatime({
 			clear: 'Clear selection',
 			close: 'Cancel',
@@ -124,14 +115,6 @@
 			}		
 			})
 		var pickert1 = $tinput1.pickatime('picker')
-		
-		 //$('#trigger2').click( function( e ) {
-            //e.stopPropagation();
-            //e.preventDefault();
-            //pickert1.open();
-            //var hora = pickert1.get('select', 'HH:i');
-            //var res = hora.split(":");
-        //});
 		
 		 var $input2 = $('.end-datepicker').pickadate({
 			today: '',
@@ -147,14 +130,6 @@
 		});
 		var picker2 = $input2.pickadate('picker')
 		
-		 //$('#trigger3').click( function( e ) {
-            //e.stopPropagation();
-            //e.preventDefault();
-            //picker2.open();
-            //var fecha = picker2.get('select', 'yyyy/mm/dd');
-            //var res = fecha.split("/");
-        //});
-		
 		var $tinput2 = $('.end-timepicker').pickatime({
 			clear: 'Clear selection',
 			close: 'Cancel',
@@ -164,13 +139,22 @@
 			})
 		var pickert2 = $tinput2.pickatime('picker')
 		
-		 //$('#trigger4').click( function( e ) {
-            //e.stopPropagation();
-            //e.preventDefault();
-            //pickert2.open();
-            //var hora = pickert2.get('select', 'HH:i');
-            //var res = hora.split(":");           
-        //});
+		 $('#trigger').click( function( e ) {
+            e.stopPropagation();
+            e.preventDefault();
+            picker1.open();
+            pickert1.open();
+            picker2.open();
+            pickert2.open();
+            var fecha1 = picker1.get('select', 'yyyy/mm/dd');
+            var hora1 = pickert1.get('select', 'HH:i');
+            var fecha2 = picker2.get('select', 'yyyy/mm/dd');
+            var hora2 = pickert2.get('select', 'HH:i');
+            var res1 = fecha1.split("/");
+            var res2 = hora1.split(":");
+            var res3 = fecha2.split("/");
+            var res4 = hora2.split(":");           
+        });
 			
     </script>
 
