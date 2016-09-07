@@ -90,7 +90,6 @@
     
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script type="text/javascript">
-		picker.open()
 		 $('.datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -111,6 +110,10 @@
 				$(document.activeElement).blur()
 			}		
 			})
+			
+		var $input = $('.datepicker').pickadate()
+		
+		var picker = $input.pickadate('picker')
 			
 			
 		
