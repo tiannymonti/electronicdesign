@@ -31,16 +31,24 @@
 		</div>
 	</nav>
 	 <main>
-		<div class="row">
+		 <div class="row">
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="datetimepicker" type="text">
+						<label for="email">Inicio</label>
+					</div>
+				</div>
+			</form>
+		</div>		 
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
 		<div class="divider"></div>
 		<div class="col s4" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="dia">23</span><span class="flow-text">.</span><span class="flow-text" id="mes">08</span><span class="flow-text">.</span><span class="flow-text" id="yr">2016</span><span class="flow-text">, </span><span class="flow-text" id="hora">14</span><span class="flow-text">:</span><span class="flow-text" id="min">14</span><span class="flow-text">:</span><span class="flow-text" id="seg">14</span></div>
 		<div class="col s4 push-s4" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud">00000000</span></div>
 		<div class="col s4 pull-s4" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud">00000000</span></div>
 		</div>
-	  </main>	
-	  
-        <footer name="abajo" class="page-footer light-blue darken-4">
+	  </main>		  
+      <footer name="abajo" class="page-footer light-blue darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -64,10 +72,20 @@
             <a class="grey-text text-lighten-4 right" href="http://uninorte.edu.co/">Universidad del Norte</a>
             </div>
           </div>
-        </footer>
-            
+        </footer>       
     </body>
     
+    <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ >
+	<script src="/jquery.js"></script>
+	<script src="/build/jquery.datetimepicker.full.min.js"></script>
+    
+    <script type="text/javascript">
+		jQuery('#datetimepicker3').datetimepicker({
+			format:'d.m.Y H:i',
+			inline:true,
+			lang:'ru'
+		});		
+    </script>
 
    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>-->
 
