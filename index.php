@@ -22,7 +22,7 @@
 	  <header style="background-color: #01579b;">
 			<img src="res/lasyrus.PNG">
 			<h1 style="font-family: 'Baloo Paaji', cursive;"> Encuentra tu carro<h1>
-			<a href="sass.html">Sass</a></li>		
+			<div id="botones"><a href="sass.html">Sass</a></li></div>					
 	 </header>
 	 <main>
 		<div class="row">
