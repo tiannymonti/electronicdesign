@@ -85,7 +85,7 @@
 		});
 		
 		$picker.on 'close', ()->
-			$(document.activeElement).blur()
+			$(document.activeElement).blur();
 
     </script>
 
