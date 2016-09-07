@@ -90,7 +90,7 @@
     
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script type="text/javascript">
-		 $('.datepicker').pickadate({
+		 var $input = $('.datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
 			weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
@@ -102,20 +102,18 @@
 				$(document.activeElement).blur()
 			}			
 		});
+		var picker = $input.pickadate('picker')
 		
-		$('.timepicker').pickatime({
+		var $tinput = $('.timepicker').pickatime({
 			clear: 'Clear selection',
 			close: 'Cancel',
 			onClose: function(){
 				$(document.activeElement).blur()
 			}		
 			})
-			
-		var $input = $('.datepicker').pickadate()		
-		var picker = $input.pickadate('picker')
+		var pickert = $tinput.pickatime('picker')	
 		
-		var $timput = $('.timepicker').pickatime()
-		var pickert = $tinput.pickatime('picker')
+		
 			
 			
 		
