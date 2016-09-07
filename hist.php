@@ -56,10 +56,11 @@
 		</div>
 		</form>
 		</div>
-		 
+		<div class="row">
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
 		<div class="divider"></div>
 		<div class="col s12" id="division1"></div>
+		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4">
           <div class="container">
