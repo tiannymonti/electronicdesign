@@ -36,19 +36,19 @@
 		<div class="row">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
-				<input id="iniciod" type="text" class="datepicker">
+				<input id="iniciod" type="text" class="start-datepicker">
 			</div>
 			<div class="input-field col s3">
 				<label for="inicioh">Hora de inicio</label>				
-				<input id="inicioh" type="text" class="timepicker">
+				<input id="inicioh" type="text" class="start-timepicker">
 			</div>
 			<div class="input-field col s3">
 				<label for="find">Fecha final</label>			
-				<input id="find" type="text" class="datepicker">
+				<input id="find" type="text" class="end-datepicker">
 			</div>
 			<div class="input-field col s3">
 				<label for="finh">Hora final</label>				
-				<input id="finh" type="text" class="timepicker">
+				<input id="finh" type="text" class="end-timepicker">
 			</div>			
 		</div>
 		</form>
@@ -90,7 +90,7 @@
     
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script type="text/javascript">
-		 var $input = $('.datepicker').pickadate({
+		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
 			weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
@@ -102,16 +102,45 @@
 				$(document.activeElement).blur()
 			}			
 		});
-		var picker = $input.pickadate('picker')
+		var picker1 = $input1.pickadate('picker')
 		
-		var $tinput = $('.timepicker').pickatime({
+		var $tinput1 = $('.start-timepicker').pickatime({
 			clear: 'Clear selection',
 			close: 'Cancel',
 			onClose: function(){
 				$(document.activeElement).blur()
 			}		
 			})
-		var pickert = $tinput.pickatime('picker')	
+		var pickert1 = $tinput1.pickatime('picker')
+		
+		 var $input2 = $('.end-datepicker').pickadate({
+			today: '',
+			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+			weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+			selectMonths: true, // Creates a dropdown to control month
+			selectYears: 15, // Creates a dropdown of 15 years to control year
+			clear: 'Clear selection',
+			close: 'Cancel',
+			onClose: function(){
+				$(document.activeElement).blur()
+			}			
+		});
+		var picker2 = $input2.pickadate('picker')
+		
+		var $tinput2 = $('.end-timepicker').pickatime({
+			clear: 'Clear selection',
+			close: 'Cancel',
+			onClose: function(){
+				$(document.activeElement).blur()
+			}		
+			})
+		var pickert2 = $tinput2.pickatime('picker')
+		//picker.open()
+		//pickert.open()
+		//picker.get('select', 'yyyy/mm/dd')
+		//picker.start()
+		//pickert.start()	
+		//pickert.get('select', '')
 		
 		
 			
