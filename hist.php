@@ -31,6 +31,8 @@
 		</div>
 	</nav>
 	 <main>
+		 <div class="row">
+		 <form class="col s12">
 		<div class="row">
 			<div class="input-field col s3">			
 				<input id="iniciod" type="date" class="datepicker">
@@ -40,6 +42,8 @@
 				<input id="inicioh" type="date" class="timepicker">
 				<label for="inicioh">Hora de inicio</label>
 			</div>
+		</div>
+		</form>
 		</div>
 		 
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
