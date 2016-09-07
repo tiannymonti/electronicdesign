@@ -112,7 +112,9 @@
             e.stopPropagation();
             e.preventDefault();
             picker1.open();
-            alert(picker1.get('select', 'yyyy/mm/dd'))
+            var fecha = picker1.get('select', 'yyyy/mm/dd');
+            var res = str.split("/"); 
+            
         });
 		
 		var $tinput1 = $('.start-timepicker').pickatime({
@@ -128,7 +130,8 @@
             e.stopPropagation();
             e.preventDefault();
             pickert1.open();
-            alert(pickert1.get('select', 'HH:i'))
+            var hora = pickert1.get('select', 'HH:i');
+            var res = str.split(":");
         });
 		
 		 var $input2 = $('.end-datepicker').pickadate({
@@ -149,7 +152,8 @@
             e.stopPropagation();
             e.preventDefault();
             picker2.open();
-            alert(picker2.get('select', 'yyyy/mm/dd'))
+            var fecha = picker2.get('select', 'yyyy/mm/dd');
+            var res = str.split("/");
         });
 		
 		var $tinput2 = $('.end-timepicker').pickatime({
@@ -165,7 +169,8 @@
             e.stopPropagation();
             e.preventDefault();
             pickert2.open();
-            alert(pickert2.get('select', 'HH:i'))
+            var hora = pickert2.get('select', 'HH:i');
+            var res = str.split(":");           
         });
 			
 		
