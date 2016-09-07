@@ -82,8 +82,6 @@
 			clear: 'Clear selection',
 			close: 'Cancel',
 			
-			$picker.on 'close', ()->
-				$(document.activeElement).blur()
 		});
 		
 		$picker.on 'close', ()->
