@@ -113,7 +113,7 @@
             e.preventDefault();
             picker1.open();
             var fecha = picker1.get('select', 'yyyy/mm/dd');
-            var res = str.split("/"); 
+            var res = fecha.split("/"); 
             
         });
 		
@@ -131,7 +131,7 @@
             e.preventDefault();
             pickert1.open();
             var hora = pickert1.get('select', 'HH:i');
-            var res = str.split(":");
+            var res = hora.split(":");
         });
 		
 		 var $input2 = $('.end-datepicker').pickadate({
@@ -153,7 +153,7 @@
             e.preventDefault();
             picker2.open();
             var fecha = picker2.get('select', 'yyyy/mm/dd');
-            var res = str.split("/");
+            var res = fecha.split("/");
         });
 		
 		var $tinput2 = $('.end-timepicker').pickatime({
@@ -170,7 +170,7 @@
             e.preventDefault();
             pickert2.open();
             var hora = pickert2.get('select', 'HH:i');
-            var res = str.split(":");           
+            var res = hora.split(":");           
         });
 			
 		
