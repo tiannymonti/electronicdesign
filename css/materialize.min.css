@@ -32,3 +32,13 @@
 				border: 0;
 				text-align: center;
 			}
+			
+			.picker__date-display {
+				background-color:#01579b;
+			}
+			.picker__weekday-display {
+				background-color:#e1f5fe;
+			}
+			.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+				background-color:#01579b;
+			}

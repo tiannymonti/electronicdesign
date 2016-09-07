@@ -86,7 +86,8 @@
 			selectMonths: true, // Creates a dropdown to control month
 			selectYears: 15, // Creates a dropdown of 15 years to control year
 			clear: 'Clear selection',
-			close: 'Cancel'
+			close: 'Cancel',
+			editable: true
 		});
 
     </script>
