@@ -20,6 +20,7 @@
 				min-height: 100vh;
 				flex-direction: column;
 			}
+/*
 			header{  
 				color: white;
 				padding-top: 1em;
@@ -56,6 +57,7 @@
 				float: right;
 				font-family: 'Material Icons';
 			}
+*/
 			
 			main {
 				flex: 1 0 auto;
