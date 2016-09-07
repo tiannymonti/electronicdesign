@@ -14,10 +14,6 @@
 	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet"> 	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <!--Para que el tiempo se vea decente-->
-<!--
-      <link rel="stylesheet" href="pickadate.js/lib/themes/classic.css">
--->
     </head>
 
     <body>
