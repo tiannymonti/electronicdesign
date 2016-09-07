@@ -18,17 +18,12 @@
     <body>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-       <nav style="background-color: #01579b">      
-			<img src="res/lasyrus.PNG">
-			<h1> Encuentra tu carro<h1>
-		<div class="nav-wrapper" > 
-			<ul class="right hide-on-med-and-down">
-				<li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-				<li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
-			</ul>
-	  </div>
-	  </nav>		
+      <script type="text/javascript" src="js/materialize.min.js"></script>         
+	  <header style="background-color: #01579b">
+		<img src="res/lasyrus.PNG">
+		<h1> Encuentra tu carro<h1>
+		<a href="sass.html">Sass</a></li>		
+	 </header>
 	 <main>
 		<div class="row">
 		<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>
@@ -68,7 +63,7 @@
     </body>
     
 
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+   <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>-->
 
 <script type="text/javascript">
 var map;
