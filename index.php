@@ -19,9 +19,9 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>         
-	  <header>
+	  <header style="background-color: #01579b;">
 			<img src="res/lasyrus.PNG">
-			<h1> Encuentra tu carro<h1>
+			<h1 style="font-family: 'Baloo Paaji', cursive;"> Encuentra tu carro<h1>
 			<a href="sass.html">Sass</a></li>		
 	 </header>
 	 <main>
