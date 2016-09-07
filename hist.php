@@ -22,7 +22,7 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <nav style="background-color: #01579b;">
 		<div class="nav-wrapper">
-		<a href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu puto carro</span></a>        
+		<a href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu carro</span></a>        
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="index.php">Ahora</a></li>
 			<li class="active"><a href="hist.php">Historicos</a></li>
