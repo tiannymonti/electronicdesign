@@ -81,18 +81,13 @@
 			selectYears: 15, // Creates a dropdown of 15 years to control year
 			clear: 'Clear selection',
 			close: 'Cancel',
+			
+			$picker.on 'close', ()->
+				$(document.activeElement).blur()
 		});
 		
-		$input.pickadate({
-			onOpen: function () {
-				if ($input.hasClass('picker__input--target')) {
-					$input
-					.pickadate()
-					.pickadate('picker')
-					.close(true);
-				}
-			}
-		});
+		$picker.on 'close', ()->
+			$(document.activeElement).blur()
 
     </script>
 
