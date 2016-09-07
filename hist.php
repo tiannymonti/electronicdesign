@@ -153,7 +153,19 @@
             var res1 = fecha1.split("/");
             var res2 = hora1.split(":");
             var res3 = fecha2.split("/");
-            var res4 = hora2.split(":");           
+            var res4 = hora2.split(":");  
+            
+            $.ajax({
+                data:  parametros,
+                url:   'ejemplo_ajax_proceso.php',
+                type:  'post',
+                beforeSend: function () {
+                        $("#resultado").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#resultado").html(response);
+                }
+			});         
         };
 			
     </script>
