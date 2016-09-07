@@ -32,8 +32,11 @@
 	</nav>
 	 <main>
 		<div class="row">
-			<div class="input-field col s6">
+			<div class="input-field col s4">
 				<input type="date" class="datepicker">
+			</div>
+			<div class="input-field col s4">
+				<input type="date" class="timepicker">
 			</div>
 		</div>
 		 
@@ -85,6 +88,8 @@
 				$(document.activeElement).blur()
 			}			
 		});
+		
+		$('.timepicker').pickatime()
 		
 
     </script>
