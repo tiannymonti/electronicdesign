@@ -153,12 +153,12 @@
             var res3 = fecha2.split("/");
             var res4 = hora2.split(":");  
             var parametros = {
-						"añoi" : res1[0],
+						"yri" : res1[0],
 						"mesi" : res1[1],
 						"diai" : res1[2],
 						"horai" : res2[0],
 						"mini" : res2[1],
-						"añof" : res3[0],
+						"yrf" : res3[0],
 						"mesf" : res3[1],
 						"diaf" : res3[2],
 						"horaf" : res4[0],
