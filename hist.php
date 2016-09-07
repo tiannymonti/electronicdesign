@@ -36,11 +36,11 @@
 		<div class="row">
 			<div class="input-field col s6">
 				<label for="iniciod">Fecha de inicio</label>			
-				<input id="iniciod" type="date" class="datepicker">
+				<input id="iniciod" type="text" class="datepicker">
 			</div>
 			<div class="input-field col s6">
 				<label for="inicioh">Hora de inicio</label>				
-				<input id="inicioh" placeholder="Placeholder" type="date" class="timepicker">
+				<input id="inicioh" type="text" class="timepicker">
 			</div>
 		</div>
 		</form>
