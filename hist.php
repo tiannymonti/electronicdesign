@@ -37,18 +37,22 @@
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
 				<input id="iniciod" type="text" class="start-datepicker">
+				<i id="trigger1" class="material-icons">today</i>
 			</div>
 			<div class="input-field col s3">
 				<label for="inicioh">Hora de inicio</label>				
 				<input id="inicioh" type="text" class="start-timepicker">
+				<i id="trigger2" class="material-icons">schedule</i>
 			</div>
 			<div class="input-field col s3">
 				<label for="find">Fecha final</label>			
 				<input id="find" type="text" class="end-datepicker">
+				<i id="trigger3" class="material-icons">today</i>
 			</div>
 			<div class="input-field col s3">
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker">
+				<i id="trigger4" class="material-icons">schedule</i>
 			</div>			
 		</div>
 		</form>
