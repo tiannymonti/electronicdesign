@@ -19,10 +19,16 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>         
-	  <header style="background-color: #01579b">
-		<img src="res/lasyrus.PNG">
-		<h1> Encuentra tu carro<h1>
-		<a href="sass.html">Sass</a></li>		
+	  <header>
+		<div class="row">
+			<div class="col s7 pull-s5" id="logo">
+				<img src="res/lasyrus.PNG">
+				<h1> Encuentra tu carro<h1>
+			</div>
+			<div class="col s5 push-s7" id="botones">
+				<a href="sass.html">Sass</a></li>
+			</div>
+		</div>		
 	 </header>
 	 <main>
 		<div class="row">
