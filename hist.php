@@ -112,6 +112,7 @@
             e.stopPropagation();
             e.preventDefault();
             picker1.open();
+            alert(picker1.get())
         });
 		
 		var $tinput1 = $('.start-timepicker').pickatime({
@@ -127,6 +128,7 @@
             e.stopPropagation();
             e.preventDefault();
             pickert1.open();
+            alert(pickert1.get())
         });
 		
 		 var $input2 = $('.end-datepicker').pickadate({
@@ -147,6 +149,7 @@
             e.stopPropagation();
             e.preventDefault();
             picker2.open();
+            alert(picker2.get())
         });
 		
 		var $tinput2 = $('.end-timepicker').pickatime({
@@ -162,6 +165,7 @@
             e.stopPropagation();
             e.preventDefault();
             pickert2.open();
+            alert(pickert2.get())
         });
 			
 		
