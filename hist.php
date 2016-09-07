@@ -170,10 +170,10 @@
                 url:   'ejemplo_ajax_proceso.php',
                 type:  'post',
                 beforeSend: function () {
-                        $("#division1").html("Procesando, espere por favor...");
+                        $("#division").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
-						$("#division1").html("");
+						$("#division").html("");
                         $("#resultado").html(response);
                 }
 			});         
