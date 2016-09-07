@@ -20,7 +20,7 @@
     } 
 
         // Consulta de selección 
-    $querytime = mysqli_query($tion, "SELECT c.latitud, c.longitud, t.dia, t.mes, t.yr, t.hora, t.min, t.seg FROM coordenadas.cordenadas AS c JOIN coordenadas.time AS t ON c.id_cordenadas = t.id_time WHERE (t.yr BETWEEN '$yri' AND '$yrf') AND (t.mes BETWEEN '$mesi' AND '$mesf') AND (t.dia BETWEEN '$diai' AND '$diaf') AND (t.hora BETWEEN '$horai' AND '$horaf') AND (t.min BETWEEN '$mini' AND '$minf') ORDER BY c.id_cordenadas";);                             
+    $querytime = mysqli_query($tion, "SELECT c.latitud, c.longitud, t.dia, t.mes, t.yr, t.hora, t.min, t.seg FROM coordenadas.cordenadas AS c JOIN coordenadas.time AS t ON c.id_cordenadas = t.id_time WHERE (t.yr = '$yri') AND (t.mes = '$mesi') AND (t.dia BETWEEN '$diai' AND '$diaf') ORDER BY c.id_cordenadas";);                             
     // set array
 	$positions = array();
 	// look through query
