@@ -25,7 +25,7 @@
 		<a href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu puto carro</span></a>        
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li class="active"><a href="index.php">Ahora</a></li>
-			<li><a href="badges.html">Historicos</a></li>
+			<li><a href="hist.php">Historicos</a></li>
 			<li><a href="#division">Fin</a></li>
 		</ul>
 		</div>
