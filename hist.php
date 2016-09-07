@@ -78,30 +78,17 @@
     </body>
     
     
-<!--
-	<script src="datetimepicker/jquery.js"></script>
-	<script src="datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
--->
-    
     <script type="text/javascript">
 		 $('.datepicker').pickadate({
+			today: '',
+			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+			weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
 			selectMonths: true, // Creates a dropdown to control month
 			selectYears: 15 // Creates a dropdown of 15 years to control year
+			clear: 'Clear selection',
+			close: 'Cancel'
 		});
-		//$.datetimepicker.setLocale('es');
-		//$('#datetimepicker_format').datetimepicker({value:'2015/04/15 05:03', format: $("#datetimepicker_format_value").val()});
-		//console.log($('#datetimepicker_format').datetimepicker('getValue'));
-		//$("#datetimepicker_format_change").on("click", function(e){
-			//$("#datetimepicker_format").data('xdsoft_datetimepicker').setOptions({format: $("#datetimepicker_format_value").val()});
-		//});
-		//$("#datetimepicker_format_locale").on("change", function(e){
-			//$.datetimepicker.setLocale($(e.currentTarget).val());
-		//});
-		
-		//$('#datetimepicker3').datetimepicker({
-			//format:'d.m.Y H:i',
-			//inline:true
-		//});
+
     </script>
 
    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>-->
