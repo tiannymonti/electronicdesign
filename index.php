@@ -22,6 +22,10 @@
 	  <header style="background-color: #01579b">
 		<img src="res/lasyrus.PNG">
 		<h1> Encuentra tu carro<h1>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="sass.html">Sass</a></li>
+			<li><a href="badges.html">Components</a></li>
+		</ul>
 	 </header>
 	 <main>
 		<div class="row">
