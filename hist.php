@@ -111,9 +111,11 @@
 			}		
 			})
 			
-		var $input = $('.datepicker').pickadate()
-		
+		var $input = $('.datepicker').pickadate()		
 		var picker = $input.pickadate('picker')
+		
+		var $timput = $('.timepicker').pickatime()
+		var pickert = $tinput.pickatime('picker')
 			
 			
 		
