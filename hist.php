@@ -112,7 +112,7 @@
             e.stopPropagation();
             e.preventDefault();
             picker1.open();
-            alert(picker1.get())
+            alert(picker1.get('select', 'yyyy/mm/dd'))
         });
 		
 		var $tinput1 = $('.start-timepicker').pickatime({
@@ -149,7 +149,7 @@
             e.stopPropagation();
             e.preventDefault();
             picker2.open();
-            alert(picker2.get())
+            alert(picker2.get('select', 'yyyy/mm/dd'))
         });
 		
 		var $tinput2 = $('.end-timepicker').pickatime({
