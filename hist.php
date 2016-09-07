@@ -34,13 +34,13 @@
 		 <div class="row">
 		 <form class="col s12">
 		<div class="row">
-			<div class="input-field col s3">			
+			<div class="input-field col s3">
+				<label for="iniciod">Fecha de inicio</label>			
 				<input id="iniciod" type="date" class="datepicker">
-				<label for="iniciod">Fecha de inicio</label>
 			</div>
-			<div class="input-field col s3">				
+			<div class="input-field col s3">
+				<label for="inicioh">Hora de inicio</label>				
 				<input id="inicioh" type="date" class="timepicker">
-				<label for="inicioh">Hora de inicio</label>
 			</div>
 		</div>
 		</form>
