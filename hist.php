@@ -83,9 +83,16 @@
 			close: 'Cancel',
 		});
 		
-		onClose: function() {
-		$('.datepicker').blur();
-		}
+		$input.pickadate({
+			onOpen: function () {
+				if ($input.hasClass('picker__input--target')) {
+					$input
+					.pickadate()
+					.pickadate('picker')
+					.close(true);
+				}
+			}
+		});
 
     </script>
 
