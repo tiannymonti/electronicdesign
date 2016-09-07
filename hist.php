@@ -172,7 +172,8 @@
                         $("#division").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
-							 window.location.assign("dbhistoricos.php");
+							alert("response");
+							 window.location.href("dbhistoricos.php");
                 }
 			});         
         };
