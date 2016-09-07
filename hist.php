@@ -35,7 +35,8 @@
 	 <main>
 		<div class="row">
 			<div class="input-field col s6">
-				<input type="text" id="datetimepicker3"/><input type="button" onclick="$('#datetimepicker3').datetimepicker({value:'2011/12/11 12:00'})" value="Inicio"/><br><br>
+				<input type="text" id="datetimepicker3"/>
+				<input type="button" onclick="$('#datetimepicker3').datetimepicker({value:'2011/12/11 12:00'})" value="Inicio"/><br><br>
 			</div>
 		</div>
 		 
@@ -74,8 +75,8 @@
     </body>
     
     
-	<script src="/jquery.js"></script>
-	<script src="/build/jquery.datetimepicker.full.min.js"></script>
+	<script src="datetimepicker/jquery.js"></script>
+	<script src="datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
     
     <script type="text/javascript">
 		$.datetimepicker.setLocale('es');
