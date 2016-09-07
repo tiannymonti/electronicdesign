@@ -108,6 +108,12 @@
 		});
 		var picker1 = $input1.pickadate('picker')
 		
+		 $('#trigger1').click( function( e ) {
+            e.stopPropagation();
+            e.preventDefault();
+            picker1.open();
+        });
+		
 		var $tinput1 = $('.start-timepicker').pickatime({
 			clear: 'Clear selection',
 			close: 'Cancel',
@@ -116,6 +122,12 @@
 			}		
 			})
 		var pickert1 = $tinput1.pickatime('picker')
+		
+		 $('#trigger2').click( function( e ) {
+            e.stopPropagation();
+            e.preventDefault();
+            pickert1.open();
+        });
 		
 		 var $input2 = $('.end-datepicker').pickadate({
 			today: '',
@@ -131,6 +143,12 @@
 		});
 		var picker2 = $input2.pickadate('picker')
 		
+		 $('#trigger3').click( function( e ) {
+            e.stopPropagation();
+            e.preventDefault();
+            picker2.open();
+        });
+		
 		var $tinput2 = $('.end-timepicker').pickatime({
 			clear: 'Clear selection',
 			close: 'Cancel',
@@ -139,15 +157,12 @@
 			}		
 			})
 		var pickert2 = $tinput2.pickatime('picker')
-		//picker.open()
-		//pickert.open()
-		//picker.get('select', 'yyyy/mm/dd')
-		//picker.start()
-		//pickert.start()	
-		//pickert.get('select', '')
 		
-		
-			
+		 $('#trigger4').click( function( e ) {
+            e.stopPropagation();
+            e.preventDefault();
+            pickert2.open();
+        });
 			
 		
 
