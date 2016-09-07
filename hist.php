@@ -84,7 +84,7 @@
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
 			weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
 			selectMonths: true, // Creates a dropdown to control month
-			selectYears: 15 // Creates a dropdown of 15 years to control year
+			selectYears: 15, // Creates a dropdown of 15 years to control year
 			clear: 'Clear selection',
 			close: 'Cancel'
 		});
