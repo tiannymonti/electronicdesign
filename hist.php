@@ -89,7 +89,13 @@
 			}			
 		});
 		
-		$('.timepicker').pickatime()
+		$('.timepicker').pickatime({
+			clear: 'Clear selection',
+			close: 'Cancel',
+			onClose: function(){
+				$(document.activeElement).blur()
+			}		
+			})
 		
 
     </script>
