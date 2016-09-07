@@ -35,8 +35,11 @@
 	 <main>
 		<div class="row">
 			<div class="input-field col s6">
+				<input type="date" class="datepicker">
+<!--
 				<input type="text" id="datetimepicker3"/>
 				<input type="button" onclick="$('#datetimepicker3').datetimepicker({value:'2011/12/11 12:00'})" value="Inicio"/><br><br>
+-->
 			</div>
 		</div>
 		 
@@ -75,24 +78,30 @@
     </body>
     
     
+<!--
 	<script src="datetimepicker/jquery.js"></script>
 	<script src="datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+-->
     
     <script type="text/javascript">
-		$.datetimepicker.setLocale('es');
-		$('#datetimepicker_format').datetimepicker({value:'2015/04/15 05:03', format: $("#datetimepicker_format_value").val()});
-		console.log($('#datetimepicker_format').datetimepicker('getValue'));
-		$("#datetimepicker_format_change").on("click", function(e){
-			$("#datetimepicker_format").data('xdsoft_datetimepicker').setOptions({format: $("#datetimepicker_format_value").val()});
+		 $('.datepicker').pickadate({
+			selectMonths: true, // Creates a dropdown to control month
+			selectYears: 15 // Creates a dropdown of 15 years to control year
 		});
-		$("#datetimepicker_format_locale").on("change", function(e){
-			$.datetimepicker.setLocale($(e.currentTarget).val());
-		});
+		//$.datetimepicker.setLocale('es');
+		//$('#datetimepicker_format').datetimepicker({value:'2015/04/15 05:03', format: $("#datetimepicker_format_value").val()});
+		//console.log($('#datetimepicker_format').datetimepicker('getValue'));
+		//$("#datetimepicker_format_change").on("click", function(e){
+			//$("#datetimepicker_format").data('xdsoft_datetimepicker').setOptions({format: $("#datetimepicker_format_value").val()});
+		//});
+		//$("#datetimepicker_format_locale").on("change", function(e){
+			//$.datetimepicker.setLocale($(e.currentTarget).val());
+		//});
 		
-		$('#datetimepicker3').datetimepicker({
-			format:'d.m.Y H:i',
-			inline:true
-		});
+		//$('#datetimepicker3').datetimepicker({
+			//format:'d.m.Y H:i',
+			//inline:true
+		//});
     </script>
 
    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>-->
