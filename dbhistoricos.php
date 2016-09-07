@@ -36,5 +36,4 @@
 	
 	echo json_encode($location);              
               
-	$tion->close();
 ?>

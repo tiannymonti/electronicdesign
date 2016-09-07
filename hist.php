@@ -166,7 +166,6 @@
             
             $.ajax({
                 data:  parametros,
-                url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
                         $("#division").html("Procesando, espere por favor...");
