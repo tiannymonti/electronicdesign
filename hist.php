@@ -137,8 +137,8 @@
 		var pickert2 = $tinput2.pickatime('picker')
 		
 		 function toggleFunction() {
-            stopPropagation();
-            preventDefault();
+            //stopPropagation();
+            //preventDefault();
             picker1.open();
             pickert1.open();
             picker2.open();
