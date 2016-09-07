@@ -19,10 +19,10 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-       <nav>
-	   <div class="nav-wrapper" style="background-color: #01579b">         
+       <nav style="background-color: #01579b">      
 			<img src="res/lasyrus.PNG">
 			<h1> Encuentra tu carro<h1>
+		<div class="nav-wrapper" > 
 			<ul class="right hide-on-med-and-down">
 				<li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
 				<li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
