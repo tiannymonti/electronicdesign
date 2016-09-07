@@ -154,7 +154,7 @@
             var res2 = hora1.split(":");
             var res3 = fecha2.split("/");
             var res4 = hora2.split(":");           
-        });
+        };
 			
     </script>
 
