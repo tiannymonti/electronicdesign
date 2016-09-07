@@ -15,7 +15,7 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <!--Para que el tiempo se vea decente-->
-      <link rel="stylesheet" href="pickadate.js/lib/themes/classic.time.css">
+      <link id="theme-time" rel="stylesheet" href="pickadate.js/lib/themes/classic.time.css">
     </head>
 
     <body>
