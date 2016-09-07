@@ -50,7 +50,7 @@
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker">
 			</div>		
-			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action">Submit
+			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" style="float: center">Submit
 				<i class="material-icons right ">send</i>
 			</button>	
 		</div>
