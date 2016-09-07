@@ -14,6 +14,8 @@
 	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet"> 	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Caendario-->
+      <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ >
     </head>
 
     <body>
@@ -35,8 +37,8 @@
 			<form class="col s12">
 				<div class="row">
 					<div class="input-field col s6">
-						<input id="datetimepicker" type="text">
-						<label for="email">Inicio</label>
+						<input type="text" id="datetimepicker3"/><input type="button" onclick="$('#datetimepicker3').datetimepicker({value:'2011/12/11 12:00'})" value="set inline value 2011/12/11 12:00"/><br><br>
+						<label>Inicio</label>
 					</div>
 				</div>
 			</form>
@@ -75,7 +77,7 @@
         </footer>       
     </body>
     
-    <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ >
+    
 	<script src="/jquery.js"></script>
 	<script src="/build/jquery.datetimepicker.full.min.js"></script>
     
@@ -83,7 +85,7 @@
 		jQuery('#datetimepicker3').datetimepicker({
 			format:'d.m.Y H:i',
 			inline:true,
-			lang:'ru'
+			lang:'es'
 		});		
     </script>
 
