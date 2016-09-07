@@ -74,7 +74,7 @@
         </footer>       
     </body>
     
-    
+    <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script type="text/javascript">
 		 $('.datepicker').pickadate({
 			today: '',
