@@ -173,7 +173,7 @@
                 },
                 success:  function (response) {
 						$("#division").html("");
-                        $("#resultado").html(response);
+                        $("#division").html(response);
                 }
 			});         
         };
