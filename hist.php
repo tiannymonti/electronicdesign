@@ -128,7 +128,7 @@
             e.stopPropagation();
             e.preventDefault();
             pickert1.open();
-            alert(pickert1.get())
+            alert(pickert1.get('select', 'HH:i'))
         });
 		
 		 var $input2 = $('.end-datepicker').pickadate({
@@ -165,7 +165,7 @@
             e.stopPropagation();
             e.preventDefault();
             pickert2.open();
-            alert(pickert2.get())
+            alert(pickert2.get('select', 'HH:i'))
         });
 			
 		
