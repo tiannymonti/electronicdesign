@@ -59,7 +59,7 @@
 		 
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
 		<div class="divider"></div>
-		<div class="col s12" id="division"></div>
+		<div class="col s12" id="division1"></div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4">
           <div class="container">
@@ -173,7 +173,7 @@
                         $("#division").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
-						$("#division").html("");
+						$("#division1").html("");
                         $("#resultado").html(response);
                 }
 			});         
