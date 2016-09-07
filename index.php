@@ -7,6 +7,7 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	  <!--Icono y titulo de la pagina web-->
 	  <link rel="icon" href="res/car-icon.png">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  <meta charset="UTF-8"> 
 	  <title>Telemetria vehicular</title>
 	  <!--Fuente del titulo-->
@@ -21,7 +22,7 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <nav style="background-color: #01579b;">
 		<div class="nav-wrapper">
-		<a href="#!" class="brand-logo"><i class="material-icons">car</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu puto carro</span></a>        
+		<a href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu puto carro</span></a>        
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li class="active"><a href="index.php">Ahora</a></li>
 			<li><a href="badges.html">Historicos</a></li>
