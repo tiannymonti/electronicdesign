@@ -162,7 +162,7 @@
 						"horaf" : res4[0],
 						"minf" : res4[1],
 						
-			}
+			};
             
             $.ajax({
                 data:  parametros,
