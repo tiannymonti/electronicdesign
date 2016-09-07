@@ -1,5 +1,7 @@
 <?php
 
+
+
     // Create connection
     $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
     // Check connection
