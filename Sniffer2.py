@@ -5,7 +5,7 @@ import mysql.connector
 
 from socket import*
 IPserver = "172.31.21.200"
-Portserver = 5601
+Portserver = 5602
 
 SockServer = socket(AF_INET, SOCK_DGRAM) 
 SockServer.bind((IPserver, Portserver))
