@@ -103,7 +103,7 @@
 				$(document.activeElement).blur()
 			}			
 		});
-		var picker1 = $input1.pickadate('picker')
+		var picker1 = $input1.pickadate('picker');
 		
 		var $tinput1 = $('.start-timepicker').pickatime({
 			clear: 'Clear selection',
@@ -111,8 +111,8 @@
 			onClose: function(){
 				$(document.activeElement).blur()
 			}		
-			})
-		var pickert1 = $tinput1.pickatime('picker')
+			});
+		var pickert1 = $tinput1.pickatime('picker');
 		
 		 var $input2 = $('.end-datepicker').pickadate({
 			today: '',
@@ -126,7 +126,7 @@
 				$(document.activeElement).blur()
 			}			
 		});
-		var picker2 = $input2.pickadate('picker')
+		var picker2 = $input2.pickadate('picker');
 		
 		var $tinput2 = $('.end-timepicker').pickatime({
 			clear: 'Clear selection',
@@ -134,48 +134,49 @@
 			onClose: function(){
 				$(document.activeElement).blur()
 			}		
-			})
-		var pickert2 = $tinput2.pickatime('picker')
+			});
+		var pickert2 = $tinput2.pickatime('picker');
+		
+		function post(path, parameters) {
+        var form = $('<form></form>');
+
+        form.attr("method", "post");
+        form.attr("action", path);
+
+        $.each(parameters, function(key, value) {
+            if ( typeof value == 'object' || typeof value == 'array' ){
+                $.each(value, function(subkey, subvalue) {
+                    var field = $('<input />');
+                    field.attr("type", "hidden");
+                    field.attr("name", key+'[]');
+                    field.attr("value", subvalue);
+                    form.append(field);
+                });
+            } else {
+                var field = $('<input />');
+                field.attr("type", "hidden");
+                field.attr("name", key);
+                field.attr("value", value);
+                form.append(field);
+            }
+        });
+        $(document.body).append(form);
+        form.submit();
+    };
 		
 		 function toggleFunction() {
             picker1.open();
             pickert1.open();
             picker2.open();
             pickert2.open();
-            var fecha1 = picker1.get('select', 'yyyy/mm/dd');
+            var fecha1 = picker1.get('select', 'yyyy-mm-dd');
             var hora1 = pickert1.get('select', 'HH:i');
-            var fecha2 = picker2.get('select', 'yyyy/mm/dd');
+            var fecha2 = picker2.get('select', 'yyyy-mm-dd');
             var hora2 = pickert2.get('select', 'HH:i');
-            var res1 = fecha1.split("/");
-            var res2 = hora1.split(":");
-            var res3 = fecha2.split("/");
-            var res4 = hora2.split(":");  
-            var parametros = {
-						"yri" : res1[0],
-						"mesi" : res1[1],
-						"diai" : res1[2],
-						"horai" : res2[0],
-						"mini" : res2[1],
-						"yrf" : res3[0],
-						"mesf" : res3[1],
-						"diaf" : res3[2],
-						"horaf" : res4[0],
-						"minf" : res4[1],
-						
-			};
-            
-            $.ajax({
-                data:  parametros,
-                type:  'post',
-                beforeSend: function () {
-                        $("#division").html("Procesando, espere por favor...");
-                },
-                success:  function (response) {
-							alert("response");
-							 window.location.href("dbhistoricos.php");
-                }
-			});         
+            post("dbhistoricos.php", {fecha1:fecha1, hora1:hora1, fecha2:fecha2, hora2:hora2})     
         };
+        
+        
 			
     </script>
 
