@@ -65,7 +65,7 @@ while True:
         print("ERROR en dato")
         bandera = 0
         
-    if bandera = 1
+    if (bandera = 1)
 			
             bd = mysql.connector.connect(user='root', password='1234',
             host='localhost', database='coordenadas')
