@@ -59,7 +59,7 @@ while True:
                 hora = hora - 5
                 hora = str(hora)
                        
-		time = year+'-'+mes+'-'+dia+' '+hora+':'+minu+':'+seg
+		time = ''+year+'-'+mes+'-'+dia+' '+hora+':'+minu+':'+seg+''
            
     else:
         print("ERROR en dato")
