@@ -5,7 +5,7 @@
 	$fecha2 = $_POST['fecha2'];
 	$hora2 = $_POST['hora2'];
 	
-	echo $fecha1.' '.$hora1.' '.$fecha2.' '.$hora2;
+	echo $fecha1.'lol '.$hora1.'hue '.$fecha2.'boo '.$hora2;
 
     //// Create connection
     //$tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
