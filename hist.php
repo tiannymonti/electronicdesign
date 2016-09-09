@@ -32,7 +32,7 @@
 	</nav>
 	 <main>
 		 <div class="row" style="margin-top: 0.2em">
-		 <form class="col s12">
+		 <form class="col s12" method=post action="dbhistoricos.php">
 		<div class="row">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			

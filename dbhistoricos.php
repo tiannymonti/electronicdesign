@@ -1,9 +1,10 @@
 <?php
 
-	$fecha1 = $_GET['fecha1'];
-	$hora1 = $_GET['hora1'];
-	$fecha2 = $_GET['fecha2'];
-	$hora2 = $_GET['hora2'];
+	
+	$fecha1 = $_POST['fecha1'];
+	$hora1 = $_POST['hora1'];
+	$fecha2 = $_POST['fecha2'];
+	$hora2 = $_POST['hora2'];
 	
 	echo $fecha1.'lol '.$hora1.'hue '.$fecha2.'boo '.$hora2;
 
