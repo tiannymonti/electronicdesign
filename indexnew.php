@@ -80,7 +80,7 @@ var myPositions = [];
 	function consulta(){
 		
 		$.ajax({
-			url:"leebasededatos.php",
+			url:"leebasededatosnew.php",
 			success:
 				function(response){
 					//alert(response)
