@@ -4,6 +4,7 @@ import mysql.connector
 ##import mysql
 
 from socket import*
+from datetime import*
 IPserver = "172.31.21.200"
 Portserver = 5601
 
@@ -63,14 +64,14 @@ while True:
                 hora = int(hora)
                 hora = hora - 5
                        
-            
+            dateAndtime = datetime.datetime(year, mes, dia1, hora, minu, seg)
             bd = mysql.connector.connect(user='root', password='1234',
                 host='localhost', database='coordenadas')
 
             cursor = bd.cursor()
             
-            add_coordinate = ("INSERT INTO time (dia, mes, yr, hora, min, seg) VALUES (%s, %s, %s, %s, %s, %s)")
-            data_coordinate = (dia1, mes, year, hora, minu, seg)
+            add_coordinate = ("UPDATE Customers SET %s WHERE ID=(SELECT MAX(ID) FROM Coordenadas)")
+            data_coordinate = (dateAndtime)
             cursor.execute(add_coordinate, data_coordinate)
             bd.commit()
             cursor.close()
