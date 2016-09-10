@@ -6,7 +6,9 @@
 	$fecha2 = $_POST['fecha2'];
 	$hora2 = $_POST['hora2'];
 	
-	echo $fecha1.'lol '.$hora1.'hue '.$fecha2.'boo '.$hora2;
+	$desde = $fecha1 . " " . $hora1;
+	$hasta = $fecha2 . " " . $hora2;
+	echo $desde.' - '.$hasta;
 
     //// Create connection
     //$tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
@@ -16,7 +18,7 @@
     //} 
 
         //// Consulta de selección 
-    //$querytime = mysqli_query($tion, "SELECT c.latitud, c.longitud, t.dia, t.mes, t.yr, t.hora, t.min, t.seg FROM coordenadas.cordenadas AS c JOIN coordenadas.time AS t ON c.id_cordenadas = t.id_time WHERE (t.yr = '.$yri.') AND (t.mes = '.$mesi.') AND (t.dia BETWEEN '.$diai.' AND '.$diaf.') ORDER BY c.id_cordenadas";);                             
+    //$querytime = mysqli_query($tion, "SELECT latitud, longitud, time FROM coordenadas.cordenadas WHERE (t.yr = '.$yri.') AND (t.mes = '.$mesi.') AND (t.dia BETWEEN '.$diai.' AND '.$diaf.') ORDER BY c.id_cordenadas";);                             
     
     //echo $querytime;
     
