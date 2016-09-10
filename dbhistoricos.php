@@ -9,7 +9,7 @@
 	$desde = htmlspecialchars($fecha1 . " " . $hora1);
 	$hasta = htmlspecialchars($fecha2 . " " . $hora2);
 	
-	//echo $desde.' - '.$hasta;
+	echo $desde.' - '.$hasta;
 
     //// Create connection
     //$tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
