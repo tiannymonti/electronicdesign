@@ -160,9 +160,6 @@
                 beforeSend: function () {
                         $("#divisio").html("Procesando, espere por favor...");
                 },
-                success:  function (response) {
-                        $("#divisio").html(response);
-                }
 			});  
         };
         
@@ -173,102 +170,101 @@
    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
 
 
-<script type="text/javascript">
-var map;
-var myCenter;
-var marker;
-var myVal = consulta();
-var myPositions = [];
-	function consulta(){
-		
-		$.ajax({
-			url:"dbhistoricos.php",
-			success:
-				function(response){
-					//alert(response)
-					var data=JSON.parse(response);
-					document.getElementById("latitud").innerHTML = data.latitud;
-					document.getElementById("longitud").innerHTML = data.longitud;
-					document.getElementById("dia").innerHTML = data.dia;
-					document.getElementById("mes").innerHTML = data.mes;
-					document.getElementById("yr").innerHTML = data.yr;
-					document.getElementById("hora").innerHTML = data.hora;
-					document.getElementById("min").innerHTML = data.min;
-					document.getElementById("seg").innerHTML = data.seg;
+	<script type="text/javascript">
+	var map;
+	var myCenter;
+	var marker;
+	var myVal = consulta();
+	var myPositions = [];
+		function consulta(){
+			
+			$.ajax({
+				url:"dbhistoricos.php",
+				success:
+					function(response){
+						//alert(response)
+						var data=JSON.parse(response);
+						document.getElementById("latitud").innerHTML = data.latitud;
+						document.getElementById("longitud").innerHTML = data.longitud;
+						document.getElementById("dia").innerHTML = data.dia;
+						document.getElementById("mes").innerHTML = data.mes;
+						document.getElementById("yr").innerHTML = data.yr;
+						document.getElementById("hora").innerHTML = data.hora;
+						document.getElementById("min").innerHTML = data.min;
+						document.getElementById("seg").innerHTML = data.seg;
 
-					myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
-					myPositions.push(myCenter);    				
-				},
-		});
+						myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
+						myPositions.push(myCenter);    				
+					},
+			});
+			
+				var lineSymbol = {
+					path: google.maps.SymbolPath.CIRCLE,
+					fillOpacity: 1,
+					scale: 3
+				};
+			
+					  var myPath = new google.maps.Polyline({
+						path: myPositions,
+						geodesic: true,
+						strokeColor: '#0000FF',
+						strokeOpacity: 1.0,
+						fillOpacity: 0,
+						icons: [{
+							icon: lineSymbol,
+							offset: '0',
+							repeat: '3px'
+						}],
+					});
+	 
+	  myPath.setMap(map);
+			
+		}
 		
-		    var lineSymbol = {
-				path: google.maps.SymbolPath.CIRCLE,
-				fillOpacity: 1,
-				scale: 3
-			};
-		
-				  var myPath = new google.maps.Polyline({
-					path: myPositions,
-					geodesic: true,
-					strokeColor: '#0000FF',
-					strokeOpacity: 1.0,
-					fillOpacity: 0,
-					icons: [{
-						icon: lineSymbol,
-						offset: '0',
-						repeat: '3px'
-					}],
-				});
- 
-  myPath.setMap(map);
-		
+		var refresh = setInterval(function(){
+			consulta();
+			marker.setPosition(myCenter);
+			map.panTo(myCenter);
+			},3000);
+
+	function placeMarker(location) {
+		marker = new google.maps.Marker({
+		position: location,
+		map: map,
+	  });
+	  var infowindow = new google.maps.InfoWindow({
+		content: 'Latitude: ' + location.lat() +
+		'<br>Longitude: ' + location.lng()
+	  });
+	  infowindow.open(map,marker);
 	}
-	
-	var refresh = setInterval(function(){
-		consulta();
-		marker.setPosition(myCenter);
-		map.panTo(myCenter);
-		},3000);
 
-function placeMarker(location) {
-    marker = new google.maps.Marker({
-    position: location,
-    map: map,
-  });
-  var infowindow = new google.maps.InfoWindow({
-    content: 'Latitude: ' + location.lat() +
-    '<br>Longitude: ' + location.lng()
-  });
-  infowindow.open(map,marker);
-}
+	function initialize()
+	{
+	var mapProp = {
+	  center:myCenter,
+	  zoom:15,
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
 
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:15,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
+	  map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-  map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	marker=new google.maps.Marker({
+	  position:myCenter,
+	  icon: 'res/carnavicon.png'
+	  });
 
-marker=new google.maps.Marker({
-  position:myCenter,
-  icon: 'res/carnavicon.png'
-  });
+	marker.setMap(map);
+	google.maps.event.addListener(map, 'click', function(event) {
+	   map.setZoom(9);
+	   map.setCenter(marker.getPosition());
+	  });
+	 
 
-marker.setMap(map);
-google.maps.event.addListener(map, 'click', function(event) {
-   map.setZoom(9);
-   map.setCenter(marker.getPosition());
-  });
- 
+	}
 
-}
+	google.maps.event.addDomListener(window, 'load', initialize);
 
-google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
--->
+	</script>
     
   </html>
