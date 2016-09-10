@@ -14,7 +14,7 @@
     // Create connection
     $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
         
-         Consulta de selección 
+    // Consulta de selección 
     $querytime = mysqli_query($tion, "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '$desde' AND '$hasta' ORDER BY time;");                             
     if (!$querytime) {
 		die('Consulta no válida: ' . mysql_error());
