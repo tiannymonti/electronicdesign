@@ -90,7 +90,10 @@
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
     
     <script type="text/javascript">		 
-		 var respuesta;
+		 //var respuesta;
+		 //var map;
+		 //var myCenter;
+		 //var myPositions = [];	
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -165,39 +168,38 @@
                 },
 				success:
 					function(response){
-							respuesta = response;
+						var data=JSON.parse(response);
+						//response.forEach(function(data) {
+						//myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
+						//myPositions.push(myCenter);
+						//});							
 					},
 				});          
-        };			
+      		
     
-		var map;
-		var myCenter;
-		var myPositions = [];	
-		alert(respuesta);
-		var data=JSON.parse(respuesta);
-		respuesta.forEach(function(data) {
-				myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
-				myPositions.push(myCenter);
-		});  
+		
+  
 
-		 function initMap() {
-			map = new google.maps.Map(document.getElementById('googleMap'), {
-			zoom: 3,
-			center: myCenter,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		});
+		 //function initMap() {
+			//map = new google.maps.Map(document.getElementById('googleMap'), {
+			//zoom: 3,
+			//center: myCenter,
+			//mapTypeId: google.maps.MapTypeId.ROADMAP
+		//});
 
 	  
-	  var myPath = new google.maps.Polyline({
-		path: myPositions,
-		geodesic: true,
-		strokeColor: '#FF0000',
-		strokeOpacity: 1.0,
-		strokeWeight: 2
-	  });
+	  //var myPath = new google.maps.Polyline({
+		//path: myPositions,
+		//geodesic: true,
+		//strokeColor: '#FF0000',
+		//strokeOpacity: 1.0,
+		//strokeWeight: 2
+	  //});
 
-	  myPath.setMap(map);
-	}
+	  //myPath.setMap(map);
+	//}
+	
+	  };	
 
    </script>
 
