@@ -176,10 +176,9 @@
 								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
 								myPositions.push(myCenter);
 							}
-						}						
-					},
-					
-					alert(myPositions);
+						}
+						alert(myPositions);						
+					}					
 				});          
       		
 		 function initMap() {
