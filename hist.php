@@ -56,7 +56,7 @@
 		</div>
 		<div class="row">
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
-		<div class="col s12" id="division"><h1> HOLI </h1></div>
+		<div class="col s12"><h1 id="division"> HOLI </h1></div>
 		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4">
@@ -163,8 +163,7 @@
                 success:  function (response) {
                         $("#division").html(response);
                 }
-			});
-            //post("dbhistoricos.php", {fecha1:fecha1, hora1:hora1, fecha2:fecha2, hora2:hora2})     
+			});  
         };
         
         
