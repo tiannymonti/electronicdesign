@@ -144,7 +144,7 @@
 		
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("googleMap"), {
-			zoom: 3,
+			zoom: 15,
 			center: myCenter,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		});
