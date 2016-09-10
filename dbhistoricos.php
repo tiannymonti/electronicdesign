@@ -20,7 +20,7 @@
 	}
 	
 	$jsonData = array();
-	while ($array = mysql_fetch_row($querytime)) {
+	while ($array = mysqli_fetch_row($querytime)) {
 		$jsonData[] = $array;
 		}
 	echo json_encode($jsonData)
