@@ -169,8 +169,10 @@
             pickert2.open();
             var fecha1 = picker1.get('select', 'yyyy-mm-dd');
             var hora1 = pickert1.get('select', 'HH:i');
+            hora1 = hora1.concat(":00");
             var fecha2 = picker2.get('select', 'yyyy-mm-dd');
             var hora2 = pickert2.get('select', 'HH:i');
+            hora2 = hora2.concat(":00");
             post("dbhistoricos.php", {fecha1:fecha1, hora1:hora1, fecha2:fecha2, hora2:hora2})     
         };
         
