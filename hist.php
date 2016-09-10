@@ -142,6 +142,25 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');
 		
+		function initMap() {
+			map = new google.maps.Map(document.getElementById("googleMap"), {
+			zoom: 3,
+			center: myCenter,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+		  
+			var myPath = new google.maps.Polyline({
+			path: myPositions,
+			geodesic: true,
+			strokeColor: '#FF0000',
+			strokeOpacity: 1.0,
+			strokeWeight: 2
+			 });
+
+			myPath.setMap(map);
+		}; //end init map
+					
+		
 		 function toggleFunction() {
             picker1.open();
             pickert1.open();
@@ -177,28 +196,7 @@
 								myPositions.push(myCenter);
 							}
 						}
-					function initMap() {
-							alert(myCenter);
-							alert(myPositions);
-							map = new google.maps.Map(document.getElementById("googleMap"), {
-							zoom: 3,
-							center: myCenter,
-							mapTypeId: google.maps.MapTypeId.ROADMAP
-						});
-				  
-						  var myPath = new google.maps.Polyline({
-							path: myPositions,
-							geodesic: true,
-							strokeColor: '#FF0000',
-							strokeOpacity: 1.0,
-							strokeWeight: 2
-						  });
-
-							myPath.setMap(map);
-					} //end init map
-					
-					google.maps.event.addDomListener(window, 'load', initMap);
-										
+						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
 	  };  //end toggle	
