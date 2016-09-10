@@ -6,8 +6,8 @@
 	$fecha2 = $_POST['fecha2'];
 	$hora2 = $_POST['hora2'];
 	
-	$desde = htmlspecialchars($fecha1 . " " . $hora1);
-	$hasta = htmlspecialchars($fecha2 . " " . $hora2);
+	$desde = $fecha1 . " " . $hora1);
+	$hasta = $fecha2 . " " . $hora2);
 	
 	//echo $desde.' - '.$hasta;
 
@@ -15,7 +15,7 @@
     $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
 
         // Consulta de selección 
-    $querytime = mysqli_query($tion, "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '$desde' AND '$hasta' ORDER BY time;");                             
+    $querytime = mysqli_query($tion, "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '.$desde.' AND '.$hasta.' ORDER BY time;");                             
     if (!$querytime) {
 		die('Consulta no válida: ' . mysql_error());
 	}
