@@ -179,7 +179,7 @@
 						}						
 					},
 					
-					alert(myPositions)
+					alert(myPositions);
 				});          
       		
 		 function initMap() {
