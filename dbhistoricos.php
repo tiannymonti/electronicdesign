@@ -25,7 +25,6 @@
 	// look through query
 	while($row = mysqli_fetch_assoc($querytime)){
 		echo $row['latitud'];
-		echo ' - '
 		echo $row['longitud'];
 	}
 	
