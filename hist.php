@@ -168,11 +168,12 @@
                 },
 				success:
 					function(response){
-						var data=JSON.parse(response);
-						response.forEach(function(data) {
-						myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
-						myPositions.push(myCenter);
-						});							
+						var arrayOfObjects = eval(response);
+						//var data=JSON.parse(response);
+						//response.forEach(function(data) {
+						//myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
+						//myPositions.push(myCenter);
+						//});							
 					},
 				});          
       		
