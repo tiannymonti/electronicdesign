@@ -87,6 +87,7 @@
     </body>
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
     
     <script type="text/javascript">		 
 		 var respuesta;
@@ -168,10 +169,7 @@
 					},
 				});          
         };			
-    </script>
     
-	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
-	<script type="text/javascript">
 		var map;
 		var myCenter;
 		var myPositions = [];	
