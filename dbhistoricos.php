@@ -19,11 +19,21 @@
 		die('Consulta no válida: ' . mysql_error());
 	}
 	
-	$jsonData = array();
-	while ($array = mysqli_fetch_row($querytime)) {
-		$jsonData[] = $array;
-		}
-	echo json_encode($jsonData)
+	while($row = msqli_fetch_array($querytime) ) { 
+     $json['latitud'] = $row['latitud'];
+     $json['longitud'] = $row['longitud'];
+     //$json['field_3'] = $row['field_1'] + $row['field_2'];
+
+     array_push($response, $json); 
+	}
+  
+	echo json_encode($response, true);
+	
+	//$jsonData = array();
+	//while ($array = mysqli_fetch_row($querytime)) {
+		//$jsonData[] = $array;
+		//}
+	//echo json_encode($jsonData)
 	
 	//// look through query
 	//while($row = mysqli_fetch_assoc($querytime)){
