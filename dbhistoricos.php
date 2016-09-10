@@ -11,26 +11,22 @@
 	
 	//echo $desde.' - '.$hasta;
 
-    //// Create connection
-    //$tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
-    
-    $query = "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '$desde' AND '$hasta';";
-    echo $query;
-    
-
-        // Consulta de selección 
-    //$querytime = mysqli_query($tion, "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '.$desde.' AND '.$hasta.';");                             
-    //if (!$querytime) {
-		//die('Consulta no válida: ' . mysql_error());
-	//}
-    ////// set array
-	////$positions = array();
+    // Create connection
+    $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
+        
+         Consulta de selección 
+    $querytime = mysqli_query($tion, "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '$desde' AND '$hasta' ORDER BY time;");                             
+    if (!$querytime) {
+		die('Consulta no válida: ' . mysql_error());
+	}
+    //// set array
+	//$positions = array();
 	
-	//// look through query
-	//while($row = mysqli_fetch_assoc($querytime)){
-		//echo $row['latitud'];
-		//echo $row['longitud'];
-	//}
+	// look through query
+	while($row = mysqli_fetch_assoc($querytime)){
+		echo $row['latitud'];
+		echo $row['longitud'];
+	}
 	
 	////$location = array();
 	////$location = array_map('current', $positions);  
