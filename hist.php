@@ -165,7 +165,6 @@
 				success:
 					function(response){
 							respuesta = response;
-							alert(respuesta);
 					},
 				});          
         };			
@@ -176,6 +175,7 @@
 		var map;
 		var myCenter;
 		var myPositions = [];	
+		alert(respuesta);
 		var data=JSON.parse(respuesta);
 		respuesta.forEach(function(data) {
 				myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
