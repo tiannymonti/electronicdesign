@@ -145,22 +145,7 @@
             hora1 = hora1.concat(":00");
             var fecha2 = picker2.get('select', 'yyyy-mm-dd');
             var hora2 = pickert2.get('select', 'HH:i');
-            hora2 = hora2.concat(":00");
-            
-             var parametros = {
-                "fecha1" : fecha1,
-                "hora1" : hora1,
-				"fecha2" : fecha2,
-                "hora2" : hora2                
-			};
-			$.ajax({
-                data:  parametros,
-                url:   'dbhistoricos.php',
-                type:  'post',
-                beforeSend: function () {
-                        $("#divisio").html("Procesando, espere por favor...");
-                },
-			});  
+            hora2 = hora2.concat(":00");           
         };
         
         
@@ -177,9 +162,20 @@
 	var myVal = consulta();
 	var myPositions = [];
 		function consulta(){
-			
+						
+             var parametros = {
+                "fecha1" : fecha1,
+                "hora1" : hora1,
+				"fecha2" : fecha2,
+                "hora2" : hora2                
+			};
 			$.ajax({
-				url:"dbhistoricos.php",
+                data:  parametros,
+                url:   'dbhistoricos.php',
+                type:  'post',
+                beforeSend: function () {
+                        $("#divisio").html("Procesando, espere por favor...");
+                },
 				success:
 					function(response){
 						var data=JSON.parse(response);
