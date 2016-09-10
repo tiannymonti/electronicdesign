@@ -14,7 +14,7 @@
     //// Create connection
     //$tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
     
-    $query = "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '.$desde.' AND '.$hasta.';";
+    $query = "SELECT latitud, longitud FROM cordenadas WHERE time BETWEEN '$desde' AND '$hasta';";
     echo $query;
     
 
