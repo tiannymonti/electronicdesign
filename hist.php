@@ -192,11 +192,13 @@
 							strokeWeight: 2
 						  });
 
-						myPath.setMap(map);
+							myPath.setMap(map);
 					} //end init map
+					
+					google.maps.event.addDomListener(window, 'load', initMap);
 										
 					}  //fin de la funcion de response					
-				});          
+				}); //fin del ajax          
 	  };  //end toggle	
 
    </script>
