@@ -186,7 +186,7 @@
 							response.forEach(function(data) {
 								myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
 								myPositions.push(myCenter);
-							}    				
+							});    				
 					},
 			});
 			
