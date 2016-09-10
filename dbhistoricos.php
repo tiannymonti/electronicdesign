@@ -28,7 +28,7 @@
     echo json_encode($emparray);
 
     //close the db connection
-    mysqli_close($connection);
+    mysqli_close($tion);
 	
 	//// look through query
 	//while($row = mysqli_fetch_assoc($querytime)){
