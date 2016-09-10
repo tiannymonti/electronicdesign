@@ -56,6 +56,7 @@
 		</div>
 		<div class="row">
 		<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>
+		<div class="divider"></div>
 		<div class="col s12"><h1 id="divisio"> HOLI </h1></div>
 		</div>
 	  </main>		  
@@ -177,6 +178,8 @@
 							}
 						}						
 					},
+					
+					alert(myPositions)
 				});          
       		
 		 function initMap() {
