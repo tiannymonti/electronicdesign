@@ -176,31 +176,28 @@
 								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
 								myPositions.push(myCenter);
 							}
-						}					
+						}
+					function initMap() {
+							map = new google.maps.Map(document.getElementById("googleMap"), {
+							zoom: 3,
+							center: myCenter,
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						});
+				  
+						  var myPath = new google.maps.Polyline({
+							path: myPositions,
+							geodesic: true,
+							strokeColor: '#FF0000',
+							strokeOpacity: 1.0,
+							strokeWeight: 2
+						  });
+
+						myPath.setMap(map);
+					} //end init map
+										
 					}  //fin de la funcion de response					
 				});          
-      	
-      	alert(myPositions);
-		 function initMap() {
-			map = new google.maps.Map(document.getElementById('googleMap'), {
-			zoom: 3,
-			center: myCenter,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		});
-
-	  
-	  var myPath = new google.maps.Polyline({
-		path: myPositions,
-		geodesic: true,
-		strokeColor: '#FF0000',
-		strokeOpacity: 1.0,
-		strokeWeight: 2
-	  });
-
-	  myPath.setMap(map);
-	}
-	
-	  };	
+	  };  //end toggle	
 
    </script>
 
