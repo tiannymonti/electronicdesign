@@ -184,7 +184,7 @@
 								myPositions.push(myCenter);
 							});    				
 					},
-			});
+				});
 			
 				var lineSymbol = {
 					path: google.maps.SymbolPath.CIRCLE,
@@ -208,12 +208,6 @@
 	  myPath.setMap(map);
 			
 		}
-		
-		var refresh = setInterval(function(){
-			consulta();
-			marker.setPosition(myCenter);
-			map.panTo(myCenter);
-			},3000);
 
 	function placeMarker(location) {
 		marker = new google.maps.Marker({
