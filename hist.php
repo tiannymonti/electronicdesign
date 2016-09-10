@@ -180,9 +180,9 @@
 			
     </script>
 
-   <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>-->
+   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
 
-<!--
+
 <script type="text/javascript">
 var map;
 var myCenter;
@@ -192,7 +192,7 @@ var myPositions = [];
 	function consulta(){
 		
 		$.ajax({
-			url:"leebasededatos.php",
+			url:"dbhistoricos.php",
 			success:
 				function(response){
 					//alert(response)
