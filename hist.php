@@ -56,8 +56,7 @@
 		</div>
 		<div class="row">
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
-		<div class="divider"></div>
-		<div class="col s12" id="division"><p> HOLI </p></div>
+		<div class="col s12" id="division"><h1> HOLI </h1></div>
 		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4">
@@ -135,33 +134,6 @@
 			}		
 			});
 		var pickert2 = $tinput2.pickatime('picker');
-		
-		//function post(path, parameters) {
-        //var form = $('<form></form>');
-
-        //form.attr("method", "post");
-        //form.attr("action", path);
-
-        //$.each(parameters, function(key, value) {
-            //if ( typeof value == 'object' || typeof value == 'array' ){
-                //$.each(value, function(subkey, subvalue) {
-                    //var field = $('<input />');
-                    //field.attr("type", "hidden");
-                    //field.attr("name", key+'[]');
-                    //field.attr("value", subvalue);
-                    //form.append(field);
-                //});
-            //} else {
-                //var field = $('<input />');
-                //field.attr("type", "hidden");
-                //field.attr("name", key);
-                //field.attr("value", value);
-                //form.append(field);
-            //}
-        //});
-        //$(document.body).append(form);
-        //form.submit();
-    //};
 		
 		 function toggleFunction() {
             picker1.open();
