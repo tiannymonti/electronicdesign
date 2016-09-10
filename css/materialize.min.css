@@ -33,6 +33,14 @@
 				text-align: center;
 			}
 			
+		   #divisio{
+				padding-top: 0;
+				padding-bottom: 0;
+				font-size: 5em;
+				border: 0;
+				text-align: center;
+			}
+			
 			.picker__date-display {
 				background-color:#01579b;
 			}

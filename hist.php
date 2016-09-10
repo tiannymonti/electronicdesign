@@ -56,7 +56,7 @@
 		</div>
 		<div class="row">
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
-		<div class="col s12"><h1 id="division"> HOLI </h1></div>
+		<div class="col s12"><h1 id="divisio"> HOLI </h1></div>
 		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4">
@@ -158,10 +158,10 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
-                        $("#division").html("Procesando, espere por favor...");
+                        $("#divisio").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
-                        $("#division").html(response);
+                        $("#divisio").html(response);
                 }
 			});  
         };
