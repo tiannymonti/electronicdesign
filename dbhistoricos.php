@@ -17,8 +17,6 @@
         // Consulta de selección 
     $querytime = mysqli_query($tion, "SELECT latitud, longitud FROM coordenadas.cordenadas WHERE time BETWEEN '.$desde.' AND '.$hasta.' ORDER BY time;");                             
     
-    echo $querytime;
-    
     // set array
 	$positions = array();
 	// look through query
