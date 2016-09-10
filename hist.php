@@ -178,6 +178,8 @@
 							}
 						}
 					function initMap() {
+							alert(myCenter);
+							alert(myPositions);
 							map = new google.maps.Map(document.getElementById("googleMap"), {
 							zoom: 3,
 							center: myCenter,
