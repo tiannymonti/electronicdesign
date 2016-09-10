@@ -182,19 +182,11 @@
 				url:"dbhistoricos.php",
 				success:
 					function(response){
-						//alert(response)
 						var data=JSON.parse(response);
-						document.getElementById("latitud").innerHTML = data.latitud;
-						document.getElementById("longitud").innerHTML = data.longitud;
-						document.getElementById("dia").innerHTML = data.dia;
-						document.getElementById("mes").innerHTML = data.mes;
-						document.getElementById("yr").innerHTML = data.yr;
-						document.getElementById("hora").innerHTML = data.hora;
-						document.getElementById("min").innerHTML = data.min;
-						document.getElementById("seg").innerHTML = data.seg;
-
-						myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
-						myPositions.push(myCenter);    				
+							response.forEach(function(data) {
+								myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
+								myPositions.push(myCenter);
+							}    				
 					},
 			});
 			
