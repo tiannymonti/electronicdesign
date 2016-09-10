@@ -32,7 +32,7 @@
 	</nav>
 	 <main>
 		 <div class="row" style="margin-top: 0.2em">
-		 <form class="col s12" method=post action="dbhistoricos.php">
+		 <!--<form class="col s12" method=post action="dbhistoricos.php">-->
 		<div class="row">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
@@ -54,7 +54,7 @@
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
-		</form>
+		<!--</form>-->
 		</div>
 		<div class="row">
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
