@@ -1,5 +1,6 @@
 <?php
 	ini_set('display_errors', 'On');
+	error_reporting(E_ALL);
 	
 	$fecha1 = $_POST['fecha1'];
 	$hora1 = $_POST['hora1'];
@@ -8,8 +9,6 @@
 	
 	$desde = htmlspecialchars($fecha1 . " " . $hora1);
 	$hasta = htmlspecialchars($fecha2 . " " . $hora2);
-	
-	//echo $desde.' - '.$hasta;
 
     // Create connection
     $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
@@ -19,18 +18,17 @@
     if (!$querytime) {
 		die('Consulta no válida: ' . mysql_error());
 	}
-    //// set array
-	//$positions = array();
 	
-	// look through query
-	while($row = mysqli_fetch_assoc($querytime)){
-		echo $row['latitud'];
-		echo $row['longitud'];
-	}
+	$jsonData = array();
+	while ($array = mysql_fetch_row($querytime)) {
+		$jsonData[] = $array;
+		}
+	echo json_encode($jsonData)
 	
-	////$location = array();
-	////$location = array_map('current', $positions);  
-	
-	////echo json_encode($location);              
+	//// look through query
+	//while($row = mysqli_fetch_assoc($querytime)){
+		//echo $row['latitud'];
+		//echo $row['longitud'];
+	//}	
               
 ?>
