@@ -28,12 +28,5 @@
     echo json_encode($emparray);
 
     //close the db connection
-    mysqli_close($tion);
-	
-	//// look through query
-	//while($row = mysqli_fetch_assoc($querytime)){
-		//echo $row['latitud'];
-		//echo $row['longitud'];
-	//}	
-              
+    mysqli_close($tion);	              
 ?>
