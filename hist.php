@@ -172,14 +172,10 @@
 						for (var i = 0; i < arrayOfObjects.length; i++) {
 							var object = arrayOfObjects[i];
 							for (var property in object) {
-								alert(object.latitud + ',' + object.longitud);
+								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
+								myPositions.push(myCenter);
 							}
-						}
-						//var data=JSON.parse(response);
-						//response.forEach(function(data) {
-						//myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
-						//myPositions.push(myCenter);
-						//});							
+						}						
 					},
 				});          
       		
