@@ -89,6 +89,9 @@
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     
     <script type="text/javascript">
+		 
+		 var = respuesta;
+		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -145,25 +148,9 @@
             hora1 = hora1.concat(":00");
             var fecha2 = picker2.get('select', 'yyyy-mm-dd');
             var hora2 = pickert2.get('select', 'HH:i');
-            hora2 = hora2.concat(":00");           
-        };
-        
-        
-			
-    </script>
-
-   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
-
-
-	<script type="text/javascript">
-	var map;
-	var myCenter;
-	var marker;
-	var myVal = consulta();
-	var myPositions = [];
-		function consulta(){
-						
-             var parametros = {
+            hora2 = hora2.concat(":00"); 
+            
+            var parametros = {
                 "fecha1" : fecha1,
                 "hora1" : hora1,
 				"fecha2" : fecha2,
@@ -178,13 +165,29 @@
                 },
 				success:
 					function(response){
-						var data=JSON.parse(response);
-							response.forEach(function(data) {
-								myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
-								myPositions.push(myCenter);
-							});    				
+							respuesta = response;
+							alert(respuesta);
 					},
-				});
+				});          
+        };
+        
+        
+			
+    </script>
+
+<!--
+   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+
+
+	<script type="text/javascript">
+	var map;
+	var myCenter;
+	var marker;
+	var myVal = consulta();
+	var myPositions = [];
+		function consulta(){
+						
+     
 			
 				var lineSymbol = {
 					path: google.maps.SymbolPath.CIRCLE,
@@ -248,5 +251,6 @@
 	google.maps.event.addDomListener(window, 'load', initialize);
 
 	</script>
+-->
     
   </html>
