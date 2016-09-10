@@ -55,7 +55,7 @@
 		</div>
 		</div>
 		<div class="row">
-		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
+		<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>
 		<div class="col s12"><h1 id="divisio"> HOLI </h1></div>
 		</div>
 	  </main>		  
@@ -88,8 +88,7 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     
-    <script type="text/javascript">
-		 
+    <script type="text/javascript">		 
 		 var respuesta;
 		
 		 var $input1 = $('.start-datepicker').pickadate({
@@ -169,14 +168,43 @@
 							alert(respuesta);
 					},
 				});          
-        };
-        
-        
-			
+        };			
     </script>
+    
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+	<script type="text/javascript">
+		var map;
+		var myCenter;
+		var myPositions = [];	
+		var data=JSON.parse(respuesta);
+		respuesta.forEach(function(data) {
+				myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
+				myPositions.push(myCenter);
+		});  
+
+		 function initMap() {
+			map = new google.maps.Map(document.getElementById('googleMap'), {
+			zoom: 3,
+			center: myCenter,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+
+	  
+	  var myPath = new google.maps.Polyline({
+		path: myPositions,
+		geodesic: true,
+		strokeColor: '#FF0000',
+		strokeOpacity: 1.0,
+		strokeWeight: 2
+	  });
+
+	  myPath.setMap(map);
+	}
+
+   </script>
 
 <!--
-   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+  
 
 
 	<script type="text/javascript">
