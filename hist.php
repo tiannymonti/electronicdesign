@@ -57,7 +57,7 @@
 		<div class="row">
 		<!--<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>-->
 		<div class="divider"></div>
-		<div class="col s12" id="division"><p> </p></div>
+		<div class="col s12" id="division"><p> HOLI </p></div>
 		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4">
@@ -86,8 +86,9 @@
           </div>
         </footer>       
     </body>
-    
+   
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
+    
     <script type="text/javascript">
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -135,32 +136,32 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');
 		
-		function post(path, parameters) {
-        var form = $('<form></form>');
+		//function post(path, parameters) {
+        //var form = $('<form></form>');
 
-        form.attr("method", "post");
-        form.attr("action", path);
+        //form.attr("method", "post");
+        //form.attr("action", path);
 
-        $.each(parameters, function(key, value) {
-            if ( typeof value == 'object' || typeof value == 'array' ){
-                $.each(value, function(subkey, subvalue) {
-                    var field = $('<input />');
-                    field.attr("type", "hidden");
-                    field.attr("name", key+'[]');
-                    field.attr("value", subvalue);
-                    form.append(field);
-                });
-            } else {
-                var field = $('<input />');
-                field.attr("type", "hidden");
-                field.attr("name", key);
-                field.attr("value", value);
-                form.append(field);
-            }
-        });
-        $(document.body).append(form);
-        form.submit();
-    };
+        //$.each(parameters, function(key, value) {
+            //if ( typeof value == 'object' || typeof value == 'array' ){
+                //$.each(value, function(subkey, subvalue) {
+                    //var field = $('<input />');
+                    //field.attr("type", "hidden");
+                    //field.attr("name", key+'[]');
+                    //field.attr("value", subvalue);
+                    //form.append(field);
+                //});
+            //} else {
+                //var field = $('<input />');
+                //field.attr("type", "hidden");
+                //field.attr("name", key);
+                //field.attr("value", value);
+                //form.append(field);
+            //}
+        //});
+        //$(document.body).append(form);
+        //form.submit();
+    //};
 		
 		 function toggleFunction() {
             picker1.open();
@@ -173,7 +174,25 @@
             var fecha2 = picker2.get('select', 'yyyy-mm-dd');
             var hora2 = pickert2.get('select', 'HH:i');
             hora2 = hora2.concat(":00");
-            post("dbhistoricos.php", {fecha1:fecha1, hora1:hora1, fecha2:fecha2, hora2:hora2})     
+            
+             var parametros = {
+                "fecha1" : fecha1,
+                "hora1" : hora1,
+				"fecha2" : fecha2,
+                "hora2" : hora2                
+			};
+			$.ajax({
+                data:  parametros,
+                url:   'dbhistoricos.php',
+                type:  'post',
+                beforeSend: function () {
+                        $("#division").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#division").html(response);
+                }
+			});
+            //post("dbhistoricos.php", {fecha1:fecha1, hora1:hora1, fecha2:fecha2, hora2:hora2})     
         };
         
         
