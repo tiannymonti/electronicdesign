@@ -90,7 +90,7 @@
     
     <script type="text/javascript">
 		 
-		 var = respuesta;
+		 var respuesta;
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
