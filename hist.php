@@ -198,7 +198,7 @@
 					position: myPositions[i],
 					icon: 'res/carnavicon.png'
 				});
-				google.maps.event.addListener(marker, 'click', (function(marker[i], i) {
+				google.maps.event.addListener(marker[i], 'click', (function(marker[i], i) {
 					return function() {
 					infowindow.setContent(marker[i].getPosition());
 					infowindow.open(map, marker[i]);
