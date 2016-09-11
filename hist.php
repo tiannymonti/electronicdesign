@@ -95,6 +95,7 @@
 		 var map;
 		 var myCenter;
 		 var myPositions = [];	
+		 var marker;
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -164,8 +165,7 @@
 				$(document.activeElement).blur()
 			}		
 			});
-		var pickert2 = $tinput2.pickatime('picker');
-		
+		var pickert2 = $tinput2.pickatime('picker');		
 		
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("googleMap"), {
@@ -177,7 +177,6 @@
 				strokeOpacity: 1,
 				scale: 4
 			};
-
 		  
 			var myPath = new google.maps.Polyline({
 			path: myPositions,
@@ -195,6 +194,15 @@
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
+			
+			for (var i = 0; i < myPositions.length; i++) {
+				new google.maps.Marker({
+				map: map,
+				position: myPositions[i],
+				icon: "'res/carnavicon.png'"
+				});
+			};
+			
 		}; //end init map
 					
 	
@@ -255,10 +263,9 @@
 				success:
 					function(response){
 						if (response == 0) {
-							console.log("ajeeeeenaaa");
 							alert("No había datos con las condiciones establecidas");
 							return;	
-						}
+						};
 						var arrayOfObjects = eval(response);						
 						for (var i = 0; i < arrayOfObjects.length; i++) {
 							var object = arrayOfObjects[i];
