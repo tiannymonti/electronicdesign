@@ -95,7 +95,7 @@
 		 var map;
 		 var myCenter;
 		 var myPositions = [];	
-		 var marker;
+		 var marker = [];
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -193,17 +193,17 @@
 			var i;
 			
 			for (var i = 0; i < myPositions.length; i++) {
-				marker = new google.maps.Marker({
-				map: map,
-				position: myPositions[i],
-				icon: 'res/carnavicon.png'
-				});
-				google.maps.event.addListener(marker, 'click', (function(marker, i) {
+				marker.push( new google.maps.Marker({
+					map: map,
+					position: myPositions[i],
+					icon: 'res/carnavicon.png'
+				}););
+				google.maps.event.addListener(marker, 'click', (function(marker[i], i) {
 					return function() {
-					infowindow.setContent(marker.getPosition());
-					infowindow.open(map, marker);
+					infowindow.setContent(marker[i].getPosition());
+					infowindow.open(map, marker[i]);
 					}
-				})(marker, i));
+				})(marker[i], i));
 			};
 		  
 			var myPath = new google.maps.Polyline({
