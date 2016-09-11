@@ -162,7 +162,7 @@
 			icons: [{
 				icon: lineSymbol,
 				offset: '0',
-				repeat: '3px'
+				repeat: '1px'
 				}],
 			 });
 
