@@ -113,9 +113,9 @@
 			}			
 		});
 		var picker1 = $input1.pickadate('picker');
-	    if ( picker1.get('value') ) {
-			picker2.set('min', picker1.get('select'))
-		 };
+	    //if ( picker1.get('value') ) {
+			//picker2.set('min', picker1.get('select'))
+		 //};
 		picker1.on('set', function(event) {
 			if ( event.select ) {
 				picker2.set('min', picker1.get('select'))
@@ -146,10 +146,10 @@
 				$(document.activeElement).blur()
 			}			
 		});
-		var picker2 = $input2.pickadate('picker');
-	   if ( picker2.get('value') ) {
-			picker1.set('max', picker2.get('select'))
-		};
+		//var picker2 = $input2.pickadate('picker');
+	   //if ( picker2.get('value') ) {
+			//picker1.set('max', picker2.get('select'))
+		//};
 		picker2.on('set', function(event) {
 		if ( event.select ) {
 			picker1.set('max', picker2.get('select'))
