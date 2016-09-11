@@ -148,21 +148,21 @@
 		}); 
 		
 			var lineSymbol = {
-				path: google.maps.SymbolPath.CIRCLE,
-				fillOpacity: 1,
-				scale: 2
+				path: 'M 0,-1 0,1',
+				strokeOpacity: 1,
+				scale: 4
 			};
+
 		  
 			var myPath = new google.maps.Polyline({
 			path: myPositions,
 			geodesic: true,
 			strokeColor: '#0000FF',
-			strokeWeight: 2,
-			fillOpacity: 0,
+			strokeOpacity: 0,
 			icons: [{
 				icon: lineSymbol,
 				offset: '0',
-				repeat: '0.5px'
+				repeat: '20px'
 				}],
 			 });
 
