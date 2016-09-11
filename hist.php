@@ -224,7 +224,7 @@
 										var object = arrayOfObjects[i];
 										var tiempo = object.time;	
 										console.log(tiempo);
-										contento.concat(tiempo.toString());
+										contento.concat(tiempo);
 										console.log(contento);
 										
 									}		
