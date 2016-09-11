@@ -200,7 +200,7 @@
 				});
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					return function() {
-					infowindow.setContent(myPositions[i]);
+					infowindow.setContent("Toma tu puta ventana");
 					infowindow.open(map, marker);
 					}
 				})(marker, i));
