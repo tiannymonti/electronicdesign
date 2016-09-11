@@ -198,9 +198,10 @@
 					position: myPositions[i],
 				icon: 'res/carnavicon.png'
 				});
+				
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					return function() {
-						infowindow.setContent(marker.getPosition());
+						infowindow.setContent(marker.getPosition(latitud));
 						infowindow.open(map, marker);
 					}
 				})(marker, i));
