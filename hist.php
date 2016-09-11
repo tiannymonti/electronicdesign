@@ -188,9 +188,25 @@
             picker2.open();
             pickert2.open();
             var fecha1 = picker1.get('select', 'yyyy-mm-dd');
+            if ( picker1.get('value') ) {
+				picker2.set('min', picker1.get('select'))
+			};
+			picker1.on('set', function(event) {
+				if ( event.select ) {
+					picker2.set('min', picker1.get('select'))
+				}
+			});           
             var hora1 = pickert1.get('select', 'HH:i');
             hora1 = hora1.concat(":00");
             var fecha2 = picker2.get('select', 'yyyy-mm-dd');
+            if ( picker2.get('value') ) {
+				picker1.set('max', picker2.get('select'))
+			};
+			picker2.on('set', function(event) {
+				if ( event.select ) {
+					picker1.set('max', picker2.get('select'))
+				}
+			});
             var hora2 = pickert2.get('select', 'HH:i');
             hora2 = hora2.concat(":00"); 
             
