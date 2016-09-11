@@ -223,9 +223,7 @@
 									for (var i = 0; i < arrayOfObjects.length; i++) {
 										var object = arrayOfObjects[i];
 										var tiempo = object.time;	
-										console.log(tiempo);
-										contento.concat(tiempo);
-										console.log(contento);
+										console.log(is_string(tiempo));										
 										
 									}		
 									infowindow.setContent(contento);
