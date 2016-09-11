@@ -298,7 +298,7 @@
 						for (var i = 0; i < arrayOfObjects.length; i++) {
 							var object = arrayOfObjects[i];
 							for (var property in object) {
-								myCenter = new google.maps.LatLng(object.latitud.toFixed(4), object.longitud.toFixed(4));	
+								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
 								myPositions.push(myCenter);
 							}
 						}					
