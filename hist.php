@@ -222,11 +222,10 @@
 									var arrayOfObjects = eval(response);
 									for (var i = 0; i < arrayOfObjects.length; i++) {
 										var object = arrayOfObjects[i];
-										for (var property in object) {
-											var tiempo = object.time;	
-											console.log(tiempo);
-											contento.concat(tiempo.toString(), "\n");
-											console.log(contento);
+										var tiempo = object.time;	
+										console.log(tiempo);
+										contento.concat(tiempo.toString());
+										console.log(contento);
 										}
 									}		
 									infowindow.setContent(contento);
