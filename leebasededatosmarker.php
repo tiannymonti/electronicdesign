@@ -5,6 +5,13 @@
 	
 	$latitud = htmlspecialchars($_POST['latitud']);
 	$longitud = htmlspecialchars($_POST['longitud']);
+	$fecha1 = $_POST['fecha1'];
+	$hora1 = $_POST['hora1'];
+	$fecha2 = $_POST['fecha2'];
+	$hora2 = $_POST['hora2'];
+	
+	$desde = htmlspecialchars($fecha1 . " " . $hora1);
+	$hasta = htmlspecialchars($fecha2 . " " . $hora2);
     // Create connection
     $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
     // Check connection
@@ -12,7 +19,7 @@
         die("Connection failed: " . $tion->connect_error);
     } 
     // Consulta de selección 
-    $querypos = mysqli_query($tion, "SELECT time FROM cordenadas WHERE (FORMAT(latitud, 4) = FORMAT($latitud, 4)) AND (FORMAT(longitud, 4) = FORMAT($longitud, 4)) ORDER BY id_cordenadas;");
+    $querypos = mysqli_query($tion, "SELECT time FROM cordenadas WHERE (FORMAT(latitud, 4) = FORMAT($latitud, 4)) AND (FORMAT(longitud, 4) = FORMAT($longitud, 4)) AND time BETWEEN '$desde' AND '$hasta' ORDER BY id_cordenadas;");
     if (!$querypos) {
 		die('Consulta no válida: ' . mysql_error());
 	}
