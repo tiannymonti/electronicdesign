@@ -168,20 +168,6 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 		
 		
-		//function addSites(map, myPositions) {
-		  //for (var i = 0; i < myPositions.length; i++) {
-			//var marker = new google.maps.Marker({
-			  //position: myPositions[i],
-			  //title: site[0],
-			  //zIndex: site[3],
-			  //html: site[4]
-			//});
-
-			//marker.setMap(map);
-		//}
-		
-	//};
-		
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -197,6 +183,7 @@
 				new google.maps.Marker({
 				map: map,
 				position: myPositions[i],
+				icon: 'res/carnavicon.png'
 			});
 		  };
 		  
