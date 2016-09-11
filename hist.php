@@ -196,6 +196,7 @@
 			map.fitBounds(bounds);
 			
 			for (var i = 0; i < myPositions.length; i++) {
+				console.log("eche")
 				new google.maps.Marker({
 				map: map,
 				position: myPositions[i],
