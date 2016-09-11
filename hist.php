@@ -122,11 +122,13 @@
 		 var $input2 = $('.end-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+			monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
 			weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+			weekdaysFull: ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
 			selectMonths: true, // Creates a dropdown to control month
 			selectYears: 15, // Creates a dropdown of 15 years to control year
-			clear: 'Clear selection',
-			close: 'Cancel',
+			clear: 'Borrar',
+			close: 'Cerrar',
 			onClose: function(){
 				$(document.activeElement).blur()
 			}			
@@ -141,6 +143,7 @@
 			}		
 			});
 		var pickert2 = $tinput2.pickatime('picker');
+		
 		
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("googleMap"), {
@@ -184,6 +187,8 @@
             var fecha2 = picker2.get('select', 'yyyy-mm-dd');
             var hora2 = pickert2.get('select', 'HH:i');
             hora2 = hora2.concat(":00"); 
+            
+            
             
             var parametros = {
                 "fecha1" : fecha1,
