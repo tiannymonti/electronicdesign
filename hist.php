@@ -194,12 +194,11 @@
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					return function() {
 						map.setZoom(16); //aumenta el zoom
-						map.setCenter(marker.getPosition());
+						map.setCenter(marker.getPosition());  //centra en el marker
 						var latitud = marker.getPosition().lat();
-						console.log(latitud);
 						var longitud = marker.getPosition().lng();
 						longitud = longitud.toFixed(4);
-						console.log(longitud);
+						var contento;
 						var parametros = {
 							"latitud" : latitud,
 							"longitud" : longitud,  
@@ -213,13 +212,21 @@
 							url:   'leebasededatosmarker.php',
 							type:  'post',
 							 beforeSend: function () {
-									infowindow.setContent("Cargando informacion");
+									contento = "Cargando información"
+									infowindow.setContent(contento);
 									infowindow.open(map, marker);
 							},
 							success:
 								function(response){
-									console.log(response);
-									infowindow.setContent(response);
+									contento = "Tiempos: \n"
+									for (var i = 0; i < arrayOfObjects.length; i++) {
+										var object = arrayOfObjects[i];
+										for (var property in object) {
+											var tiempo = object.time;	
+											contento.concat(tiempo.toString, "\n");
+										}
+									}		
+									infowindow.setContent(contento);
 									infowindow.open(map, marker);										
 								}  //fin de la funcion de response					
 							}); //fin del ajax 						
