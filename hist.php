@@ -226,7 +226,7 @@
 										console.log(tiempo);
 										contento.concat(tiempo.toString());
 										console.log(contento);
-										}
+										
 									}		
 									infowindow.setContent(contento);
 									infowindow.open(map, marker);										
