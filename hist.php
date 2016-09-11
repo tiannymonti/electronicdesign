@@ -202,7 +202,11 @@
 						console.log(longitud);
 						var parametros = {
 							"latitud" : latitud,
-							"longitud" : longitud                
+							"longitud" : longitud,  
+							"fecha1" : fecha1,
+							"hora1" : hora1,
+							"fecha2" : fecha2,
+							"hora2" : hora2 							              
 						};
 						$.ajax({
 							data:  parametros,
