@@ -99,11 +99,13 @@
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+			monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
 			weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+			weekdaysFull: ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
 			selectMonths: true, // Creates a dropdown to control month
 			selectYears: 15, // Creates a dropdown of 15 years to control year
-			clear: 'Clear selection',
-			close: 'Cancel',
+			clear: 'Borrar',
+			close: 'Cerrar',
 			onClose: function(){
 				$(document.activeElement).blur()
 			}			
@@ -111,8 +113,8 @@
 		var picker1 = $input1.pickadate('picker');
 		
 		var $tinput1 = $('.start-timepicker').pickatime({
-			clear: 'Clear selection',
-			close: 'Cancel',
+			clear: 'Borrar',
+			close: 'Cerrar',
 			onClose: function(){
 				$(document.activeElement).blur()
 			}		
@@ -136,8 +138,8 @@
 		var picker2 = $input2.pickadate('picker');
 		
 		var $tinput2 = $('.end-timepicker').pickatime({
-			clear: 'Clear selection',
-			close: 'Cancel',
+			clear: 'Borrar',
+			close: 'Cerrar',
 			onClose: function(){
 				$(document.activeElement).blur()
 			}		
