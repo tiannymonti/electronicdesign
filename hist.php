@@ -35,19 +35,19 @@
 		<div class="row">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
-				<input id="iniciod" type="text" class="start-datepicker" required>
+				<input id="iniciod" type="text" class="start-datepicker" autocomplete="off">
 			</div>
 			<div class="input-field col s3">
 				<label for="inicioh">Hora de inicio</label>				
-				<input id="inicioh" type="text" class="start-timepicker">
+				<input id="inicioh" type="text" class="start-timepicker" autocomplete="off">
 			</div>
 			<div class="input-field col s3">
 				<label for="find">Fecha final</label>			
-				<input id="find" type="text" class="end-datepicker" required>
+				<input id="find" type="text" class="end-datepicker" autocomplete="off">
 			</div>
 			<div class="input-field col s3">
 				<label for="finh">Hora final</label>				
-				<input id="finh" type="text" class="end-timepicker">
+				<input id="finh" type="text" class="end-timepicker" autocomplete="off">
 			</div>		
 			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
 				<i id="trigger" class="material-icons right">send</i>
@@ -113,9 +113,9 @@
 			}			
 		});
 		var picker1 = $input1.pickadate('picker');
-	    //if ( picker1.get('value') ) {
-			//picker2.set('min', picker1.get('select'))
-		 //};
+	    if ( picker1.get('value') ) {
+			picker2.set('min', picker1.get('select'))
+		 };
 		picker1.on('set', function(event) {
 			if ( event.select ) {
 				picker2.set('min', picker1.get('select'))
@@ -146,10 +146,10 @@
 				$(document.activeElement).blur()
 			}			
 		});
-		//var picker2 = $input2.pickadate('picker');
-	   //if ( picker2.get('value') ) {
-			//picker1.set('max', picker2.get('select'))
-		//};
+		var picker2 = $input2.pickadate('picker');
+	   if ( picker2.get('value') ) {
+			picker1.set('max', picker2.get('select'))
+		};
 		picker2.on('set', function(event) {
 		if ( event.select ) {
 			picker1.set('max', picker2.get('select'))
