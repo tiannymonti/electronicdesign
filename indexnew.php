@@ -97,7 +97,7 @@ var myPositions = [];
 		    var lineSymbol = {
 				path: google.maps.SymbolPath.CIRCLE,
 				fillOpacity: 1,
-				scale: 3
+				scale: 2
 			};
 		
 				  var myPath = new google.maps.Polyline({
@@ -109,7 +109,7 @@ var myPositions = [];
 					icons: [{
 						icon: lineSymbol,
 						offset: '0',
-						repeat: '5px'
+						repeat: '3px'
 					}],
 				});
  
