@@ -196,16 +196,12 @@
 			map.fitBounds(bounds);
 		}; //end init map
 					
-		picker1.open();
-        pickert1.open();
-        picker2.open();
-        pickert2.open();
-    
+	
 		 function toggleFunction() {
-            //picker1.open();
-            //pickert1.open();
-            //picker2.open();
-            //pickert2.open();
+            picker1.open();
+            pickert1.open();
+            picker2.open();
+            pickert2.open();
             var fecha1 = picker1.get('select', 'yyyy-mm-dd');
             var hora1 = pickert1.get('select', 'HH:i');
             hora1 = hora1.concat(":00");
