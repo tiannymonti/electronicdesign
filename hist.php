@@ -49,7 +49,7 @@
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker">
 			</div>		
-			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Submit
+			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
@@ -106,6 +106,7 @@
 			selectYears: 15, // Creates a dropdown of 15 years to control year
 			clear: 'Borrar',
 			close: 'Cerrar',
+			min: new Date(2015,1,01),
 			onClose: function(){
 				$(document.activeElement).blur()
 			}			
@@ -131,6 +132,7 @@
 			selectYears: 15, // Creates a dropdown of 15 years to control year
 			clear: 'Borrar',
 			close: 'Cerrar',
+			min: new Date(2015,1,01),
 			onClose: function(){
 				$(document.activeElement).blur()
 			}			
