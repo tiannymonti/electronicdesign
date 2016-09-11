@@ -158,6 +158,7 @@
 
 			myPath.setMap(map);
 			
+			limits = [myPositions[0], myPositions[(myPositions.length) - 1]];
 			var bounds = new google.maps.LatLngBounds(limits);
 			map.fitBounds(bounds);
 		}; //end init map
@@ -198,7 +199,7 @@
 								myPositions.push(myCenter);
 							}
 						}
-						limits = [myPositions[0], myPositions[(myPositions.length) - 1]];
+						
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
