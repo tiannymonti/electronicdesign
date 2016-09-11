@@ -223,7 +223,7 @@
 				hora2 = "00:00";
 			};
             hora2 = hora2.concat(":00"); 
-            
+            console.log(fecha1.localeCompare(fecha2) == 0);  //quita esto luego
             if (fecha1.localeCompare(fecha2) == 0){
 				var tim1 = hora1.split(":");
 				var tim2 = hora2.split(":");
