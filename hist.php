@@ -201,7 +201,7 @@
 				
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					return function() {
-						infowindow.setContent(marker.getPosition().lat());
+						infowindow.setContent(marker.getPosition().toString());
 						infowindow.open(map, marker);
 					}
 				})(marker, i));
