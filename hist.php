@@ -43,7 +43,7 @@
 			</div>
 			<div class="input-field col s3">
 				<label for="find">Fecha final</label>			
-				<input id="find" type="text" class="end-datepicker">
+				<input id="find" type="text" class="end-datepicker" required>
 			</div>
 			<div class="input-field col s3">
 				<label for="finh">Hora final</label>				
