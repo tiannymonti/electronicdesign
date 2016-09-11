@@ -189,7 +189,7 @@
 				strokeOpacity: 1,
 				scale: 4
 			};
-			
+			var infowindow = new google.maps.InfoWindow();
 			var i;
 			
 			for (var i = 0; i < myPositions.length; i++) {
