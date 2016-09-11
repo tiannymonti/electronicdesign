@@ -175,7 +175,7 @@
 				//content: 'Tiempo:'  
 				//});
 			//infowindow.open(map,marker);
-		};
+		//};
  
 
 		
