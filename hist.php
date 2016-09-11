@@ -225,7 +225,7 @@
 										for (var property in object) {
 											var tiempo = object.time;	
 											console.log(tiempo);
-											contento.concat(tiempo, "\n");
+											contento.concat(tiempo.toString(), "\n");
 											console.log(contento);
 										}
 									}		
