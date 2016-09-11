@@ -254,7 +254,11 @@
                 },
 				success:
 					function(response){
-						console.log(response);
+						if (response == 0) {
+							console.log("ajeeeeenaaa");
+							alert("No había datos con las condiciones establecidas");
+							return;	
+						}
 						var arrayOfObjects = eval(response);						
 						for (var i = 0; i < arrayOfObjects.length; i++) {
 							var object = arrayOfObjects[i];
