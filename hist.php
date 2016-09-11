@@ -227,12 +227,12 @@
             if (fecha1.localeCompare(fecha2) == 0){
 				var tim1 = hora1.split(":");
 				var tim2 = hora2.split(":");
-				console.log(tim1[0] > tim2[0]);
-				if (parseInt(tim1[0] > parseInt(tim2[0]))){
+				if (tim1[0] > tim2[0]){
+					console.log(ENTRO);
 					alert("Dias iguales, horas no posibles");
 					return;
-				}else if (parseInt(tim1[0] == parseInt(tim2[0]))){
-					if (parseInt(tim1[1] > parseInt(tim2[1]))){
+				}else if (tim1[0] == tim2[0]){
+					if (tim1[1] > tim2[1]){
 						alert("Dias iguales, horas no posibles");
 						return;
 					};
