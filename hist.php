@@ -223,6 +223,20 @@
 				hora2 = "00:00";
 			};
             hora2 = hora2.concat(":00"); 
+            
+            if (fecha1.localeCompare(fecha2) == 0){
+				var tim1 = hora1.split(":");
+				var tim2 = hora2.split(":");
+				if (parseInt(tim1[0] < parseInt(tim2[0]))){
+					alert("Dias iguales, horas no posibles");
+					return;
+				}else if (parseInt(tim1[0] == parseInt(tim2[0]))){
+					if (parseInt(tim1[1] < parseInt(tim2[1]))){
+						alert("Dias iguales, horas no posibles");
+						return;
+					};
+				};
+			};
                      
             var parametros = {
                 "fecha1" : fecha1,
