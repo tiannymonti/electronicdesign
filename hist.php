@@ -96,6 +96,10 @@
 		 var myCenter;
 		 var myPositions = [];	
 		 var marker;
+		 var fecha1;
+		 var fecha2;
+		 var hora1;
+		 var hora2;
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -244,22 +248,22 @@
             pickert1.open();
             picker2.open();
             pickert2.open();
-            var fecha1 = picker1.get('select', 'yyyy-mm-dd');
+            fecha1 = picker1.get('select', 'yyyy-mm-dd');
             if (fecha1 == null || fecha1 == "") {
 				alert("Debe indicar fecha de inicio");
 				return;
 			};
-            var hora1 = pickert1.get('select', 'HH:i');
+            hora1 = pickert1.get('select', 'HH:i');
             if (hora1 == null || hora1 == "") {
 				hora1 = "00:00";
 			};
             hora1 = hora1.concat(":00");
-            var fecha2 = picker2.get('select', 'yyyy-mm-dd');
+            fecha2 = picker2.get('select', 'yyyy-mm-dd');
             if (fecha2 == null || fecha2 == "") {
 				alert("Debe indicar fecha final");
 				return;
 			};           
-            var hora2 = pickert2.get('select', 'HH:i');
+            hora2 = pickert2.get('select', 'HH:i');
             if (hora2 == null || hora2 == "") {
 				hora2 = "00:00";
 			};
