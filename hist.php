@@ -95,7 +95,6 @@
 		 var map;
 		 var myCenter;
 		 var myPositions = [];	
-		 var limits = [];
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -158,8 +157,7 @@
 
 			myPath.setMap(map);
 			
-			limits = [myPositions[0], myCenter];
-			var bounds = new google.maps.LatLngBounds(limits);
+			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
 		}; //end init map
 					
