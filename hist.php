@@ -168,13 +168,13 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 		
 		//function showInfo() {
-			//map.setZoom(16); //aumenta el zoom
-			//map.setCenter(marker.getPosition());			
-			//var contentString = 'Ubicación Actual';
-			//var infowindow = new google.maps.InfoWindow({
-				//content: 'Tiempo:'  
-				//});
-			//infowindow.open(map,marker);
+			////map.setZoom(16); //aumenta el zoom
+			////map.setCenter(marker.getPosition());			
+			////var contentString = 'Ubicación Actual';
+			////var infowindow = new google.maps.InfoWindow({
+				////content: 'Tiempo:'  
+				////});
+			////infowindow.open(map,marker);
 		//};
  
 
@@ -198,6 +198,7 @@
 				position: myPositions[i],
 				icon: 'res/carnavicon.png'
 				});
+				console.log(myPositions[i]);
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					return function() {
 					infowindow.setContent("Toma tu puta ventana");
