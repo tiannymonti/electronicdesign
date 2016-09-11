@@ -223,7 +223,7 @@
 									for (var i = 0; i < arrayOfObjects.length; i++) {
 										var object = arrayOfObjects[i];
 										var tiempo = object.time;	
-										console.log(is_string(tiempo));										
+										console.log(is_object(tiempo));										
 										
 									}		
 									infowindow.setContent(contento);
