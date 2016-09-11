@@ -95,6 +95,7 @@
 		 var map;
 		 var myCenter;
 		 var myPositions = [];	
+		 var limits = [];
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -144,10 +145,8 @@
 		
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("googleMap"), {
-			zoom: 15,
-			center: myCenter,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-		});
+		}); 
 		  
 			var myPath = new google.maps.Polyline({
 			path: myPositions,
@@ -158,6 +157,9 @@
 			 });
 
 			myPath.setMap(map);
+			
+			var bounds = new google.maps.LatLngBounds(limits);
+			map.fitBounds(bounds);
 		}; //end init map
 					
 		
@@ -196,89 +198,11 @@
 								myPositions.push(myCenter);
 							}
 						}
+						limits = [myPositions[0], myPositions[(myPositions.length) - 1]];
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
 	  };  //end toggle	
 
    </script>
-
-<!--
-  
-
-
-	<script type="text/javascript">
-	var map;
-	var myCenter;
-	var marker;
-	var myVal = consulta();
-	var myPositions = [];
-		function consulta(){
-						
-     
-			
-				var lineSymbol = {
-					path: google.maps.SymbolPath.CIRCLE,
-					fillOpacity: 1,
-					scale: 3
-				};
-			
-					  var myPath = new google.maps.Polyline({
-						path: myPositions,
-						geodesic: true,
-						strokeColor: '#0000FF',
-						strokeOpacity: 1.0,
-						fillOpacity: 0,
-						icons: [{
-							icon: lineSymbol,
-							offset: '0',
-							repeat: '3px'
-						}],
-					});
-	 
-	  myPath.setMap(map);
-			
-		}
-
-	function placeMarker(location) {
-		marker = new google.maps.Marker({
-		position: location,
-		map: map,
-	  });
-	  var infowindow = new google.maps.InfoWindow({
-		content: 'Latitude: ' + location.lat() +
-		'<br>Longitude: ' + location.lng()
-	  });
-	  infowindow.open(map,marker);
-	}
-
-	function initialize()
-	{
-	var mapProp = {
-	  center:myCenter,
-	  zoom:15,
-	  mapTypeId:google.maps.MapTypeId.ROADMAP
-	  };
-
-	  map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-	marker=new google.maps.Marker({
-	  position:myCenter,
-	  icon: 'res/carnavicon.png'
-	  });
-
-	marker.setMap(map);
-	google.maps.event.addListener(map, 'click', function(event) {
-	   map.setZoom(9);
-	   map.setCenter(marker.getPosition());
-	  });
-	 
-
-	}
-
-	google.maps.event.addDomListener(window, 'load', initialize);
-
-	</script>
--->
-    
   </html>
