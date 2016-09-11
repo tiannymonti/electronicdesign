@@ -35,7 +35,7 @@
 		<div class="row">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
-				<input id="iniciod" type="text" class="start-datepicker" autocomplete="off">
+				<input id="iniciod" type="text" class="start-datepicker" autocomplete="on">
 			</div>
 			<div class="input-field col s3">
 				<label for="inicioh">Hora de inicio</label>				
@@ -43,7 +43,7 @@
 			</div>
 			<div class="input-field col s3">
 				<label for="find">Fecha final</label>			
-				<input id="find" type="text" class="end-datepicker" autocomplete="off">
+				<input id="find" type="text" class="end-datepicker" autocomplete="on">
 			</div>
 			<div class="input-field col s3">
 				<label for="finh">Hora final</label>				
