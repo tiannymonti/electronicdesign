@@ -35,7 +35,7 @@
 		<div class="row">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
-				<input id="iniciod" type="text" class="start-datepicker">
+				<input id="iniciod" type="text" class="start-datepicker" required>
 			</div>
 			<div class="input-field col s3">
 				<label for="inicioh">Hora de inicio</label>				
