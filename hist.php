@@ -219,10 +219,11 @@
 							success:
 								function(response){
 									contento = "Tiempos: ";
+									console.log(typeof(contento));
 									var arrayOfObjects = eval(response);
 									for (var i = 0; i < arrayOfObjects.length; i++) {
 										var object = arrayOfObjects[i];
-										var tiempo = object.time;	
+										var tiempo = object.time;	//esto es un string
 										console.log(typeof(tiempo));										
 										
 									}		
