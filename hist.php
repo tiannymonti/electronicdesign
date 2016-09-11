@@ -148,17 +148,17 @@
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}); 
 		  
-			//var myPath = new google.maps.Polyline({
-			//path: myPositions,
-			//geodesic: true,
-			//strokeColor: '#FF0000',
-			//strokeOpacity: 1.0,
-			//strokeWeight: 2
-			 //});
+			var myPath = new google.maps.Polyline({
+			path: myPositions,
+			geodesic: true,
+			strokeColor: '#FF0000',
+			strokeOpacity: 1.0,
+			strokeWeight: 2
+			 });
 
-			//myPath.setMap(map);
+			myPath.setMap(map);
 			
-			limits = [myPositions[0], myPositions[(myPositions.length) - 1]];
+			limits = [myPositions[0], myCenter];
 			var bounds = new google.maps.LatLngBounds(limits);
 			map.fitBounds(bounds);
 		}; //end init map
