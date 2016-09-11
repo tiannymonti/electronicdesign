@@ -224,7 +224,9 @@
 										var object = arrayOfObjects[i];
 										for (var property in object) {
 											var tiempo = object.time;	
+											console.log(tiempo);
 											contento.concat(tiempo.toString, "\n");
+											console.log(contento);
 										}
 									}		
 									infowindow.setContent(contento);
