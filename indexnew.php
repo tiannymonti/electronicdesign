@@ -94,22 +94,21 @@ var myPositions = [];
 				},
 		});
 		
-		    var lineSymbol = {
-				path: google.maps.SymbolPath.CIRCLE,
-				fillOpacity: 1,
-				scale: 2
+			var lineSymbol = {
+				path: 'M 0,-1 0,1',
+				strokeOpacity: 1,
+				scale: 4
 			};
 		
 				  var myPath = new google.maps.Polyline({
 					path: myPositions,
 					geodesic: true,
 					strokeColor: '#0000FF',
-					strokeOpacity: 1.0,
-					fillOpacity: 0,
+					strokeOpacity: 0,
 					icons: [{
 						icon: lineSymbol,
 						offset: '0',
-						repeat: '3px'
+						repeat: '20px'
 					}],
 				});
  

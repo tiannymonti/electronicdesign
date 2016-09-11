@@ -207,8 +207,7 @@
 								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
 								myPositions.push(myCenter);
 							}
-						}
-						
+						}					
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
