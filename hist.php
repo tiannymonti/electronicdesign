@@ -167,6 +167,17 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');		
 		
+		function showInfo() {
+			map.setZoom(16); //aumenta el zoom
+			map.setCenter(marker.getPosition());			
+			var contentString = 'Ubicación Actual';
+			var infowindow = new google.maps.InfoWindow({
+				content: 'Tiempo:'  
+				});
+			infowindow.open(map,marker);
+		};
+ 
+
 		
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("googleMap"), {
@@ -180,7 +191,7 @@
 			};
 			
 			for (var i = 0; i < myPositions.length; i++) {
-				new google.maps.Marker({
+				marker = new google.maps.Marker({
 				map: map,
 				position: myPositions[i],
 				icon: 'res/carnavicon.png'
