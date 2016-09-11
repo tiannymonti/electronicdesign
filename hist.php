@@ -106,7 +106,8 @@
 			selectYears: 15, // Creates a dropdown of 15 years to control year
 			clear: 'Borrar',
 			close: 'Cerrar',
-			min: new Date(2015,1,01),
+			min: new Date(2016,0,01),
+			max: true,
 			onClose: function(){
 				$(document.activeElement).blur()
 			}			
@@ -132,7 +133,8 @@
 			selectYears: 15, // Creates a dropdown of 15 years to control year
 			clear: 'Borrar',
 			close: 'Cerrar',
-			min: new Date(2015,1,01),
+			min: new Date(2016,0,01),
+			max: true,
 			onClose: function(){
 				$(document.activeElement).blur()
 			}			
