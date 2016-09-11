@@ -218,13 +218,12 @@
 							},
 							success:
 								function(response){
-									contento = "Tiempos: ";
+									contento = "Tiempos: \n";
 									var arrayOfObjects = eval(response);
 									for (var i = 0; i < arrayOfObjects.length; i++) {
 										var object = arrayOfObjects[i];
 										var tiempo = object.time;	//esto es un string
-										console.log(contento + tiempo);										
-										
+										console.log(contento + tiempo + "\n");																				
 									}		
 									infowindow.setContent(contento);
 									infowindow.open(map, marker);										
