@@ -254,11 +254,6 @@
                 },
 				success:
 					function(response){
-						console.log(response.length);
-						if (response == null || response == ""){
-							alert("No se generaron datos");
-							return;	
-						};
 						var arrayOfObjects = eval(response);						
 						for (var i = 0; i < arrayOfObjects.length; i++) {
 							var object = arrayOfObjects[i];
