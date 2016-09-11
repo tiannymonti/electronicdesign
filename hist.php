@@ -194,22 +194,27 @@
 						var latitud = marker.getPosition().lat();
 						console.log(latitud);
 						var longitud = marker.getPosition().lng();
-						console.log(longitud.toFixed(4));
-						//var parametros = {
-							//"latitud" : latitud,
-							//"longitud" : longitud                
-						//};
-						//$.ajax({
-							//data:  parametros,
-							//url:   'leebasededatosmarker.php',
-							//type:  'post',
-							//success:
-								//function(response){
-									//var content = response;										
-								//}  //fin de la funcion de response					
-							//}); //fin del ajax 
-						infowindow.setContent("JODAAAA");
-						infowindow.open(map, marker);
+						longitud = longitud.toFixed(4);
+						console.log(longitud);
+						var parametros = {
+							"latitud" : latitud,
+							"longitud" : longitud                
+						};
+						$.ajax({
+							data:  parametros,
+							url:   'leebasededatosmarker.php',
+							type:  'post',
+							 beforeSend: function () {
+									infowindow.setContent("MMMMMM");
+									infowindow.open(map, marker);
+							},
+							success:
+								function(response){
+									console.log(response);
+									infowindow.setContent("JODAAAA");
+									infowindow.open(map, marker);										
+								}  //fin de la funcion de response					
+							}); //fin del ajax 						
 					}
 				})(marker, i));
 			};
