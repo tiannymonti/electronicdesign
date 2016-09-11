@@ -166,19 +166,7 @@
 			}		
 			});
 		var pickert2 = $tinput2.pickatime('picker');		
-		
-		//function showInfo() {
-			//map.setZoom(16); //aumenta el zoom
-			//map.setCenter(marker.getPosition());			
-			//var contentString = 'Ubicación Actual';
-			//var infowindow = new google.maps.InfoWindow({
-				//content: 'Tiempo:'  
-				//});
-			//infowindow.open(map,marker);
-		//};
- 
-
-		
+	//GOOGLE MAPS
 		function initMap() {
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -203,7 +191,24 @@
 					return function() {
 						map.setZoom(16); //aumenta el zoom
 						map.setCenter(marker.getPosition());
-						infowindow.setContent(marker.getPosition().toString());
+						var latitud = marker.getPosition().lat();
+						console.log(latitud);
+						var longitud = marker.getPosition().lng();
+						console.log(longitud);
+						//var parametros = {
+							//"latitud" : latitud,
+							//"longitud" : longitud                
+						//};
+						//$.ajax({
+							//data:  parametros,
+							//url:   'leebasededatosmarker.php',
+							//type:  'post',
+							//success:
+								//function(response){
+									//var content = response;										
+								//}  //fin de la funcion de response					
+							//}); //fin del ajax 
+						infowindow.setContent("JODAAAA");
 						infowindow.open(map, marker);
 					}
 				})(marker, i));
@@ -293,7 +298,7 @@
 						for (var i = 0; i < arrayOfObjects.length; i++) {
 							var object = arrayOfObjects[i];
 							for (var property in object) {
-								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
+								myCenter = new google.maps.LatLng(object.latitud.toFixed(4), object.longitud.toFixed(4));	
 								myPositions.push(myCenter);
 							}
 						}					
