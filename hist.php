@@ -193,11 +193,11 @@
 			var i;
 			
 			for (var i = 0; i < myPositions.length; i++) {
-				marker.push( new google.maps.Marker({
+				marker[i] = new google.maps.Marker({
 					map: map,
 					position: myPositions[i],
 					icon: 'res/carnavicon.png'
-				}););
+				});
 				google.maps.event.addListener(marker, 'click', (function(marker[i], i) {
 					return function() {
 					infowindow.setContent(marker[i].getPosition());
