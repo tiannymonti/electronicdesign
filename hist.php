@@ -205,13 +205,13 @@
 							url:   'leebasededatosmarker.php',
 							type:  'post',
 							 beforeSend: function () {
-									infowindow.setContent("MMMMMM");
+									infowindow.setContent("Cargando informacion");
 									infowindow.open(map, marker);
 							},
 							success:
 								function(response){
 									console.log(response);
-									infowindow.setContent("JODAAAA");
+									infowindow.setContent(response);
 									infowindow.open(map, marker);										
 								}  //fin de la funcion de response					
 							}); //fin del ajax 						
