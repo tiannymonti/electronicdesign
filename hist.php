@@ -35,7 +35,7 @@
 		<div class="row">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha de inicio</label>			
-				<input id="iniciod" type="text" class="start-datepicker" autocomplete="on">
+				<input id="iniciod" type="text" class="start-datepicker" autocomplete="off">
 			</div>
 			<div class="input-field col s3">
 				<label for="inicioh">Hora de inicio</label>				
@@ -113,14 +113,7 @@
 			}			
 		});
 		var picker1 = $input1.pickadate('picker');
-	    if ( picker1.get('value') ) {
-			picker2.set('min', picker1.get('select'))
-		 };
-		picker1.on('set', function(event) {
-			if ( event.select ) {
-				picker2.set('min', picker1.get('select'))
-			}
-		});           
+	      
   		var $tinput1 = $('.start-timepicker').pickatime({
 			clear: 'Borrar',
 			close: 'Cerrar',
@@ -130,7 +123,7 @@
 			});
 		var pickert1 = $tinput1.pickatime('picker');
 		
-		 var $input2 = $('.end-datepicker').pickadate({
+		var $input2 = $('.end-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
 			monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
@@ -147,7 +140,15 @@
 			}			
 		});
 		var picker2 = $input2.pickadate('picker');
-	   if ( picker2.get('value') ) {
+		if ( picker1.get('value') ) {
+			picker2.set('min', picker1.get('select'))
+		 };
+		picker1.on('set', function(event) {
+			if ( event.select ) {
+				picker2.set('min', picker1.get('select'))
+			}
+		});         
+		if ( picker2.get('value') ) {
 			picker1.set('max', picker2.get('select'))
 		};
 		picker2.on('set', function(event) {
