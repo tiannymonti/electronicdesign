@@ -254,7 +254,7 @@
                 },
 				success:
 					function(response){
-						console.log(response);
+						console.log(response.length);
 						if (response == null || response == ""){
 							alert("No se generaron datos");
 							return;	
