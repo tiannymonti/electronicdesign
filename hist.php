@@ -197,7 +197,7 @@
 			
 			for (var i = 0; i < myPositions.length; i++) {
 				console.log("eche")
-				new google.maps.Marker({
+				var maerker = new google.maps.Marker({
 				map: map,
 				position: myPositions[i],
 				icon: "'res/carnavicon.png'"
