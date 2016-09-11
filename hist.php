@@ -194,7 +194,7 @@
 						var latitud = marker.getPosition().lat();
 						console.log(latitud);
 						var longitud = marker.getPosition().lng();
-						console.log(longitud);
+						console.log(longitud.toFixed(4));
 						//var parametros = {
 							//"latitud" : latitud,
 							//"longitud" : longitud                
