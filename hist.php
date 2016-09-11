@@ -218,14 +218,14 @@
 							},
 							success:
 								function(response){
-									contento = "Tiempos: \n";
+									contento = "Tiempos: ";
 									var arrayOfObjects = eval(response);
 									for (var i = 0; i < arrayOfObjects.length; i++) {
 										var object = arrayOfObjects[i];
 										for (var property in object) {
 											var tiempo = object.time;	
 											console.log(tiempo);
-											contento.concat(tiempo.toString, "\n");
+											contento.concat(tiempo, "\n");
 											console.log(contento);
 										}
 									}		
