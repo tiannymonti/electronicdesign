@@ -198,10 +198,9 @@
 				position: myPositions[i],
 				icon: 'res/carnavicon.png'
 				});
-				console.log(marker.getPosition());
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					return function() {
-					infowindow.setContent("Toma tu puta ventana");
+					infowindow.setContent(marker.getPosition());
 					infowindow.open(map, marker);
 					}
 				})(marker, i));
