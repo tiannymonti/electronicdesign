@@ -223,12 +223,11 @@
 				hora2 = "00:00";
 			};
             hora2 = hora2.concat(":00"); 
-            console.log(fecha1.localeCompare(fecha2) == 0);  //quita esto luego
+
             if (fecha1.localeCompare(fecha2) == 0){
 				var tim1 = hora1.split(":");
-				console.log(tim1);
 				var tim2 = hora2.split(":");
-				console.log(tim2);
+				console.log(tim1[0] < parseInt(tim2[0]));
 				if (parseInt(tim1[0] < parseInt(tim2[0]))){
 					alert("Dias iguales, horas no posibles");
 					return;
