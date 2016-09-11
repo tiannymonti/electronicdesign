@@ -18,14 +18,20 @@
     if (!$querytime) {
 		die('Consulta no válida: ' . mysql_error());
 	}
-	
-	//create an array
-    $emparray = array();
-    while($row =mysqli_fetch_assoc($querytime))
-    {
-        $emparray[] = $row;
-    }
-    echo json_encode($emparray);
+	if (mysqli_num_rows($querytime) == 0) { 
+		
+		echo "0";
+		//results are empty, do something here 
+	} else { 
+		//create an array
+		$emparray = array();
+		while($row =mysqli_fetch_assoc($querytime))
+		{
+			$emparray[] = $row;
+		}
+		echo json_encode($emparray);
+    
+    }  
 
     //close the db connection
     mysqli_close($tion);	              
