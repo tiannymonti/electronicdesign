@@ -308,9 +308,9 @@
                 beforeSend: function () {
                         document.getElementById('preloader').style.display = 'block';
                 },
-				success:
-					document.getElementById('preloader').style.display = 'none';
+				success:					
 					function(response){
+						document.getElementById('preloader').style.display = 'none';
 						if (response == 0) {
 							alert("No había datos con las condiciones establecidas");
 							return;	
