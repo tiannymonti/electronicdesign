@@ -25,8 +25,8 @@
       <!--BARRA DE NAVEGACION -->
       <nav class ="light-blue darken-4" role="navigation">
 		<div class="nav-wrapper container">
-		<a id="logo-container" href="#!" class="brand-logo"><span style="font-family: 'Baloo Paaji', cursive; font-size: 1em;">Encuentra tu carro</span></a>        
-		<ul class="right hide-on-med-and-down">
+		<a id="logo-container" href="#!" class="brand-logo right"><span style="font-family: 'Baloo Paaji', cursive; font-size: 1em;">Encuentra tu carro</span></a>        
+		<ul class="left hide-on-med-and-down">
 			<li><a href="index.php">Ahora</a></li>
 			<li class="active"><a href="hist.php">Historicos</a></li>
 			<li><a href="#final">Fin</a></li>
