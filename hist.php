@@ -26,7 +26,7 @@
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="index.php">Ahora</a></li>
 			<li class="active"><a href="hist.php">Historicos</a></li>
-			<li><a href="#division">Fin</a></li>
+			<li><a href="#final">Fin</a></li>
 		</ul>
 		</div>
 	</nav>
@@ -34,7 +34,7 @@
 		 <div class="row" style="margin-top: 0.2em">
 		<div class="row">
 			<div class="input-field col s3">
-				<label for="iniciod">Fecha de inicio</label>			
+				<label for="iniciod">Fecha inicial</label>			
 				<input id="iniciod" type="text" class="start-datepicker" autocomplete="on">
 			</div>
 			<div class="input-field col s3">
@@ -49,7 +49,7 @@
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker" autocomplete="off">
 			</div>		
-			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
+			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()" style="margin:auto;">Aceptar
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
@@ -69,7 +69,7 @@
 		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em;"></div>
 		</div>
 	  </main>		  
-      <footer name="abajo" class="page-footer light-blue darken-4">
+      <footer name="abajo" class="page-footer light-blue darken-4" id="final">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
