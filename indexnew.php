@@ -20,14 +20,23 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <nav style="background-color: #01579b;">
-		<div class="nav-wrapper">
-		<a href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu carro</span></a>        
-		<ul id="nav-mobile" class="right hide-on-med-and-down">
+       <!--BARRA DE NAVEGACION -->
+      <nav class ="light-blue darken-4" role="navigation">
+		<div class="nav-wrapper container">
+		<a id="logo-container" href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu carro</span></a>        
+		<ul class="right hide-on-med-and-down">
 			<li class="active"><a href="index.php">Ahora</a></li>
 			<li><a href="hist.php">Historicos</a></li>
 			<li><a href="#division">Fin</a></li>
 		</ul>
+		
+	   <ul id="nav-mobile" class="side-nav">
+         <li><a href="index.php">Ahora</a></li>
+		 <li class="active"><a href="hist.php">Historicos</a></li>
+		 <li><a href="#final">Fin</a></li>
+       </ul>
+       
+       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
 	 <main>

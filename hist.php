@@ -60,7 +60,7 @@
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker" autocomplete="off">
 			</div>		
-			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()" style="margin:auto;">Aceptar
+			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
