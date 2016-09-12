@@ -2,7 +2,7 @@
   $(function(){
 
     $('.button-collapse').sideNav({
-		edge: 'right', // Choose the horizontal origin
+		edge: 'left', // Choose the horizontal origin
         closeOnClick: true // Closes side-nav on <a> clicks,
     });
 
