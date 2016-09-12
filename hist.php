@@ -43,7 +43,7 @@
 	</nav>
 	 <main>
 		 <div class="row" style="margin-top: 0.2em">
-		<div class="row">
+		<div class="row" style="margin:auto;">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha inicio</label>			
 				<input id="iniciod" type="text" class="start-datepicker" autocomplete="on">
