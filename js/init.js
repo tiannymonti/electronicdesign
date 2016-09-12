@@ -1,7 +1,10 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({
+		edge: 'right', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks,
+    });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

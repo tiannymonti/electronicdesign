@@ -25,7 +25,7 @@
       <!--BARRA DE NAVEGACION -->
       <nav class ="light-blue darken-4" role="navigation">
 		<div class="nav-wrapper container">
-		<a id="logo-container" href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu carro</span></a>        
+		<a id="logo-container" href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive; font-size: 0.2em">Encuentra tu carro</span></a>        
 		<ul class="right hide-on-med-and-down">
 			<li><a href="index.php">Ahora</a></li>
 			<li class="active"><a href="hist.php">Historicos</a></li>
@@ -45,11 +45,11 @@
 		 <div class="row" style="margin-top: 0.2em">
 		<div class="row">
 			<div class="input-field col s3">
-				<label for="iniciod">Fecha inicial</label>			
+				<label for="iniciod">Fecha inicio</label>			
 				<input id="iniciod" type="text" class="start-datepicker" autocomplete="on">
 			</div>
 			<div class="input-field col s3">
-				<label for="inicioh">Hora inicial</label>				
+				<label for="inicioh">Hora inicio</label>				
 				<input id="inicioh" type="text" class="start-timepicker" autocomplete="off">
 			</div>
 			<div class="input-field col s3">
