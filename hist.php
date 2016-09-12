@@ -55,9 +55,17 @@
 		</div>
 		</div>
 		<div class="row">
-	    <div class="progress" style="display:none;" id="preloader">
-			<div class="indeterminate" style="width: 70%"></div>
-		</div>
+		  <div class="preloader-wrapper big active" style="display:none;" id="preloader">
+			<div class="spinner-layer spinner-blue-only">
+			  <div class="circle-clipper left">
+				<div class="circle"></div>
+			  </div><div class="gap-patch">
+				<div class="circle"></div>
+			  </div><div class="circle-clipper right">
+				<div class="circle"></div>
+			  </div>
+			</div>
+		  </div>
 		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em;"></div>
 		</div>
 	  </main>		  
