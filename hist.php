@@ -306,9 +306,10 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
-                        
+                        document.getElementById('preloader').style.display = 'block';
                 },
 				success:
+					document.getElementById('preloader').style.display = 'none';
 					function(response){
 						if (response == 0) {
 							alert("No había datos con las condiciones establecidas");
