@@ -55,9 +55,10 @@
 		</div>
 		</div>
 		<div class="row">
-		<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>
-		<div class="divider"></div>
-		<div class="col s12"><h1 id="divisio"> HOLI </h1></div>
+	    <div class="progress" style="display:none;" id="preloader">
+			<div class="indeterminate" style="width: 70%"></div>
+		</div>
+		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em;"></div>
 		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4">
@@ -212,7 +213,7 @@
 							url:   'leebasededatosmarker.php',
 							type:  'post',
 							 beforeSend: function () {
-									contento = "Cargando información"
+									contento = "..."
 									infowindow.setContent(contento);
 									infowindow.open(map, marker);
 							},
@@ -222,8 +223,7 @@
 									var arrayOfObjects = eval(response);
 									for (var i = 0; i < arrayOfObjects.length; i++) {
 										var object = arrayOfObjects[i];
-										var tiempo = object.time;	//esto es un string
-										console.log(contento + tiempo + '\n');		
+										var tiempo = object.time;	//esto es un string	
 										contento = contento + tiempo + '\n';																		
 									}		
 									infowindow.setContent(contento);
@@ -306,7 +306,7 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
-                        $("#divisio").html("Procesando, espere por favor...");
+                        
                 },
 				success:
 					function(response){
