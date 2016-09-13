@@ -20,21 +20,32 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <nav style="background-color: #01579b;">
-		<div class="nav-wrapper">
-		<a href="#!" class="brand-logo"><i class="material-icons">room</i><span style="font-family: 'Baloo Paaji', cursive;">Encuentra tu carro</span></a>        
-		<ul id="nav-mobile" class="right hide-on-med-and-down">
+      <script src="js/init.js"></script>
+      
+       <!--BARRA DE NAVEGACION -->
+      <nav class ="light-blue darken-4" role="navigation">
+		<div class="nav-wrapper container">
+		<a id="logo-container" href="#!" class="brand-logo right"><span style="font-family: 'Baloo Paaji', cursive; font-size: 1em;">Encuentra tu carro</span></a>        
+		<ul class="left hide-on-med-and-down">
 			<li class="active"><a href="index.php">Ahora</a></li>
 			<li><a href="hist.php">Historicos</a></li>
 			<li><a href="#division">Fin</a></li>
 		</ul>
+		
+	   <ul id="nav-mobile" class="side-nav">
+         <li><a href="index.php">Ahora</a></li>
+		 <li class="active"><a href="hist.php">Historicos</a></li>
+		 <li><a href="#final">Fin</a></li>
+       </ul>
+       
+       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
 	 <main>
 		<div class="row">
 		<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>
 		<div class="divider"></div>
-		<div class="col s4" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="dia">23</span><span class="flow-text">.</span><span class="flow-text" id="mes">08</span><span class="flow-text">.</span><span class="flow-text" id="yr">2016</span><span class="flow-text">, </span><span class="flow-text" id="hora">14</span><span class="flow-text">:</span><span class="flow-text" id="min">14</span><span class="flow-text">:</span><span class="flow-text" id="seg">14</span></div>
+		<div class="col s4" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time">0000-00-00 00:00:00</span></div>
 		<div class="col s4 push-s4" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud">00000000</span></div>
 		<div class="col s4 pull-s4" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud">00000000</span></div>
 		</div>
@@ -80,41 +91,35 @@ var myPositions = [];
 	function consulta(){
 		
 		$.ajax({
-			url:"leebasededatos.php",
+			url:"leebasededatosnew.php",
 			success:
 				function(response){
 					//alert(response)
 					var data=JSON.parse(response);
 					document.getElementById("latitud").innerHTML = data.latitud;
 					document.getElementById("longitud").innerHTML = data.longitud;
-					document.getElementById("dia").innerHTML = data.dia;
-					document.getElementById("mes").innerHTML = data.mes;
-					document.getElementById("yr").innerHTML = data.yr;
-					document.getElementById("hora").innerHTML = data.hora;
-					document.getElementById("min").innerHTML = data.min;
-					document.getElementById("seg").innerHTML = data.seg;
+					document.getElementById("time").innerHTML = data.time;
 
 					myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
 					myPositions.push(myCenter);    				
 				},
 		});
 		
-		    var lineSymbol = {
-				path: google.maps.SymbolPath.CIRCLE,
-				fillOpacity: 1,
-				scale: 3
+			var lineSymbol = {
+				path: 'M 0,-1 0,1',
+				strokeOpacity: 1,
+				scale: 4
 			};
 		
 				  var myPath = new google.maps.Polyline({
 					path: myPositions,
 					geodesic: true,
 					strokeColor: '#0000FF',
-					strokeOpacity: 1.0,
-					fillOpacity: 0,
+					strokeOpacity: 0,
 					icons: [{
 						icon: lineSymbol,
 						offset: '0',
-						repeat: '5px'
+						repeat: '20px'
 					}],
 				});
  
