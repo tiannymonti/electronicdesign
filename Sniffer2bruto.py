@@ -66,17 +66,17 @@ while True:
         bandera = 0
         
     if (bandera == 1):
-			global time
+		global time
 			
-            bd = mysql.connector.connect(user='root', password='1234', host='localhost', database='coordenadas')
+        bd = mysql.connector.connect(user='root', password='1234', host='localhost', database='coordenadas')
 
-            cursor = bd.cursor()
+        cursor = bd.cursor()
 
-            add_coordinate = ("INSERT INTO cordenadas (latitud, longitud, time) VALUES (%s, %s, %s)")
-            data_coordinate = (latitud, longitud, time)
-            cursor.execute(add_coordinate, data_coordinate)
-            bd.commit()
-            cursor.close()
-            bd.close()
+        add_coordinate = ("INSERT INTO cordenadas (latitud, longitud, time) VALUES (%s, %s, %s)")
+		data_coordinate = (latitud, longitud, time)
+		cursor.execute(add_coordinate, data_coordinate)
+		bd.commit()
+		cursor.close()
+		bd.close()
 
 SockServer.close()
