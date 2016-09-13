@@ -66,10 +66,9 @@ while True:
         bandera = 0
         
     if (bandera == 1):
-		global time
-			
+		
+		global time	
         bd = mysql.connector.connect(user='root', password='1234', host='localhost', database='coordenadas')
-
         cursor = bd.cursor()
 
         add_coordinate = ("INSERT INTO cordenadas (latitud, longitud, time) VALUES (%s, %s, %s)")
