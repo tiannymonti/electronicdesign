@@ -33,9 +33,9 @@
 		</ul>
 		
 	   <ul id="nav-mobile" class="side-nav">
-         <li><a href="index.php">Ahora</a></li>
-		 <li class="active"><a href="hist.php">Historicos</a></li>
-		 <li><a href="#final">Fin</a></li>
+         <li class="active"><a href="index.php">Ahora</a></li>
+		 <li><a href="hist.php">Historicos</a></li>
+		 <li><a href="#division">Fin</a></li>
        </ul>
        
        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>		
