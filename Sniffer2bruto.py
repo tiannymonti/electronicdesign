@@ -66,6 +66,7 @@ while True:
         bandera = 0
         
     if (bandera == 1):
+			global time
 			
             bd = mysql.connector.connect(user='root', password='1234',
             host='localhost', database='coordenadas')
