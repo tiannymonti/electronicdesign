@@ -192,7 +192,7 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
 		function initMap() {
-			
+			setMapOnAll(null);
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}); 
