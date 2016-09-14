@@ -275,7 +275,7 @@
 					
 	
 		 function toggleFunction() {
-			removeLine();
+			
             picker1.open();
             pickert1.open();
             picker2.open();
