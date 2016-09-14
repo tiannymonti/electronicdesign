@@ -272,8 +272,14 @@
 			
 		}; //end init map
 					
+		function removeLine() {
+			myPath.setMap(null);
+			setMapOnAll(null);
+			clearMarkers();
+		}
 	
 		 function toggleFunction() {
+			removeLine();
             picker1.open();
             pickert1.open();
             picker2.open();
