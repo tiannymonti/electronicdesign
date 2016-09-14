@@ -1,0 +1,10 @@
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 3: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 4: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 6: from: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 7: IPserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 8: Portserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 9: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 10: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 11: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: syntax error near unexpected token `('
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: `SockServer = socket(AF_INET, SOCK_DGRAM) '
