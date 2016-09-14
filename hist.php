@@ -193,7 +193,7 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
 		function initMap() {
-			removeLine();
+			myPath.setMap(null);
 			
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -275,9 +275,9 @@
 			
 		}; //end init map
 		
-		function removeLine() {
-		  myPath.setMap(null);
-		}
+		//function removeLine() {
+		  //myPath.setMap(null);
+		//}
 							
 	
 		 function toggleFunction() {
