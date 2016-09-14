@@ -193,10 +193,11 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
 		function initMap() {
-			removeLine(myPath);
+			removeLine();
+			
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-		}); 
+			}); 
 		
 			var lineSymbol = {
 				path: 'M 0,-1 0,1',
@@ -274,8 +275,8 @@
 			
 		}; //end init map
 		
-		function removeLine(path) {
-		  path.setMap(null);
+		function removeLine() {
+		  myPath.setMap(null);
 		}
 							
 	
