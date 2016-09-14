@@ -334,6 +334,7 @@
                 type:  'post',
                 beforeSend: function () {
 						if (myPath != null){
+							console.log("wtf")
 							removeLine();
 						};
                         document.getElementById('preloader').style.display = 'block';
