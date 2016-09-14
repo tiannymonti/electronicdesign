@@ -277,6 +277,7 @@
 		
 		function removeLine() {
 			myPath.setMap(null);
+			myPath = null;
 		};
 							
 	
@@ -333,8 +334,7 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
-						if (myPath != null){
-							console.log("wtf")
+						if (myPath != null){							
 							removeLine();
 						};
                         document.getElementById('preloader').style.display = 'block';
