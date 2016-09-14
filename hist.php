@@ -254,7 +254,7 @@
 				})(marker, i));
 			};
 		  
-			var myPath = new google.maps.Polyline({
+			myPath = new google.maps.Polyline({
 			path: myPositions,
 			geodesic: true,
 			strokeColor: '#0000FF',
