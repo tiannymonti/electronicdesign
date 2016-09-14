@@ -192,7 +192,6 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
 		function initMap() {
-			setMapOnAll(null);
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}); 
@@ -255,7 +254,7 @@
 			};
 		  
 			var myPath = new google.maps.Polyline({
-			path: myPositions,
+			//path: myPositions,
 			geodesic: true,
 			strokeColor: '#0000FF',
 			strokeOpacity: 0,
@@ -266,6 +265,7 @@
 				}],
 			 });
 
+			myPath.setPath(myPositions);
 			myPath.setMap(map);
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
