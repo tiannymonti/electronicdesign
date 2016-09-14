@@ -192,13 +192,12 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
-		function initMap() {
-			
-			map.clear();
-			
+		function initMap() {	
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
+			
+			map.clear();
 		
 			var lineSymbol = {
 				path: 'M 0,-1 0,1',
