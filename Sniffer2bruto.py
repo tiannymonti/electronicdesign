@@ -50,7 +50,7 @@ while True:
             year = data2[17:21]
             bandera1 = 1
 
-            if (hora >= 0) & (hora <= 5):
+            if (int(hora) >= 0) & (int(hora) <= 5):
                 hora = int(hora)
                 hora = 19 + hora
                 print(hora)
