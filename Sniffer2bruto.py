@@ -53,7 +53,9 @@ while True:
             if (int(hora) >= 0) & (int(hora) <= 5):
                 hora = int(hora)
                 hora = 19 + hora
+                hora = str(hora)
                 print(hora)
+                dia1= int(dia1)
                 dia1 = dia1 - 1
                 dia1 = str(dia1)
                 print(dia1)
