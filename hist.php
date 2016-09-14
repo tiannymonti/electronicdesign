@@ -120,6 +120,7 @@
 		 var fecha2;
 		 var hora1;
 		 var hora2;
+		 var myPath;
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -192,6 +193,7 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
 		function initMap() {
+			removeLine(myPath);
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}); 
@@ -253,8 +255,7 @@
 				})(marker, i));
 			};
 		  
-			var myPath = new google.maps.Polyline({
-			//path: myPositions,
+			myPath = new google.maps.Polyline({
 			geodesic: true,
 			strokeColor: '#0000FF',
 			strokeOpacity: 0,
@@ -272,7 +273,11 @@
 			map.fitBounds(bounds);
 			
 		}; //end init map
-					
+		
+		function removeLine(path) {
+		  path.setMap(null);
+		}
+							
 	
 		 function toggleFunction() {
 			
