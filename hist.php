@@ -120,6 +120,7 @@
 		 var fecha2;
 		 var hora1;
 		 var hora2;
+		 var myPath;
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
