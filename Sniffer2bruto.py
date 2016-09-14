@@ -41,11 +41,9 @@ while True:
     elif (n1 >= 0):
         if data2[0:4] == ">RTM":
             hora = data2[4:6]
-            print(hora)
             minu= data2[6:8]
             seg = data2[8:10]
             dia1 = data2[13:15]
-            print(dia1)
             mes = data2[15:17]
             year = data2[17:21]
             bandera1 = 1
@@ -54,16 +52,13 @@ while True:
                 hora = int(hora)
                 hora = 19 + hora
                 hora = str(hora)
-                print(hora)
                 dia1= int(dia1)
                 dia1 = dia1 - 1
                 dia1 = str(dia1)
-                print(dia1)
             else:
                 hora = int(hora)
                 hora = hora - 5
                 hora = str(hora)
-                print(hora)
                        
 	time = year+'-'+mes+'-'+dia1+' '+hora+':'+minu+':'+seg
            
