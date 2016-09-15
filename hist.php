@@ -193,7 +193,7 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
 	
-		var myPath;
+		var path = null;
 		
 		function initMap() {	
 			map = new google.maps.Map(document.getElementById("googleMap"), {
@@ -257,7 +257,8 @@
 				})(marker, i));
 			};
 		  
-			myPath = new google.maps.Polyline({
+			var myPath = new google.maps.Polyline({
+			path: myPositions;
 			geodesic: true,
 			strokeColor: '#0000FF',
 			strokeOpacity: 0,
@@ -267,8 +268,15 @@
 				repeat: '20px'
 				}],
 			 });
-			myPath.setPath(myPositions);
+			 
+			var prepath = path;
+			if(prepath){
+				prepath.setMap(null);
+			}
+			//myPath.setPath(myPositions);
 			myPath.setMap(map);
+			
+			path = myPath;
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
