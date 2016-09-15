@@ -329,7 +329,7 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {	
-						myPositions = null;
+						myPositions = [];
                         document.getElementById('preloader').style.display = 'block';
                 },
 				success:					
