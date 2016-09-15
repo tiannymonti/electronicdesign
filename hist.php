@@ -342,9 +342,9 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
-						if (myPath != null){							
-							removeLine();
-						};
+						//if (myPath != null){							
+							//removeLine();
+						//};
                         document.getElementById('preloader').style.display = 'block';
                 },
 				success:					
