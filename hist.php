@@ -193,8 +193,6 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
 	
-		var path = null;
-		
 		function initMap() {	
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -269,26 +267,14 @@
 				}],
 			 });
 			 
-			var prepath = path;
-			if(prepath){
-				prepath.setMap(null);
-			}
-			//myPath.setPath(myPositions);
 			myPath.setMap(map);
-			
-			path = myPath;
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
 			
 		}; //end init map
 		
-		function removeLine() {
-			myPath.setMap(null);
-			myPath = null;
-		};
-							
-	
+								
 		 function toggleFunction() {
 			
             picker1.open();
@@ -342,9 +328,7 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {
-						//if (myPath != null){							
-							//removeLine();
-						//};
+						$("googleMap").load('hist.php'); 
                         document.getElementById('preloader').style.display = 'block';
                 },
 				success:					
