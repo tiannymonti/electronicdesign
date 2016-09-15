@@ -77,7 +77,7 @@
 			  </div>
 			</div>
 		  </div>
-		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em;"></div>
+		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em; display:none;"></div>
 		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4" id="final">
@@ -331,10 +331,12 @@
                 beforeSend: function () {	
 						myPositions = [];
                         document.getElementById('preloader').style.display = 'block';
+                        document.getElementById('googleMap').style.display = 'none';
                 },
 				success:					
 					function(response){
 						document.getElementById('preloader').style.display = 'none';
+						document.getElementById('googleMap').style.display = 'block';
 						if (response == 0) {
 							alert("No había datos con las condiciones establecidas");
 							return;	
