@@ -258,7 +258,7 @@
 			};
 		  
 			var myPath = new google.maps.Polyline({
-			path: myPositions;
+			path: myPositions,
 			geodesic: true,
 			strokeColor: '#0000FF',
 			strokeOpacity: 0,
