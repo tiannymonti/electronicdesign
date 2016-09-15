@@ -254,7 +254,8 @@
 					}
 				})(marker, i));
 			};
-		  
+			
+			console.log(myPositions);
 			var myPath = new google.maps.Polyline({
 			path: myPositions,
 			geodesic: true,
@@ -327,8 +328,7 @@
                 data:  parametros,
                 url:   'dbhistoricos.php',
                 type:  'post',
-                beforeSend: function () {
-						$("googleMap").load('hist.php'); 
+                beforeSend: function () {						
                         document.getElementById('preloader').style.display = 'block';
                 },
 				success:					
