@@ -1,0 +1,15 @@
+]0;root@ip-172-31-21-200:/var/www/html/electronicdesign\[root@ip-172-31-21-200 electronicdesign]# ps
+  PID TTY          TIME CMD
+ 1818 pts/2    00:00:00 bash
+ 1832 pts/2    00:00:00 ps
+]0;root@ip-172-31-21-200:/var/www/html/electronicdesign\[root@ip-172-31-21-200 electronicdesign]# ps -a
+  PID TTY          TIME CMD
+  934 pts/0    00:00:00 sudo
+  935 pts/0    00:00:00 su
+  936 pts/0    00:00:00 bash
+ 1057 pts/1    00:00:00 sudo
+ 1058 pts/1    00:00:00 su
+ 1059 pts/1    00:00:00 bash
+ 1816 pts/1    00:00:00 screen
+ 1839 pts/2    00:00:00 ps
+]0;root@ip-172-31-21-200:/var/www/html/electronicdesign\[root@ip-172-31-21-200 electronicdesign]# exit
