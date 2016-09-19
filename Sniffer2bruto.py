@@ -36,7 +36,10 @@ while True:
             longDec = data[21:26]
             latitud = latInt + "." + latDec
             longitud = longInt + "." + longDec
+            signal2= data[32:34]
             bandera2 = 1
+            if int(signal2)==90:
+                bandera2=0
 
     elif (n1 >= 0):
         if data2[0:4] == ">RTM":
@@ -46,7 +49,11 @@ while True:
             dia1 = data2[13:15]
             mes = data2[15:17]
             year = data2[17:21]
+            signal1= data2[23:24]
             bandera1 = 1
+            if int(signal1)==9:
+                bandera1=0
+            
 
             if (int(hora) >= 0) & (int(hora) <= 5):
                 hora = int(hora)
