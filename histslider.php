@@ -79,16 +79,16 @@
 		  </div>
 		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em; display:none;"></div>
 		</div>
-		<div style="border: 1px solid black; background-color: blue; padding: 1px;">
+		<div class="row">
 		  <div id="slider"></div>
 		</div>
-		<div>
+		<div class="row">
 		  <!--Play button-->
-		  <a class="waves-effect waves-light btn" id="play">Play</a>
+		  <a class="waves-effect waves-light btn light-blue darken-4" id="play">Play</a>
 		  <!--Pause button-->
-		  <a class="waves-effect waves-light btn" id="pause">Pause</a>
+		  <a class="waves-effect waves-light btn light-blue darken-4" id="pause">Pause</a>
 		  <!--Reset and Stop button-->
-		  <a class="waves-effect waves-light btn" id="stop">Stop</a>
+		  <a class="waves-effect waves-light btn light-blue darken-4" id="stop">Stop</a>
 		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4" id="final">
