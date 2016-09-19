@@ -79,6 +79,10 @@
 		  </div>
 		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em; display:none;"></div>
 		</div>
+		<div style="border: 1px solid black; background-color: blue; padding: 5px;">
+		  slider
+		  <div id="slider"></div>
+		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4" id="final">
           <div class="container">
@@ -109,6 +113,23 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+    
+    <script>
+	  $(function() {
+		$("#slider").slider({
+		  max: 200,
+		  min: 0,
+		  change: function(event, ui) {
+			console.log("ui.value=" + ui.value);
+			var icons = line.get('icons');
+			//if ((icons[0].offset <= 100 + '%')) {
+			icons[0].offset = (ui.value / 2) + '%';
+			line.set('icons', icons);
+		  }
+		});
+	  });
+
+	</script>
     
     <script type="text/javascript">		 
 		 var respuesta;
@@ -355,4 +376,5 @@
 	  };  //end toggle	
 
    </script>
+   
   </html>
