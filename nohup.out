@@ -8,3 +8,1935 @@
 /var/www/html/electronicdesign/Sniffer2bruto.py: line 11: global: command not found
 /var/www/html/electronicdesign/Sniffer2bruto.py: line 12: syntax error near unexpected token `('
 /var/www/html/electronicdesign/Sniffer2bruto.py: line 12: `SockServer = socket(AF_INET, SOCK_DGRAM) '
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 3: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 4: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 6: from: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 7: IPserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 8: Portserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 9: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 10: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 11: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: syntax error near unexpected token `('
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: `SockServer = socket(AF_INET, SOCK_DGRAM) '
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 3: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 4: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 6: from: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 7: IPserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 8: Portserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 9: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 10: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 11: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: syntax error near unexpected token `('
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: `SockServer = socket(AF_INET, SOCK_DGRAM) '
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 3: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 4: import: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 6: from: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 7: IPserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 8: Portserver: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 9: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 10: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 11: global: command not found
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: syntax error near unexpected token `('
+/var/www/html/electronicdesign/Sniffer2bruto.py: line 12: `SockServer = socket(AF_INET, SOCK_DGRAM) '
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378810+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378810+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78810+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78810+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78810+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2153300001409201600106000000;ID=GRUPO1<
+
+'>RTM2153300001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:53:30
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378830+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378830+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78830+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78830+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78830+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2153500001409201600108000000;ID=GRUPO1<
+
+'>RTM2153500001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:53:50
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378850+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378850+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78850+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78850+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78850+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2154100001409201600109000000;ID=GRUPO1<
+
+'>RTM2154100001409201600109000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:54:10
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378870+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378870+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78870+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78870+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78870+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2154300001409201600109000000;ID=GRUPO1<
+
+'>RTM2154300001409201600109000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:54:30
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378890+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378890+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78890+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78890+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78890+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2154500001409201600109000000;ID=GRUPO1<
+
+'>RTM2154500001409201600109000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:54:50
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378910+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378910+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78910+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78910+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78910+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2155100001409201600107000000;ID=GRUPO1<
+
+'>RTM2155100001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:55:10
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378930+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378930+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78930+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78930+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78930+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2155300001409201600107000000;ID=GRUPO1<
+
+'>RTM2155300001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:55:30
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378950+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378950+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78950+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78950+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78950+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2155500001409201600108000000;ID=GRUPO1<
+
+'>RTM2155500001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:55:50
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378970+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378970+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78970+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78970+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78970+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2156100001409201600109000000;ID=GRUPO1<
+
+'>RTM2156100001409201600109000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:56:10
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914378990+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914378990+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV78990+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV78990+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV78990+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2156300001409201600109000000;ID=GRUPO1<
+
+'>RTM2156300001409201600109000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:56:30
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379011+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379011+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79011+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79011+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79011+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2156510001409201600107000000;ID=GRUPO1<
+
+'>RTM2156510001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:56:51
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379031+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379031+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79031+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79031+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79031+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2157110001409201600107000000;ID=GRUPO1<
+
+'>RTM2157110001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:57:11
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379051+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379051+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79051+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79051+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79051+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2157310001409201600107000000;ID=GRUPO1<
+
+'>RTM2157310001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:57:31
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379071+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379071+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79071+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79071+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79071+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2157510001409201600107000000;ID=GRUPO1<
+
+'>RTM2157510001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:57:51
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379090+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379090+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79090+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79090+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79090+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2158100001409201600107000000;ID=GRUPO1<
+
+'>RTM2158100001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:58:10
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379110+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379110+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79110+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79110+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79110+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2158300001409201600108000000;ID=GRUPO1<
+
+'>RTM2158300001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:58:30
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379130+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379130+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79130+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79130+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79130+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2158500001409201600108000000;ID=GRUPO1<
+
+'>RTM2158500001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:58:50
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379150+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379150+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79150+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79150+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79150+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2159100001409201600108000000;ID=GRUPO1<
+
+'>RTM2159100001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:59:10
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379170+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379170+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79170+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79170+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79170+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2159300001409201600107000000;ID=GRUPO1<
+
+'>RTM2159300001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:59:30
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379190+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379190+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79190+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79190+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79190+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2159500001409201600107000000;ID=GRUPO1<
+
+'>RTM2159500001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 16:59:50
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379210+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379210+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79210+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79210+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79210+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2200100001409201600107000000;ID=GRUPO1<
+
+'>RTM2200100001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:00:10
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379231+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379231+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79231+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79231+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79231+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2200310001409201600107000000;ID=GRUPO1<
+
+'>RTM2200310001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:00:31
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379250+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379250+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79250+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79250+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79250+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2200500001409201600108000000;ID=GRUPO1<
+
+'>RTM2200500001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:00:50
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379271+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379271+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79271+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79271+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79271+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2201110001409201600108000000;ID=GRUPO1<
+
+'>RTM2201110001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:01:11
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379292+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379292+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79292+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79292+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79292+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2201320001409201600108000000;ID=GRUPO1<
+
+'>RTM2201320001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:01:32
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379312+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379312+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79312+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79312+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79312+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2201520001409201600108000000;ID=GRUPO1<
+
+'>RTM2201520001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:01:52
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379333+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379333+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79333+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79333+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79333+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2202130001409201600108000000;ID=GRUPO1<
+
+'>RTM2202130001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:02:13
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379352+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379352+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79352+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79352+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79352+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2202320001409201600108000000;ID=GRUPO1<
+
+'>RTM2202320001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:02:32
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379372+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379372+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79372+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79372+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79372+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2202520001409201600108000000;ID=GRUPO1<
+
+'>RTM2202520001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:02:52
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379393+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379393+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79393+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79393+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79393+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2203130001409201600107000000;ID=GRUPO1<
+
+'>RTM2203130001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:03:13
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379413+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379413+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79413+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79413+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79413+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2203330001409201600107000000;ID=GRUPO1<
+
+'>RTM2203330001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:03:33
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379433+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379433+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79433+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79433+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79433+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2203530001409201600106000000;ID=GRUPO1<
+
+'>RTM2203530001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:03:53
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379454+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379454+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79454+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79454+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79454+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2204140001409201600107000000;ID=GRUPO1<
+
+'>RTM2204140001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:04:14
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379475+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379475+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79475+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79475+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79475+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2204350001409201600108000000;ID=GRUPO1<
+
+'>RTM2204350001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:04:35
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379494+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379494+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79494+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79494+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79494+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2204540001409201600107000000;ID=GRUPO1<
+
+'>RTM2204540001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:04:54
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379515+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379515+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79515+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79515+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79515+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2205150001409201600107000000;ID=GRUPO1<
+
+'>RTM2205150001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:05:15
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379535+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379535+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79535+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79535+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79535+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2205350001409201600106000000;ID=GRUPO1<
+
+'>RTM2205350001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:05:35
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379555+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379555+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79555+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79555+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79555+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2205550001409201600106000000;ID=GRUPO1<
+
+'>RTM2205550001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:05:55
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379575+1101937-0748515200019312;ID=GRUPO1<
+
+'>REV021914379575+1101937-0748515200019312;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79575+1101937-0748515200019312;ID=GRUPO1<
+
+'>RPV79575+1101937-0748515200019312;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79575+1101937-0748515200019312
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2206150001409201600106000000;ID=GRUPO1<
+
+'>RTM2206150001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:06:15
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379594+1101949-0748514100217712;ID=GRUPO1<
+
+'>REV021914379594+1101949-0748514100217712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79594+1101949-0748514100217712;ID=GRUPO1<
+
+'>RPV79594+1101949-0748514100217712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79594+1101949-0748514100217712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2206340001409201600106000000;ID=GRUPO1<
+
+'>RTM2206340001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:06:34
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379615+1101949-0748514100117712;ID=GRUPO1<
+
+'>REV021914379615+1101949-0748514100117712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79615+1101949-0748514100117712;ID=GRUPO1<
+
+'>RPV79615+1101949-0748514100117712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79615+1101949-0748514100117712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2206550001409201600107000000;ID=GRUPO1<
+
+'>RTM2206550001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:06:55
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379635+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379635+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79635+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79635+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79635+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2207150001409201600109000000;ID=GRUPO1<
+
+'>RTM2207150001409201600109000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:07:15
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379655+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379655+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79655+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79655+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79655+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2207350001409201600108000000;ID=GRUPO1<
+
+'>RTM2207350001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:07:35
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379675+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379675+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79675+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79675+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79675+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2207550001409201600109000000;ID=GRUPO1<
+
+'>RTM2207550001409201600109000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:07:55
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379695+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379695+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79695+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79695+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79695+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2208150001409201600107000000;ID=GRUPO1<
+
+'>RTM2208150001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:08:15
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379714+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379714+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79714+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79714+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79714+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2208340001409201600107000000;ID=GRUPO1<
+
+'>RTM2208340001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:08:34
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379735+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379735+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79735+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79735+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79735+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2208550001409201600108000000;ID=GRUPO1<
+
+'>RTM2208550001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:08:55
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379754+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379754+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79754+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79754+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79754+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2209140001409201600108000000;ID=GRUPO1<
+
+'>RTM2209140001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:09:14
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379774+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379774+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79774+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79774+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79774+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2209340001409201600108000000;ID=GRUPO1<
+
+'>RTM2209340001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:09:34
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379794+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379794+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79794+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79794+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79794+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2209540001409201600108000000;ID=GRUPO1<
+
+'>RTM2209540001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:09:54
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379814+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379814+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79814+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79814+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79814+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2210140001409201600108000000;ID=GRUPO1<
+
+'>RTM2210140001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:10:14
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379834+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379834+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79834+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79834+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79834+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2210340001409201600108000000;ID=GRUPO1<
+
+'>RTM2210340001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:10:34
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379854+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379854+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79854+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79854+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79854+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2210540001409201600108000000;ID=GRUPO1<
+
+'>RTM2210540001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:10:54
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379874+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379874+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79874+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79874+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79874+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2211140001409201600108000000;ID=GRUPO1<
+
+'>RTM2211140001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:11:14
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379895+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379895+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79895+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79895+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79895+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2211350001409201600107000000;ID=GRUPO1<
+
+'>RTM2211350001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:11:35
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379916+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379916+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79916+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79916+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79916+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2211560001409201600107000000;ID=GRUPO1<
+
+'>RTM2211560001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:11:56
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379937+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379937+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79937+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79937+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79937+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2212170001409201600106000000;ID=GRUPO1<
+
+'>RTM2212170001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:12:17
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379957+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379957+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79957+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79957+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79957+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2212370001409201600106000000;ID=GRUPO1<
+
+'>RTM2212370001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:12:37
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379977+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379977+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79977+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79977+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79977+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2212570001409201600108000000;ID=GRUPO1<
+
+'>RTM2212570001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:12:57
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914379997+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914379997+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV79997+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV79997+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV79997+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2213170001409201600108000000;ID=GRUPO1<
+
+'>RTM2213170001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:13:17
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380016+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380016+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80016+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80016+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80016+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2213360001409201600108000000;ID=GRUPO1<
+
+'>RTM2213360001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:13:36
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380037+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380037+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80037+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80037+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80037+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2213570001409201600108000000;ID=GRUPO1<
+
+'>RTM2213570001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:13:57
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380056+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380056+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80056+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80056+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80056+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2214160001409201600108000000;ID=GRUPO1<
+
+'>RTM2214160001409201600108000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:14:16
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380077+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380077+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80077+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80077+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80077+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2214370001409201600106000000;ID=GRUPO1<
+
+'>RTM2214370001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:14:37
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380097+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380097+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80097+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80097+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80097+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2214570001409201600106000000;ID=GRUPO1<
+
+'>RTM2214570001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:14:57
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380117+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380117+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80117+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80117+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80117+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2215170001409201600105000000;ID=GRUPO1<
+
+'>RTM2215170001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:15:17
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380137+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380137+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80137+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80137+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80137+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2215370001409201600106000000;ID=GRUPO1<
+
+'>RTM2215370001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:15:37
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380157+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380157+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80157+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80157+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80157+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2215570001409201600106000000;ID=GRUPO1<
+
+'>RTM2215570001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:15:57
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380176+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380176+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80176+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80176+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80176+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2216160001409201600106000000;ID=GRUPO1<
+
+'>RTM2216160001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:16:16
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380196+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380196+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80196+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80196+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80196+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2216360001409201600106000000;ID=GRUPO1<
+
+'>RTM2216360001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:16:36
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380216+1101949-0748514100017712;ID=GRUPO1<
+
+'>REV021914380216+1101949-0748514100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80216+1101949-0748514100017712;ID=GRUPO1<
+
+'>RPV80216+1101949-0748514100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80216+1101949-0748514100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2216560001409201600107000000;ID=GRUPO1<
+
+'>RTM2216560001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:16:56
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380227+1101860-0748515600017712;ID=GRUPO1<
+
+'>REV021914380227+1101860-0748515600017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80227+1101860-0748515600017712;ID=GRUPO1<
+
+'>RPV80227+1101860-0748515600017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80227+1101860-0748515600017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2217070001409201600106000000;ID=GRUPO1<
+
+'>RTM2217070001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:17:07
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380247+1101842-0748516100017712;ID=GRUPO1<
+
+'>REV021914380247+1101842-0748516100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80247+1101842-0748516100017712;ID=GRUPO1<
+
+'>RPV80247+1101842-0748516100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80247+1101842-0748516100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2217270001409201600106000000;ID=GRUPO1<
+
+'>RTM2217270001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:17:27
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380266+1101842-0748516100017712;ID=GRUPO1<
+
+'>REV021914380266+1101842-0748516100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80266+1101842-0748516100017712;ID=GRUPO1<
+
+'>RPV80266+1101842-0748516100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80266+1101842-0748516100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2217460001409201600106000000;ID=GRUPO1<
+
+'>RTM2217460001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:17:46
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380286+1101842-0748516100017712;ID=GRUPO1<
+
+'>REV021914380286+1101842-0748516100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80286+1101842-0748516100017712;ID=GRUPO1<
+
+'>RPV80286+1101842-0748516100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80286+1101842-0748516100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2218060001409201600107000000;ID=GRUPO1<
+
+'>RTM2218060001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:18:06
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380307+1101842-0748516100017712;ID=GRUPO1<
+
+'>REV021914380307+1101842-0748516100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80307+1101842-0748516100017712;ID=GRUPO1<
+
+'>RPV80307+1101842-0748516100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80307+1101842-0748516100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2218270001409201600105000000;ID=GRUPO1<
+
+'>RTM2218270001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:18:27
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380327+1101842-0748516100017712;ID=GRUPO1<
+
+'>REV021914380327+1101842-0748516100017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80327+1101842-0748516100017712;ID=GRUPO1<
+
+'>RPV80327+1101842-0748516100017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80327+1101842-0748516100017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2218470001409201600107000000;ID=GRUPO1<
+
+'>RTM2218470001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:18:47
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380342+1101933-0748514700017712;ID=GRUPO1<
+
+'>REV021914380342+1101933-0748514700017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80342+1101933-0748514700017712;ID=GRUPO1<
+
+'>RPV80342+1101933-0748514700017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80342+1101933-0748514700017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2219020001409201600107000000;ID=GRUPO1<
+
+'>RTM2219020001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:19:02
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380362+1101951-0748514700017712;ID=GRUPO1<
+
+'>REV021914380362+1101951-0748514700017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80362+1101951-0748514700017712;ID=GRUPO1<
+
+'>RPV80362+1101951-0748514700017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80362+1101951-0748514700017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2219220001409201600107000000;ID=GRUPO1<
+
+'>RTM2219220001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:19:22
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380382+1101949-0748514300017712;ID=GRUPO1<
+
+'>REV021914380382+1101949-0748514300017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80382+1101949-0748514300017712;ID=GRUPO1<
+
+'>RPV80382+1101949-0748514300017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80382+1101949-0748514300017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2219420001409201600106000000;ID=GRUPO1<
+
+'>RTM2219420001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:19:42
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380402+1101949-0748514300017712;ID=GRUPO1<
+
+'>REV021914380402+1101949-0748514300017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80402+1101949-0748514300017712;ID=GRUPO1<
+
+'>RPV80402+1101949-0748514300017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80402+1101949-0748514300017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2220020001409201600106000000;ID=GRUPO1<
+
+'>RTM2220020001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:20:02
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380422+1101949-0748514300017712;ID=GRUPO1<
+
+'>REV021914380422+1101949-0748514300017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80422+1101949-0748514300017712;ID=GRUPO1<
+
+'>RPV80422+1101949-0748514300017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80422+1101949-0748514300017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2220220001409201600106000000;ID=GRUPO1<
+
+'>RTM2220220001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:20:22
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380442+1101949-0748514300017712;ID=GRUPO1<
+
+'>REV021914380442+1101949-0748514300017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80442+1101949-0748514300017712;ID=GRUPO1<
+
+'>RPV80442+1101949-0748514300017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80442+1101949-0748514300017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2220420001409201600107000000;ID=GRUPO1<
+
+'>RTM2220420001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:20:42
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380462+1101949-0748514300017712;ID=GRUPO1<
+
+'>REV021914380462+1101949-0748514300017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80462+1101949-0748514300017712;ID=GRUPO1<
+
+'>RPV80462+1101949-0748514300017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80462+1101949-0748514300017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2221020001409201600107000000;ID=GRUPO1<
+
+'>RTM2221020001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:21:02
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380482+1101949-0748514300017712;ID=GRUPO1<
+
+'>REV021914380482+1101949-0748514300017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80482+1101949-0748514300017712;ID=GRUPO1<
+
+'>RPV80482+1101949-0748514300017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80482+1101949-0748514300017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2221220001409201600107000000;ID=GRUPO1<
+
+'>RTM2221220001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:21:22
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380502+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380502+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80502+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80502+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80502+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2221420001409201600106000000;ID=GRUPO1<
+
+'>RTM2221420001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:21:42
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380522+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380522+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80522+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80522+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80522+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2222020001409201600106000000;ID=GRUPO1<
+
+'>RTM2222020001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:22:02
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380542+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380542+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80542+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80542+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80542+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2222220001409201600106000000;ID=GRUPO1<
+
+'>RTM2222220001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:22:22
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380562+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380562+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80562+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80562+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80562+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2222420001409201600107000000;ID=GRUPO1<
+
+'>RTM2222420001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:22:42
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380582+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380582+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80582+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80582+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80582+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2223020001409201600105000000;ID=GRUPO1<
+
+'>RTM2223020001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:23:02
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380601+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380601+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80601+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80601+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80601+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2223210001409201600105000000;ID=GRUPO1<
+
+'>RTM2223210001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:23:21
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380622+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380622+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80622+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80622+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80622+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2223420001409201600105000000;ID=GRUPO1<
+
+'>RTM2223420001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:23:42
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380641+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380641+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80641+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80641+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80641+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2224010001409201600105000000;ID=GRUPO1<
+
+'>RTM2224010001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:24:01
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380662+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380662+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80662+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80662+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80662+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2224220001409201600106000000;ID=GRUPO1<
+
+'>RTM2224220001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:24:22
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380682+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380682+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80682+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80682+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80682+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2224420001409201600107000000;ID=GRUPO1<
+
+'>RTM2224420001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:24:42
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380702+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380702+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80702+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80702+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80702+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2225020001409201600107000000;ID=GRUPO1<
+
+'>RTM2225020001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:25:02
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380722+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380722+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80722+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80722+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80722+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2225220001409201600106000000;ID=GRUPO1<
+
+'>RTM2225220001409201600106000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:25:22
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380742+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380742+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80742+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80742+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80742+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2225420001409201600107000000;ID=GRUPO1<
+
+'>RTM2225420001409201600107000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:25:42
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380762+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380762+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80762+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80762+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80762+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2226020001409201600105000000;ID=GRUPO1<
+
+'>RTM2226020001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:26:02
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >REV021914380781+1101946-0748514400017712;ID=GRUPO1<
+
+'>REV021914380781+1101946-0748514400017712;ID=GRUPO1<\r\n'
+ERROR en dato
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RPV80781+1101946-0748514400017712;ID=GRUPO1<
+
+'>RPV80781+1101946-0748514400017712;ID=GRUPO1<\r\n'
+Coordenadas Recibidas!>RPV80781+1101946-0748514400017712
+A la espera de paquete...
+Paquete recibido desde ('186.181.76.195', 5601)
+Informacion Recibida: >RTM2226210001409201600105000000;ID=GRUPO1<
+
+'>RTM2226210001409201600105000000;ID=GRUPO1<\r\n'
+tiempo
+2016-09-14 17:26:21
+A la espera de paquete...
+Paquet
