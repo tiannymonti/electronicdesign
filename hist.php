@@ -208,7 +208,7 @@
 			
 			console.log(myPositions.length);
 			
-			for (var i = 0; i < myPositions.length; i++) {
+			for (var i = 0; i <= myPositions.length; i++) {
 				marker = new google.maps.Marker({
 					map: map,
 					position: myPositions[i],
