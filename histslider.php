@@ -212,6 +212,10 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS	
 		function initMap() {	
+			
+			var intervalForAnimation;
+			var count = 0;
+  
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
@@ -299,8 +303,27 @@
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
 			
-		}; //end init map
-		
+			function playing() {
+				intervalForAnimation = window.setInterval(function() {
+				  $("#map").after(animateCircle(myPath, count));
+				  count = (count + 0.2) % 200;
+				}, 20);
+			}	
+			
+			  function animateCircle(myPath, count) {
+				var icons = myPath.get('icons');
+				//if ((icons[0].offset <= 100 + '%')) {
+				icons[0].offset = (count / 2) + '%';
+				myPath.set('icons', icons);
+				$("#slider").slider("value", count);
+				if (count >= 199) {
+				  clearInterval(intervalForAnimation);
+				  //  line1.setMap(null);
+				};
+				//n++;
+				//};
+			  }
+		}; //end init map	
 								
 		 function toggleFunction() {
 			
