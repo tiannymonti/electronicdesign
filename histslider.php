@@ -120,10 +120,10 @@
 		  min: 0,
 		  change: function(event, ui) {
 			console.log("ui.value=" + ui.value);
-			var icons = line.get('icons');
+			var icons = myPath.get('icons');
 			//if ((icons[0].offset <= 100 + '%')) {
 			icons[0].offset = (ui.value / 2) + '%';
-			line.set('icons', icons);
+			myPath.set('icons', icons);
 		  }
 		});
 	  });
@@ -139,8 +139,8 @@
 		 var fecha2;
 		 var hora1;
 		 var hora2;
-
-		
+		 var myPath;
+	
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -210,8 +210,7 @@
 			}		
 			});
 		var pickert2 = $tinput2.pickatime('picker');		
-	//GOOGLE MAPS
-	
+	//GOOGLE MAPS	
 		function initMap() {	
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -275,15 +274,21 @@
 			};
 			
 			
-			var myPath = new google.maps.Polyline({
+			myPath = new google.maps.Polyline({
 			path: myPositions,
 			geodesic: true,
 			strokeColor: '#0000FF',
 			strokeOpacity: 0,
 			icons: [{
-				icon: lineSymbol,
-				offset: '0',
-				repeat: '20px'
+				   icon: symbolSource,
+				   offset: '0%'
+				}, {
+				   icon: symbolDestination,
+				   offset: '100%'
+				}, {
+					icon: lineSymbol,
+					offset: '0',
+					repeat: '20px'
 				}],
 			 });
 			 

@@ -120,8 +120,9 @@
 		 var fecha2;
 		 var hora1;
 		 var hora2;
+		 var myPath;
+		 
 
-		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -192,7 +193,6 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS
-	
 		function initMap() {	
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -256,7 +256,7 @@
 			};
 			
 			
-			var myPath = new google.maps.Polyline({
+			myPath = new google.maps.Polyline({
 			path: myPositions,
 			geodesic: true,
 			strokeColor: '#0000FF',
