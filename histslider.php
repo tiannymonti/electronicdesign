@@ -79,9 +79,6 @@
 		  </div>
 		<div id="googleMap" style="width:95%;height:55em;margin:auto; margin-top:0.5em; display:none;"></div>
 		</div>
-		<div class="row">
-		  <div id="slider"></div>
-		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4" id="final">
           <div class="container">
@@ -125,20 +122,6 @@
 		 var hora2;
 		 var myPath;
 		 
-		$(function() {
-		console.log("Entro a la funcion del slider")
-		$("#slider").slider({
-		  max: 200,
-		  min: 0,
-		  change: function(event, ui) {
-			console.log("ui.value=" + ui.value);
-			var icons = myPath.get('icons');
-			//if ((icons[0].offset <= 100 + '%')) {
-			icons[0].offset = (ui.value / 2) + '%';
-			myPath.set('icons', icons);
-			  }
-			});
-		  });
 	
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -211,9 +194,6 @@
 		var pickert2 = $tinput2.pickatime('picker');		
 	//GOOGLE MAPS	
 		function initMap() {	
-			
-			var intervalForAnimation;
-			var count = 0;
   
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -227,54 +207,6 @@
 			var infowindow = new google.maps.InfoWindow();
 			var i;
 			
-			for (var i = 0; i < myPositions.length; i++) {
-				marker = new google.maps.Marker({
-					map: map,
-					position: myPositions[i],
-				icon: 'res/carnavicon.png'
-				});
-				
-				google.maps.event.addListener(marker, 'click', (function(marker, i) {
-					return function() {
-						map.setZoom(16); //aumenta el zoom
-						map.setCenter(marker.getPosition());  //centra en el marker
-						var latitud = marker.getPosition().lat();
-						var longitud = marker.getPosition().lng();
-						longitud = longitud.toFixed(4);
-						var contento;
-						var parametros = {
-							"latitud" : latitud,
-							"longitud" : longitud,  
-							"fecha1" : fecha1,
-							"hora1" : hora1,
-							"fecha2" : fecha2,
-							"hora2" : hora2 							              
-						};
-						$.ajax({
-							data:  parametros,
-							url:   'leebasededatosmarker.php',
-							type:  'post',
-							 beforeSend: function () {
-									contento = "..."
-									infowindow.setContent(contento);
-									infowindow.open(map, marker);
-							},
-							success:
-								function(response){
-									contento = "Tiempos: '\n'";
-									var arrayOfObjects = eval(response);
-									for (var i = 0; i < arrayOfObjects.length; i++) {
-										var object = arrayOfObjects[i];
-										var tiempo = object.time;	//esto es un string	
-										contento = contento + tiempo + '\n';																		
-									}		
-									infowindow.setContent(contento);
-									infowindow.open(map, marker);										
-								}  //fin de la funcion de response					
-							}); //fin del ajax 						
-					}
-				})(marker, i));
-			};
 			
 			  var symbolShape = {
 				path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
@@ -302,26 +234,6 @@
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
 			
-			function playing() {
-				intervalForAnimation = window.setInterval(function() {
-				  $("#map").after(animateCircle(myPath, count));
-				  count = (count + 0.2) % 200;
-				}, 20);
-			}	
-			
-			  function animateCircle(myPath, count) {
-				var icons = myPath.get('icons');
-				//if ((icons[0].offset <= 100 + '%')) {
-				icons[0].offset = (count / 2) + '%';
-				myPath.set('icons', icons);
-				$("#slider").slider("value", count);
-				if (count >= 199) {
-				  clearInterval(intervalForAnimation);
-				  //  line1.setMap(null);
-				};
-				//n++;
-				//};
-			  }
 		}; //end init map	
 								
 		 function toggleFunction() {
