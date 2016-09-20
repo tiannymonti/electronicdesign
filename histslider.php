@@ -262,6 +262,9 @@
 					"hora2" : hora2 							              
 				};
 				
+				alert("Lat:" + latitud);
+				alert("Long:" + longitud);
+				alert(fecha1 + fecha2);
 				 
 			});
 		 
