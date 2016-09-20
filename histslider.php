@@ -206,15 +206,12 @@
 			};
 			var infowindow = new google.maps.InfoWindow();
 			var i;
-			
-			
+						
 			  var symbolShape = {
 				path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
 				strokeColor: '#0000FF',
 				strokeOpacity: 1.0
 			  };
-			  
-			console.log(myPositions.length);
 			
 			myPath = new google.maps.Polyline({
 			path: myPositions,
@@ -237,32 +234,37 @@
 			map.fitBounds(bounds);
 			
 			google.maps.event.addListener(myPath, 'click', function(h) {
-			 var latlng = h.latLng;
-			 alert(latlng);
-			 var needle = {
-				 minDistance: 9999999999, //silly high
-				 index: -1,
-				 latlng: null
-			 };
-			 myPath.getPath().forEach(function(myPositions, index){
-				 var dist = google.maps.geometry.spherical.computeDistanceBetween(latlng, myPositions);
-				 if (dist < needle.minDistance){
-					needle.minDistance = dist;
-					needle.index = index;
-					needle.latlng = myPositions;
-				 }
-			 });
-			 // The closest point in the polyline
-			 alert("Closest index: " + needle.index);
-			 
-			 alert("Closest point: " + needle.latlng);
-			 
-			 alert("Lat:" + needle.latlng.lat());
-
-			 alert("Long:" + needle.latlng.lng());
-		 });
+				 var latlng = h.latLng;
+				 var needle = {
+					 minDistance: 9999999999, //silly high
+					 index: -1,
+					 latlng: null
+				 };
+				 myPath.getPath().forEach(function(myPositions, index){
+					 var dist = google.maps.geometry.spherical.computeDistanceBetween(latlng, myPositions);
+					 if (dist < needle.minDistance){
+						needle.minDistance = dist;
+						needle.index = index;
+						needle.latlng = myPositions;
+					 }
+				 });
+				 
+				 var latitud = needle.latlng.lat();
+				 var longitud = needle.latlng.lng();
+				 longitud = longitud.toFixed(4);
+				 var contento;
+				 var parametros = {
+					"latitud" : latitud,
+					"longitud" : longitud,  
+					"fecha1" : fecha1,
+					"hora1" : hora1,
+					"fecha2" : fecha2,
+					"hora2" : hora2 							              
+				};
+				
+				 
+			});
 		 
-		 console.log(myPath.getPath().getLength());
 			
 		}; //end init map	
 								
