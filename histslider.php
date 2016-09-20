@@ -334,6 +334,8 @@
 								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
 								myPositions.push(myCenter);
 							}
+							console.log(myPositions.length);
+							console.log("Posicionesssss");
 						}					
 						initMap();				
 					}  //fin de la funcion de response					
