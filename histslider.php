@@ -82,14 +82,6 @@
 		<div class="row">
 		  <div id="slider"></div>
 		</div>
-		<div class="row">
-		  <!--Play button-->
-		  <a class="waves-effect waves-light btn light-blue darken-4" id="play">Play</a>
-		  <!--Pause button-->
-		  <a class="waves-effect waves-light btn light-blue darken-4" id="pause">Pause</a>
-		  <!--Reset and Stop button-->
-		  <a class="waves-effect waves-light btn light-blue darken-4" id="stop">Stop</a>
-		</div>
 	  </main>		  
       <footer name="abajo" class="page-footer light-blue darken-4" id="final">
           <div class="container">
@@ -119,7 +111,7 @@
     </body>
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+    <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
     
     <script>
 	  $(function() {
@@ -135,7 +127,6 @@
 		  }
 		});
 	  });
-
 	</script>
     
     <script type="text/javascript">		 
