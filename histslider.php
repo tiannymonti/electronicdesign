@@ -281,6 +281,7 @@
 								contento = contento + tiempo + '\n';																		
 							}		
 							infowindow.setContent(contento);
+							infowindow.setPosition(event.latLng);
 							infowindow.open(map);										
 						}  //fin de la funcion de response					
 					}); //fin del ajax 						
