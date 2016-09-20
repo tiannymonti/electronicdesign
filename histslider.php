@@ -262,7 +262,7 @@
 					"hora2" : hora2 							              
 				};
 				
-				alert(parametros);
+				
 				 
 			});
 		 
