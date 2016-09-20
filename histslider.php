@@ -213,6 +213,8 @@
 				strokeColor: '#0000FF',
 				strokeOpacity: 1.0
 			  };
+			  
+			console.log(myPositions.length);
 			
 			myPath = new google.maps.Polyline({
 			path: myPositions,
