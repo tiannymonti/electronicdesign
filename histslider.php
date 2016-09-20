@@ -256,8 +256,10 @@
 			 alert("Closest index: " + needle.index);
 			 
 			 alert("Closest point: " + needle.latlng);
+			 
+			 alert("Lat:" + needle.latlng[0]);
 
-
+			 alert("Long:" + needle.latlng[1]);
 		 });
 		 
 		 console.log(myPath.getPath().getLength());
