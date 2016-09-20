@@ -235,7 +235,7 @@
 			map.fitBounds(bounds);
 			
 			google.maps.event.addListener(myPath, 'click', function(h) {
-			 var latlng=h.latLng;
+			 var latlng = h.latLng;
 			 alert(myPath);
 			 var needle = {
 				 minDistance: 9999999999, //silly high
@@ -254,7 +254,7 @@
 			 alert("Closest index: " + needle.index);
 
 			 // The clicked point on the polyline
-			 alert(latlnt);
+			 alert(latlng);
 
 		 });
 			
