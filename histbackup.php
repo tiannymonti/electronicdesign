@@ -108,8 +108,8 @@
     </body>
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
-    <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
-        
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+    
     <script type="text/javascript">		 
 		 var respuesta;
 		 var map;
@@ -122,7 +122,7 @@
 		 var hora2;
 		 var myPath;
 		 
-	
+
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -192,9 +192,8 @@
 			}		
 			});
 		var pickert2 = $tinput2.pickatime('picker');		
-	//GOOGLE MAPS	
+	//GOOGLE MAPS
 		function initMap() {	
-  
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
@@ -206,18 +205,59 @@
 			};
 			var infowindow = new google.maps.InfoWindow();
 			var i;
-						
-			  var symbolShape = {
-				path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
-				strokeColor: '#0000FF',
-				strokeOpacity: 1.0
-			  };
-			  
-			  var symbolDestination = {
-				path: 'M -2,-2 2,2 M 2,-2 -2,2',
-				strokeColor: '#292',
-				strokeWeight: 4
-			  };
+			
+			console.log(myPositions.length);
+			
+			for (var i = 0; i <= myPositions.length; i++) {
+				marker = new google.maps.Marker({
+					map: map,
+					position: myPositions[i],
+					icon: 'res/carnavicon.png'
+				});
+				
+			console.log(i);
+				google.maps.event.addListener(marker, 'click', (function(marker, i) {
+					return function() {
+						map.setZoom(16); //aumenta el zoom
+						map.setCenter(marker.getPosition());  //centra en el marker
+						var latitud = marker.getPosition().lat();
+						var longitud = marker.getPosition().lng();
+						longitud = longitud.toFixed(4);
+						var contento;
+						var parametros = {
+							"latitud" : latitud,
+							"longitud" : longitud,  
+							"fecha1" : fecha1,
+							"hora1" : hora1,
+							"fecha2" : fecha2,
+							"hora2" : hora2 							              
+						};
+						$.ajax({
+							data:  parametros,
+							url:   'leebasededatosmarker.php',
+							type:  'post',
+							 beforeSend: function () {
+									contento = "..."
+									infowindow.setContent(contento);
+									infowindow.open(map, marker);
+							},
+							success:
+								function(response){
+									contento = "Tiempos: '\n'";
+									var arrayOfObjects = eval(response);
+									for (var i = 0; i < arrayOfObjects.length; i++) {
+										var object = arrayOfObjects[i];
+										var tiempo = object.time;	//esto es un string	
+										contento = contento + tiempo + '\n';																		
+									}		
+									infowindow.setContent(contento);
+									infowindow.open(map, marker);										
+								}  //fin de la funcion de response					
+							}); //fin del ajax 						
+					}
+				})(marker, i));
+			};
+			
 			
 			myPath = new google.maps.Polyline({
 			path: myPositions,
@@ -225,16 +265,10 @@
 			strokeColor: '#0000FF',
 			strokeOpacity: 0,
 			icons: [{
-					icon: symbolShape,
-					offset: '0%'
-				}, {
-					icon: lineSymbol,
-					offset: '0',
-					repeat: '20px'
-				}, {
-					icon: symbolDestination,
-					offset: '100%'
-					}],
+				icon: lineSymbol,
+				offset: '0',
+				repeat: '20px'
+				}],
 			 });
 			 
 			myPath.setMap(map);
@@ -242,63 +276,8 @@
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
 			
-			google.maps.event.addListener(myPath, 'click', function(h) {
-				 var latlng = h.latLng;
-				 var needle = {
-					 minDistance: 9999999999, //silly high
-					 index: -1,
-					 latlng: null
-				 };
-				 myPath.getPath().forEach(function(myPositions, index){
-					 var dist = google.maps.geometry.spherical.computeDistanceBetween(latlng, myPositions);
-					 if (dist < needle.minDistance){
-						needle.minDistance = dist;
-						needle.index = index;
-						needle.latlng = myPositions;
-					 }
-				 });
-				 
-				 var latitud = needle.latlng.lat();
-				 var longitud = needle.latlng.lng();
-				 longitud = longitud.toFixed(4);
-				 var contento;
-				 var parametros = {
-					"latitud" : latitud,
-					"longitud" : longitud,  
-					"fecha1" : fecha1,
-					"hora1" : hora1,
-					"fecha2" : fecha2,
-					"hora2" : hora2 							              
-				};
-				
-				$.ajax({
-					data:  parametros,
-					url:   'leebasededatosmarker.php',
-					type:  'post',
-					 beforeSend: function () {
-							contento = "..."
-							infowindow.setContent(contento);
-							infowindow.open(map, marker);
-					},
-					success:
-						function(response){
-							contento = "Tiempos: '\n'";
-							var arrayOfObjects = eval(response);
-							for (var i = 0; i < arrayOfObjects.length; i++) {
-								var object = arrayOfObjects[i];
-								var tiempo = object.time;	//esto es un string	
-								contento = contento + tiempo + '\n';																		
-							}		
-							infowindow.setContent(contento);
-							infowindow.setPosition(needle.latlng);
-							infowindow.open(map);										
-						}  //fin de la funcion de response					
-					}); //fin del ajax 						
-				 
-			});
-		 
-			
-		}; //end init map	
+		}; //end init map
+		
 								
 		 function toggleFunction() {
 			
@@ -379,5 +358,4 @@
 	  };  //end toggle	
 
    </script>
-   
   </html>
