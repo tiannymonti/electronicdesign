@@ -262,7 +262,28 @@
 					"hora2" : hora2 							              
 				};
 				
-				
+				$.ajax({
+					data:  parametros,
+					url:   'leebasededatosmarker.php',
+					type:  'post',
+					 beforeSend: function () {
+							contento = "..."
+							infowindow.setContent(contento);
+							infowindow.open(map, marker);
+					},
+					success:
+						function(response){
+							contento = "Tiempos: '\n'";
+							var arrayOfObjects = eval(response);
+							for (var i = 0; i < arrayOfObjects.length; i++) {
+								var object = arrayOfObjects[i];
+								var tiempo = object.time;	//esto es un string	
+								contento = contento + tiempo + '\n';																		
+							}		
+							infowindow.setContent(contento);
+							infowindow.open(map, marker);										
+						}  //fin de la funcion de response					
+					}); //fin del ajax 						
 				 
 			});
 		 
