@@ -236,7 +236,7 @@
 			
 			google.maps.event.addListener(myPath, 'click', function(h) {
 			 var latlng = h.latLng;
-			 alert(myPath);
+			 alert(latlng);
 			 var needle = {
 				 minDistance: 9999999999, //silly high
 				 index: -1,
@@ -255,6 +255,8 @@
 
 			 // The clicked point on the polyline
 			 alert(latlng);
+			 
+			 console.log(myPath.getPath());
 
 		 });
 			
