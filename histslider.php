@@ -234,6 +234,30 @@
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			map.fitBounds(bounds);
 			
+			google.maps.event.addListener(myPath, 'click', function(h) {
+			 var latlng=h.latLng;
+			 alert(myPath);
+			 var needle = {
+				 minDistance: 9999999999, //silly high
+				 index: -1,
+				 latlng: null
+			 };
+			 myPath.getPath().forEach(function(routePoint, index){
+				 var dist = google.maps.geometry.spherical.computeDistanceBetween(latlng, routePoint);
+				 if (dist < needle.minDistance){
+					needle.minDistance = dist;
+					needle.index = index;
+					needle.latlng = routePoint;
+				 }
+			 });
+			 // The closest point in the polyline
+			 alert("Closest index: " + needle.index);
+
+			 // The clicked point on the polyline
+			 alert(latlnt);
+
+		 });
+			
 		}; //end init map	
 								
 		 function toggleFunction() {
