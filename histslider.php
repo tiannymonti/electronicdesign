@@ -257,9 +257,9 @@
 			 
 			 alert("Closest point: " + needle.latlng);
 			 
-			 alert("Lat:" + needle.latlng[0]);
+			 alert("Lat:" + needle.latlng.lat());
 
-			 alert("Long:" + needle.latlng[1]);
+			 alert("Long:" + needle.latlng.lng());
 		 });
 		 
 		 console.log(myPath.getPath().getLength());
