@@ -253,10 +253,10 @@
 			 // The closest point in the polyline
 			 alert("Closest index: " + needle.index);
 
-			 
-			 console.log(myPath.getPath());
 
 		 });
+		 
+		 console.log(myPath.getPath().getLength());
 			
 		}; //end init map	
 								
