@@ -215,6 +215,7 @@
 					icon: 'res/carnavicon.png'
 				});
 				
+			console.log(i);
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
 					return function() {
 						map.setZoom(16); //aumenta el zoom
