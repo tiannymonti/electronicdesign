@@ -113,21 +113,6 @@
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
     
-    <script>
-	  $(function() {
-		$("#slider").slider({
-		  max: 200,
-		  min: 0,
-		  change: function(event, ui) {
-			console.log("ui.value=" + ui.value);
-			var icons = myPath.get('icons');
-			//if ((icons[0].offset <= 100 + '%')) {
-			icons[0].offset = (ui.value / 2) + '%';
-			myPath.set('icons', icons);
-		  }
-		});
-	  });
-	</script>
     
     <script type="text/javascript">		 
 		 var respuesta;
@@ -140,6 +125,20 @@
 		 var hora1;
 		 var hora2;
 		 var myPath;
+		 
+		$(function() {
+		$("#slider").slider({
+		  max: 200,
+		  min: 0,
+		  change: function(event, ui) {
+			console.log("ui.value=" + ui.value);
+			var icons = myPath.get('icons');
+			//if ((icons[0].offset <= 100 + '%')) {
+			icons[0].offset = (ui.value / 2) + '%';
+			myPath.set('icons', icons);
+			  }
+			});
+		  });
 	
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
