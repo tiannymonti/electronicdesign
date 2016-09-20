@@ -242,19 +242,17 @@
 				 index: -1,
 				 latlng: null
 			 };
-			 myPath.getPath().forEach(function(routePoint, index){
-				 var dist = google.maps.geometry.spherical.computeDistanceBetween(latlng, routePoint);
+			 myPath.getPath().forEach(function(myPositions, index){
+				 var dist = google.maps.geometry.spherical.computeDistanceBetween(latlng, myPositions);
 				 if (dist < needle.minDistance){
 					needle.minDistance = dist;
 					needle.index = index;
-					needle.latlng = routePoint;
+					needle.latlng = myPositions;
 				 }
 			 });
 			 // The closest point in the polyline
 			 alert("Closest index: " + needle.index);
 
-			 // The clicked point on the polyline
-			 alert(latlng);
 			 
 			 console.log(myPath.getPath());
 
