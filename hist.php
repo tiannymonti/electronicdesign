@@ -206,11 +206,13 @@
 			var infowindow = new google.maps.InfoWindow();
 			var i;
 			
+			console.log(myPositions.length);
+			
 			for (var i = 0; i < myPositions.length; i++) {
 				marker = new google.maps.Marker({
 					map: map,
 					position: myPositions[i],
-				icon: 'res/carnavicon.png'
+					icon: 'res/carnavicon.png'
 				});
 				
 				google.maps.event.addListener(marker, 'click', (function(marker, i) {
