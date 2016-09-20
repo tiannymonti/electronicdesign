@@ -273,6 +273,11 @@
 				})(marker, i));
 			};
 			
+			  var symbolShape = {
+				path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+				strokeColor: '#0000FF',
+				strokeOpacity: 1.0
+			  };
 			
 			myPath = new google.maps.Polyline({
 			path: myPositions,
@@ -280,11 +285,8 @@
 			strokeColor: '#0000FF',
 			strokeOpacity: 0,
 			icons: [{
-				   icon: symbolSource,
-				   offset: '0%'
-				}, {
-				   icon: symbolDestination,
-				   offset: '100%'
+					icon: symbolShape,
+					offset: '0%'
 				}, {
 					icon: lineSymbol,
 					offset: '0',
