@@ -254,6 +254,8 @@
 			 });
 			 // The closest point in the polyline
 			 alert("Closest index: " + needle.index);
+			 
+			 alert("Closest point: " + needle.latlng);
 
 
 		 });
