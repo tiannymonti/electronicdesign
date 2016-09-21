@@ -214,9 +214,9 @@
 			  };
 			  
 			  var symbolDestination = {
-				path: 'M -2,-2 2,2 M 2,-2 -2,2',
+				path: google.maps.SymbolPath.BACKWARD_OPEN_ARROW,
 				strokeColor: '#0000FF',
-				strokeWeight: 4
+				strokeOpacity: 1.0
 			  };
 			
 			myPath = new google.maps.Polyline({
