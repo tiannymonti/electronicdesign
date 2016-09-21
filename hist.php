@@ -215,7 +215,7 @@
 			  
 			  var symbolDestination = {
 				path: 'M -2,-2 2,2 M 2,-2 -2,2',
-				strokeColor: '#292',
+				strokeColor: '#0000FF',
 				strokeWeight: 4
 			  };
 			
@@ -227,6 +227,10 @@
 			icons: [{
 					icon: symbolShape,
 					offset: '0%'
+				}, {
+					icon: lineSymbol,
+					offset: '0',
+					repeat: '20px'
 				}, {
 					icon: symbolDestination,
 					offset: '100%'
