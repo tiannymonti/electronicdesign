@@ -228,10 +228,6 @@
 					icon: symbolShape,
 					offset: '0%'
 				}, {
-					icon: lineSymbol,
-					offset: '0',
-					repeat: '20px'
-				}, {
 					icon: symbolDestination,
 					offset: '100%'
 					}],
