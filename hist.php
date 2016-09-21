@@ -223,14 +223,11 @@
 			path: myPositions,
 			geodesic: true,
 			strokeColor: '#0000FF',
-			strokeOpacity: 0,
+			strokeOpacity: 1.0,
+			strokeWeight: 3,
 			icons: [{
 					icon: symbolShape,
 					offset: '0%'
-				}, {
-					icon: lineSymbol,
-					offset: '0',
-					repeat: '20px'
 				}, {
 					icon: symbolDestination,
 					offset: '100%'
