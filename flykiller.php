@@ -129,8 +129,8 @@
 		
 		 var slider = document.getElementById('connect');
 		 noUiSlider.create(slider, {
-		   start: [20, 80],
-		   connect: true,
+		   start: 0,
+		   connect: 'lower',
 		   step: 1,
 		   range: {
 			 'min': 0,
