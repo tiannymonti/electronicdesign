@@ -65,7 +65,7 @@
 		</div>
 		</div>		
 		<div class="row">
-		  <input type="range">
+		  <input type="range" data-rangeslider>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
 			  <div class="circle-clipper left">
@@ -109,6 +109,7 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+    <script src="jquery.min.js"></script>
 	<script type="text/javascript" src="rangeslider.js/rangeslider.min.js"></script>
 <!--
 	<script>
