@@ -273,7 +273,8 @@
 						var contento = "Tiempos: '\n'" + latitud + ", " + longitud;	
 						infowindow.setContent(contento);
 						infowindow.open(map, marker);			
-			})(marker));		 
+				})(marker));
+			};		 
 			
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);			
