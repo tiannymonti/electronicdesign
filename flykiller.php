@@ -67,6 +67,7 @@
 		</div>
 		</div>	
 		<div id="connect" style="display:none; margin:auto;"></div>
+		<div id="value" style="display:none; margin:auto;"></div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -214,7 +215,6 @@
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
 			   start:  timestamp(myTimes[0]),
-			   tooltips: [wNumb({ decimals: 1 }) ],
 			   connect: 'lower',
 			   step: 1000,
 			   range: {
@@ -377,6 +377,7 @@
                         document.getElementById('preloader').style.display = 'block';
                         document.getElementById('googleMap').style.display = 'none';
                         document.getElementById('connect').style.display = 'none';
+                        document.getElementById('value').style.display = 'none';
                 },
 				success:					
 					function(response){
@@ -396,7 +397,8 @@
 								myTimes.push(mytime);
 							}
 						}
-						document.getElementById('connect').style.display = 'block';					
+						document.getElementById('connect').style.display = 'block';	
+						document.getElementById('value').style.display = 'block';				
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
