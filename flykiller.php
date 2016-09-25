@@ -114,8 +114,7 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
-    <script src="jquery.min.js"></script>
-	<script type="text/javascript" src="rangeslider.js/rangeslider.min.js"></script>
+
         
     <script type="text/javascript">		 
 		 var respuesta;
@@ -128,25 +127,6 @@
 		 var hora1;
 		 var hora2;
 		 var myPath;
-		 
-		 $('input[type="range"]').rangeslider({
-
-			// Feature detection the default is `true`.
-			// Set this to `false` if you want to use
-			// the polyfill also in Browsers which support
-			// the native <input type="range"> element.
-			polyfill: true,
-
-			// Default CSS classes
-			rangeClass: 'rangeslider',
-			disabledClass: 'rangeslider--disabled',
-			horizontalClass: 'rangeslider--horizontal',
-			verticalClass: 'rangeslider--vertical',
-			fillClass: 'rangeslider__fill',
-			handleClass: 'rangeslider__handle'
-			
-		});
-		 
 	
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
