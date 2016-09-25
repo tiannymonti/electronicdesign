@@ -11,8 +11,7 @@
 	  <meta charset="UTF-8"> 
 	  <title>Telemetria vehicular</title>
 	  <!--Fuente del titulo-->
-	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
-	  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 	  
+	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet"> 	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -109,6 +108,7 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         
