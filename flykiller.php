@@ -67,6 +67,7 @@
 		</div>
 		</div>	
 		<br></br>	
+		<div id="connect"></div>
 		<div class="input-field">
 		   <p class="range-field">
 			  <input type="range" id="test"/>
@@ -131,7 +132,7 @@
 		 var hora2;
 		 var myPath;
 		
-		 var slider = document.getElementById('test');
+		 var slider = document.getElementById('connect');
 		 noUiSlider.create(slider, {
 		   start: [20, 80],
 		   connect: true,
