@@ -44,7 +44,7 @@
 		</div>
 	</nav>
 	 <main>
-	 <div class="row" style="margin-top: 0.2em">
+		 <div class="row" style="margin-top: 0.2em">
 		<div class="row" style="margin:auto;">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha inicio</label>			
@@ -62,12 +62,11 @@
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker" autocomplete="off">
 			</div>		
-			<button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
+			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
 				<i id="trigger" class="material-icons right">send</i>
-			</button>
+			</button>	
 		</div>
-	</div>
-		<div id="slider-1"></div>
+		</div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
