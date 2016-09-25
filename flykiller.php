@@ -62,10 +62,10 @@
 			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
-			<input type="range">
 		</div>
 		</div>		
 		<div class="row">
+		  <input type="range">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
 			  <div class="circle-clipper left">
