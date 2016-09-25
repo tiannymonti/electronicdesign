@@ -65,7 +65,7 @@
 		</div>
 		</div>		
 		<div class="row">
-		   <p class="range-field">
+		   <p class="range-field" style="margin: auto;">
 			  <input type="range" id="test5" min="0" max="100" />
 			</p>
 		</div>
