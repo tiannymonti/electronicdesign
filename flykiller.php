@@ -67,7 +67,7 @@
 		</div>
 		</div>	
 		<br></br>	
-		<div id="connect"></div>
+		<div id="connect" style="display:none; margin:auto;"></div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -127,19 +127,6 @@
 		 var hora2;
 		 var myPath;
 		
-		 var slider = document.getElementById('connect');
-		 noUiSlider.create(slider, {
-		   start: 0,
-		   connect: 'lower',
-		   step: 1,
-		   range: {
-			 'min': 0,
-			 'max': 100
-		   },
-		   format: wNumb({
-			 decimals: 0
-		   })
-		  });
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -365,6 +352,7 @@
 						myPositions = [];
                         document.getElementById('preloader').style.display = 'block';
                         document.getElementById('googleMap').style.display = 'none';
+                        document.getElementById('connect').style.display = 'none';
                 },
 				success:					
 					function(response){
@@ -381,7 +369,21 @@
 								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
 								myPositions.push(myCenter);
 							}
-						}					
+						}
+						document.getElementById('connect').style.display = 'block';
+						 var slider = document.getElementById('connect');
+						 noUiSlider.create(slider, {
+						   start: 0,
+						   connect: 'lower',
+						   step: 1,
+						   range: {
+							 'min': 0,
+							 'max': 100
+						   },
+						   format: wNumb({
+							 decimals: 0
+						   })
+						  });					
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
