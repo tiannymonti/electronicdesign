@@ -11,7 +11,8 @@
 	  <meta charset="UTF-8"> 
 	  <title>Telemetria vehicular</title>
 	  <!--Fuente del titulo-->
-	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet"> 	  
+	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+	  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
