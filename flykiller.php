@@ -68,11 +68,6 @@
 		</div>	
 		<br></br>	
 		<div id="connect"></div>
-		<div class="input-field">
-		   <p class="range-field">
-			  <input type="range" id="test"/>
-			</p>
-		</div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
