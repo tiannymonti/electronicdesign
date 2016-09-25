@@ -238,6 +238,10 @@
 			 
 			myPath.setMap(map);
 			
+			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
+			map.fitBounds(bounds);
+			
+			
 			var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
 			   start:  0,
@@ -264,7 +268,7 @@
 				dateValues.innerHTML = myTimes[values[handle]];
 				marker.setPosition(myPositions[values[handle]]);
 				map.panTo(myPositions[values[handle]]);				
-			});				 
+			});		 
 			
 		}; //end init map	
 								
