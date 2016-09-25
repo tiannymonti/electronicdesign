@@ -260,6 +260,10 @@
 			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
+				marker=new google.maps.Marker({
+				  position:myPositions[values[handle]],
+				  icon: 'res/carnavicon.png'
+				});
 			});
 		 
 			
