@@ -62,8 +62,9 @@
 			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
+			<input type="range">
 		</div>
-		</div>
+		</div>		
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -108,6 +109,23 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
+    
+    <script src="jquery.min.js"></script>
+	<script src="rangeslider.min.js"></script>
+	<script>
+		// Initialize a new plugin instance for all
+		// e.g. $('input[type="range"]') elements.
+		$('input[type="range"]').rangeslider();
+
+		// Destroy all plugin instances created from the
+		// e.g. $('input[type="range"]') elements.
+		$('input[type="range"]').rangeslider('destroy');
+
+		// Update all rangeslider instances for all
+		// e.g. $('input[type="range"]') elements.
+		// Usefull if you changed some attributes e.g. `min` or `max` etc.
+		$('input[type="range"]').rangeslider('update', true);
+	</script>
         
     <script type="text/javascript">		 
 		 var respuesta;
