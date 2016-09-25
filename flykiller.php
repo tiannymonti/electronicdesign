@@ -212,10 +212,9 @@
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
+				
 			
-			dt = new Date(timestamp(myTimes[0]));
-			
-			console.log(dt.toString())
+			console.log(formatDate(timestamp(myTimes[0])))
 			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
@@ -233,9 +232,9 @@
 			 
 			 var dateValues = document.getElementById('values');
 			 
-			 slider.noUiSlider.on('update', function( values, handle ) {
-				dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
-			});
+			 //slider.noUiSlider.on('update', function( values, handle ) {
+				//dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+			//});
 
 			var infowindow = new google.maps.InfoWindow();
 			var i;
