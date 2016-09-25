@@ -233,7 +233,7 @@
 			 
 			 var dateValues = document.getElementById('values');
 			 
-			 dateSlider.noUiSlider.on('update', function( values, handle ) {
+			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
 			});
 
