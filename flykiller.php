@@ -203,6 +203,8 @@
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
 			
+			console.log(myTimes[0]);
+			
 			console.log(new Date(myTimes[0]));
 			
 		   var slider = document.getElementById('connect');
