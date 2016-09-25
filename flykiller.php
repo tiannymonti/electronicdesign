@@ -138,10 +138,7 @@
 		   range: {
 			 'min': 0,
 			 'max': 100
-		   },
-		   format: wNumb({
-			 decimals: 0
-		   })
+		   }
 		  });
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
