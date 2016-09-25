@@ -198,12 +198,7 @@
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
-	
-			var lineSymbol = {
-				path: 'M 0,-1 0,1',
-				strokeOpacity: 1,
-				scale: 4
-			};
+
 			var infowindow = new google.maps.InfoWindow();
 			var i;
 						
