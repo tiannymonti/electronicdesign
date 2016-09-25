@@ -65,9 +65,9 @@
 		</div>
 		</div>		
 		<div class="row">
-		  <input type="range" style="margin: auto;" data-rangeslider>
-		  <span class="thumb active" style="margin: auto">
-		  <span class="value"></span>
+		   <p class="range-field">
+			  <input type="range" id="test5" min="0" max="100" />
+			</p>
 		</div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
