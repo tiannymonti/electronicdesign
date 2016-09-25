@@ -13,7 +13,7 @@
 	  <!--Fuente del titulo-->
 	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet"> 
 	  <!--ESLAIDER-->
-	  <link type="text/css" rel="stylesheet" href="extras/noUiSlider/nouislider.css"/>	  
+	  <link type="text/css" rel="stylesheet" href="noUiSlider.js/nouislider.css"/>	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -116,7 +116,7 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
-	<script type="text/javascript" src="extras/noUiSlider/nouislider.js"></script>
+	<script type="text/javascript" src="noUiSlider.js/nouislider.js"></script>
         
     <script type="text/javascript">		 
 		 var respuesta;
