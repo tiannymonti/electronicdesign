@@ -65,10 +65,11 @@
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
-		</div>	
+		</div>		
 		<div id="connect" style="display:none; margin:auto;"></div>
-		<div id="values" style="display:none; margin:auto;"></div>
-		<div class="row">
+		<div class="row" style="margin:auto;">
+			<div id="values" style="display:none; margin:auto;"></div>
+		</div>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
 			  <div class="circle-clipper left">
