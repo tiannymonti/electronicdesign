@@ -66,7 +66,6 @@
 			</button>	
 		</div>
 		</div>	
-		<br></br>	
 		<div id="connect" style="display:none; margin:auto;"></div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
@@ -207,6 +206,7 @@
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
 			   start: 0,
+			   tooltips: [ false, wNumb({ decimals: 1 }) ],
 			   connect: 'lower',
 			   step: 1,
 			   range: {
