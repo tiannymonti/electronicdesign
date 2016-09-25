@@ -129,7 +129,20 @@
 		 var hora1;
 		 var hora2;
 		 var myPath;
-	
+		
+		  var slider = document.getElementById('test5');
+		  noUiSlider.create(slider, {
+		   start: [20, 80],
+		   connect: true,
+		   step: 1,
+		   range: {
+			 'min': 0,
+			 'max': 100
+		   },
+		   format: wNumb({
+			 decimals: 0
+		   })
+		  });
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
 			monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
