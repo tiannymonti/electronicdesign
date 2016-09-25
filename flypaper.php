@@ -268,6 +268,10 @@
 			});		 
 			
 			
+			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
+			
+			map.fitBounds(bounds);
+			
 		}; //end init map	
 								
 		 function toggleFunction() {
