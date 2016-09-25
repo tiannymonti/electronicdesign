@@ -126,6 +126,7 @@
 		 var hora1;
 		 var hora2;
 		 var myPath;
+		 var myTimes = [];
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -364,6 +365,7 @@
                 type:  'post',
                 beforeSend: function () {	
 						myPositions = [];
+						myTimes = [];
                         document.getElementById('preloader').style.display = 'block';
                         document.getElementById('googleMap').style.display = 'none';
                         document.getElementById('connect').style.display = 'none';
@@ -381,7 +383,9 @@
 							var object = arrayOfObjects[i];
 							for (var property in object) {
 								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
+								mytime = object.time;
 								myPositions.push(myCenter);
+								myTimes.push(mytime);
 							}
 						}
 						document.getElementById('connect').style.display = 'block';					
