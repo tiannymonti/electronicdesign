@@ -204,10 +204,7 @@
   
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-			}); 				
-
-			var infowindow = new google.maps.InfoWindow();
-			var i;
+			}); 							
 						
 			  var symbolShape = {
 				path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
@@ -260,14 +257,15 @@
 				  position:myPositions[0],
 				  icon: 'res/carnavicon.png'
 			 });
+			 		 
+			 var popup = new google.maps.InfoWindow({
+					content: "Posicion:" + marker.getPosition()});
+					popup.open(map, marker);  	
 			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
 				marker.setPosition(myPositions[values[handle]]);
-				map.panTo(myPositions[values[handle]]);	
-				var popup = new google.maps.InfoWindow({
-					content: "Posicion:" + marker.getPosition()});
-					popup.open(map, marker);  			
+				map.panTo(myPositions[values[handle]]);						
 			});		 
 			
 			
