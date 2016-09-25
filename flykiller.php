@@ -208,7 +208,9 @@
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
 			
-			console.log(new Date(timestamp(myTimes[0])))
+			dt = new Date(timestamp(myTimes[0]));
+			
+			console.log(dt.toString())
 			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
