@@ -208,9 +208,7 @@
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
 			
-			console.log(myTimes[8]);
-			
-			console.log(timestamp(myTimes[8]));
+			console.log(new Date(timestamp(myTimes[0])))
 			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
@@ -225,6 +223,10 @@
 				 decimals: 0
 			   })
 			 });
+			 
+			 var dateValues = document.getElementById('values');
+			 
+			 
 
 			var infowindow = new google.maps.InfoWindow();
 			var i;
