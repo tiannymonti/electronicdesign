@@ -239,9 +239,11 @@
 			myPath.setMap(map);
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
-			map.fitBounds(bounds);
 			
-			
+			map.addListener('click', function() {
+				map.fitBounds(bounds);
+			});
+					
 			var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
 			   start:  0,
