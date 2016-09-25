@@ -68,7 +68,7 @@
 		</div>		
 		<div id="connect" style="display:none; margin:auto;"></div>
 		<div class="row" style="margin:auto;">
-			<div id="values" style="display:none; margin:auto;"></div>
+			<div id="values" style="display:none; margin:auto; text-align: center;"></div>
 		</div>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
