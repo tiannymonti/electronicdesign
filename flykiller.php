@@ -66,6 +66,7 @@
 		</div>		
 		<div class="row">
 		  <input type="range" data-rangeslider>
+		  <span class="value"></span>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
 			  <div class="circle-clipper left">
