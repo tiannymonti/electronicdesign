@@ -266,7 +266,8 @@
 			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
-				marker.setPosition(myPositions[values[handle]]);				
+				marker.setPosition(myPositions[values[handle]]);
+				map.panTo(myPositions[values[handle]]);				
 			});		 
 			
 		}; //end init map	
