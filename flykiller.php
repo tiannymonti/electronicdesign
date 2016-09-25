@@ -202,6 +202,20 @@
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
+			
+		   var slider = document.getElementById('connect');
+			 noUiSlider.create(slider, {
+			   start: 0,
+			   connect: 'lower',
+			   step: 1,
+			   range: {
+				 'min': 0,
+				 'max': 100
+			   },
+			   format: wNumb({
+				 decimals: 0
+			   })
+			 });
 
 			var infowindow = new google.maps.InfoWindow();
 			var i;
@@ -370,20 +384,7 @@
 								myPositions.push(myCenter);
 							}
 						}
-						document.getElementById('connect').style.display = 'block';
-						 var slider = document.getElementById('connect');
-						 noUiSlider.create(slider, {
-						   start: 0,
-						   connect: 'lower',
-						   step: 1,
-						   range: {
-							 'min': 0,
-							 'max': 100
-						   },
-						   format: wNumb({
-							 decimals: 0
-						   })
-						  });					
+						document.getElementById('connect').style.display = 'block';					
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
