@@ -264,8 +264,7 @@
 				  position:myPositions[values[handle]],
 				  icon: 'res/carnavicon.png'
 				});
-			});
-		 
+			});		 
 			
 		}; //end init map	
 								
