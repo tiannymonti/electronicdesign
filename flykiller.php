@@ -201,6 +201,11 @@
 		function timestamp(str){
 			return new Date(str).getTime();   
 		};	
+		
+		function formatDate ( date ) {
+			dt = new Date(date);
+			return dt.toString();
+		};
 	//GOOGLE MAPS	
 		function initMap() {	
   
@@ -228,7 +233,9 @@
 			 
 			 var dateValues = document.getElementById('values');
 			 
-			 
+			 dateSlider.noUiSlider.on('update', function( values, handle ) {
+				dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+			});
 
 			var infowindow = new google.maps.InfoWindow();
 			var i;
