@@ -203,16 +203,21 @@
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
 			
+			console.log(myTimes[0]);
+			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
 			   start: myTimes[0],
-			   //tooltips: [wNumb({ decimals: 1 }) ],
+			   tooltips: [wNumb({ decimals: 1 }) ],
 			   connect: 'lower',
 			   step: 1,
 			   range: {
-				 'min': myTimes[0],
-				 'max': myTimes[myTimes.length - 1]
+				 'min': 0,
+				 'max': 100
 			   },
+			   format: wNumb({
+				 decimals: 0
+			   })
 			 });
 
 			var infowindow = new google.maps.InfoWindow();
