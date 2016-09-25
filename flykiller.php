@@ -69,7 +69,7 @@
 		<br></br>	
 		<div class="row">
 		   <p class="range-field" style="margin: auto;">
-			  <input type="range" id="test5" min="0" max="100" />
+			  <input type="range" id="test"/>
 			</p>
 		</div>
 		<div class="row">
@@ -130,7 +130,7 @@
 		 var hora2;
 		 var myPath;
 		
-		 var slider = document.getElementById('test5');
+		 var slider = document.getElementById('test');
 		 noUiSlider.create(slider, {
 		   start: [20, 80],
 		   connect: true,
@@ -138,7 +138,10 @@
 		   range: {
 			 'min': 0,
 			 'max': 100
-		   }
+		   },
+		   format: wNumb({
+			 decimals: 0
+		   })
 		  });
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
