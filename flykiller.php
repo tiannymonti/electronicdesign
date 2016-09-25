@@ -67,7 +67,7 @@
 		</div>
 		</div>	
 		<div id="connect" style="display:none; margin:auto;"></div>
-		<div id="value" style="display:none; margin:auto;"></div>
+		<div id="values" style="display:none; margin:auto;"></div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -232,9 +232,9 @@
 			 
 			 var dateValues = document.getElementById('values');
 			 
-			 //slider.noUiSlider.on('update', function( values, handle ) {
-				//dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
-			//});
+			 slider.noUiSlider.on('update', function( values, handle ) {
+				dateValues.innerHTML = range[values[handle]];
+			});
 
 			var infowindow = new google.maps.InfoWindow();
 			var i;
@@ -387,7 +387,7 @@
                         document.getElementById('preloader').style.display = 'block';
                         document.getElementById('googleMap').style.display = 'none';
                         document.getElementById('connect').style.display = 'none';
-                        document.getElementById('value').style.display = 'none';
+                        document.getElementById('values').style.display = 'none';
                 },
 				success:					
 					function(response){
@@ -408,7 +408,7 @@
 							}
 						}
 						document.getElementById('connect').style.display = 'block';	
-						document.getElementById('value').style.display = 'block';				
+						document.getElementById('values').style.display = 'block';				
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
