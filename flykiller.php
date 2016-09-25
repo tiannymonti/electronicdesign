@@ -258,13 +258,15 @@
 			 
 			 var dateValues = document.getElementById('values');
 			 
+			 marker = new google.maps.Marker({
+				  map: map,
+				  position:myPositions[0],
+				  icon: 'res/carnavicon.png'
+			 });
+			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
-				marker = new google.maps.Marker({
-				  map: map,
-				  position:myPositions[values[handle]],
-				  icon: 'res/carnavicon.png'
-				});
+				marker.setPosition(myPositions[values[handle]]);				
 			});		 
 			
 		}; //end init map	
