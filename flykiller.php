@@ -206,7 +206,7 @@
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
 			   start: 0,
-			   tooltips: [ false, wNumb({ decimals: 1 }) ],
+			   tooltips: [true, wNumb({ decimals: 1 }) ],
 			   connect: 'lower',
 			   step: 1,
 			   range: {
