@@ -8,7 +8,6 @@
 	  <!--Icono y titulo de la pagina web-->
 	  <link rel="icon" href="res/car-icon.png">
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
 	  <meta charset="UTF-8"> 
 	  <title>Telemetria vehicular</title>
 	  <!--Fuente del titulo-->
@@ -21,8 +20,6 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
       <script src="js/init.js"></script>
       
       <!--BARRA DE NAVEGACION -->
