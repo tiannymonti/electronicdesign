@@ -211,19 +211,16 @@
   
 			map = new google.maps.Map(document.getElementById("googleMap"), {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-			}); 
-				
-			
-			console.log(formatDate(timestamp(myTimes[0])))
+			}); 				
 			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
-			   start:  timestamp(myTimes[0]),
+			   start:  0,
 			   connect: 'lower',
-			   step: 1000,
+			   step: 1,
 			   range: {
-				 'min': timestamp(myTimes[0]),
-				 'max': timestamp(myTimes[myTimes.length - 1])
+				 'min': 0,
+				 'max': myTimes.length - 1
 			   },
 			   format: wNumb({
 				 decimals: 0
@@ -233,7 +230,7 @@
 			 var dateValues = document.getElementById('values');
 			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
-				dateValues.innerHTML = range[values[handle]];
+				dateValues.innerHTML = myTimes[values[handle]];
 			});
 
 			var infowindow = new google.maps.InfoWindow();
