@@ -240,7 +240,7 @@
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			
-			  marker.addListener('click', function() {
+			  map.addListener('click', function() {
 				  map.fitBounds(bounds);				
 			  });
 
