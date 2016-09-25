@@ -116,7 +116,7 @@
    
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
-
+	<script type="text/javascript" src="extras/noUiSlider/nouislider.js"></script>
         
     <script type="text/javascript">		 
 		 var respuesta;
