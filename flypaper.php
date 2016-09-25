@@ -239,9 +239,67 @@
 			myPath.setMap(map);
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
-			map.fitBounds(bounds);
 			
+			  marker.addListener('click', function() {
+				  map.fitBounds(bounds);				
+			  });
+
+			google.maps.event.addListener(myPath, 'click', function(h) {
+				 var latlng = h.latLng;
+				 var needle = {
+					 minDistance: 9999999999, //silly high
+					 index: -1,
+					 latlng: null
+				 };
+				 myPath.getPath().forEach(function(myPositions, index){
+					 var dist = google.maps.geometry.spherical.computeDistanceBetween(latlng, myPositions);
+					 if (dist < needle.minDistance){
+						needle.minDistance = dist;
+						needle.index = index;
+						needle.latlng = myPositions;
+					 }
+				 });
+				 
+				 var latitud = needle.latlng.lat();
+				 var longitud = needle.latlng.lng();
+				 longitud = longitud.toFixed(4);
+				 var contento;
+				 var parametros = {
+					"latitud" : latitud,
+					"longitud" : longitud,  
+					"fecha1" : fecha1,
+					"hora1" : hora1,
+					"fecha2" : fecha2,
+					"hora2" : hora2 							              
+				};
+				
+				$.ajax({
+					data:  parametros,
+					url:   'leebasededatosmarker.php',
+					type:  'post',
+					 beforeSend: function () {
+							contento = "..."
+							infowindow.setContent(contento);
+							infowindow.open(map, marker);
+					},
+					success:
+						function(response){
+							contento = "Tiempos: '\n'";
+							var arrayOfObjects = eval(response);
+							for (var i = 0; i < arrayOfObjects.length; i++) {
+								var object = arrayOfObjects[i];
+								var tiempo = object.time;	//esto es un string	
+								contento = contento + tiempo + '\n';																		
+							}		
+							infowindow.setContent(contento);
+							infowindow.setPosition(needle.latlng);
+							infowindow.open(map);										
+						}  //fin de la funcion de response					
+					}); //fin del ajax 						
+				 
+				});
 			
+					
 			var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
 			   start:  0,
