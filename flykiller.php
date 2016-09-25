@@ -13,7 +13,7 @@
 	  <!--Fuente del titulo-->
 	  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet"> 
 	  <!--ESLAIDER-->
-	  <link type="text/css" rel="stylesheet" href="extras/noUiSlider/nouislider.css"  media="screen,projection"/>	  
+	  <link type="text/css" rel="stylesheet" href="extras/noUiSlider/nouislider.css"/>	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
