@@ -266,11 +266,11 @@
 				map.panTo(myPositions[values[handle]]);				
 			});	
 			
-			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
+			//var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			
-			 map.addListener('click', function() {
-				  map.fitBounds(bounds);				
-			  });
+			 //map.addListener('click', function() {
+				  //map.fitBounds(bounds);				
+			  //});
 
 			google.maps.event.addListener(myPath, 'click', function(h) {
 				 var latlng = h.latLng;
