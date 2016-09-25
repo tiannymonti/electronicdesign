@@ -195,7 +195,11 @@
 				$(document.activeElement).blur()
 			}		
 			});
-		var pickert2 = $tinput2.pickatime('picker');		
+		var pickert2 = $tinput2.pickatime('picker');	
+		
+		function timestamp(str){
+			return new Date(str).getTime();   
+		};	
 	//GOOGLE MAPS	
 		function initMap() {	
   
@@ -205,7 +209,7 @@
 			
 			console.log(myTimes[8]);
 			
-			console.log(new Date(myTimes[8]));
+			console.log(timestamp(myTimes[8]));
 			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
