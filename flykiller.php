@@ -205,17 +205,14 @@
 			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
-			   start: 0,
-			   tooltips: [wNumb({ decimals: 1 }) ],
+			   start: myTimes[0],
+			   //tooltips: [wNumb({ decimals: 1 }) ],
 			   connect: 'lower',
 			   step: 1,
 			   range: {
-				 'min': 0,
-				 'max': 100
+				 'min': myTimes[0],
+				 'max': myTimes.[myTimes.length - 1]
 			   },
-			   format: wNumb({
-				 decimals: 0
-			   })
 			 });
 
 			var infowindow = new google.maps.InfoWindow();
