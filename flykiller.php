@@ -211,7 +211,7 @@
 			   step: 1,
 			   range: {
 				 'min': myTimes[0],
-				 'max': myTimes.[myTimes.length - 1]
+				 'max': myTimes[myTimes.length - 1]
 			   },
 			 });
 
