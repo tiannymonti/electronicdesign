@@ -63,7 +63,8 @@
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
-		</div>		
+		</div>	
+		<br></br>	
 		<div class="row">
 		   <p class="range-field" style="margin: auto;">
 			  <input type="range" id="test5" min="0" max="100" />
