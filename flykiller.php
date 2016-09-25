@@ -8,6 +8,7 @@
 	  <!--Icono y titulo de la pagina web-->
 	  <link rel="icon" href="res/car-icon.png">
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
 	  <meta charset="UTF-8"> 
 	  <title>Telemetria vehicular</title>
 	  <!--Fuente del titulo-->
@@ -20,6 +21,8 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
       <script src="js/init.js"></script>
       
       <!--BARRA DE NAVEGACION -->
@@ -41,7 +44,7 @@
 		</div>
 	</nav>
 	 <main>
-		 <div class="row" style="margin-top: 0.2em">
+	 <div class="row" style="margin-top: 0.2em">
 		<div class="row" style="margin:auto;">
 			<div class="input-field col s3">
 				<label for="iniciod">Fecha inicio</label>			
@@ -59,11 +62,14 @@
 				<label for="finh">Hora final</label>				
 				<input id="finh" type="text" class="end-timepicker" autocomplete="off">
 			</div>		
-			  <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
-				<i id="trigger" class="material-icons right">send</i>
-			</button>	
+			<div class="row" style="margin:auto;">
+				<button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action" onclick="toggleFunction()">Aceptar
+					<i id="trigger" class="material-icons right">send</i>
+				</button>
+			</div>
 		</div>
-		</div>
+	</div>
+		<div id="slider-1"></div>
 		<div class="row">
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
