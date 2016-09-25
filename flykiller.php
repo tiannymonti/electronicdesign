@@ -203,9 +203,9 @@
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 			}); 
 			
-			console.log(myTimes[2]);
+			console.log(myTimes[8]);
 			
-			console.log(new Date(myTimes[2]));
+			console.log(new Date(myTimes[8]));
 			
 		   var slider = document.getElementById('connect');
 			 noUiSlider.create(slider, {
