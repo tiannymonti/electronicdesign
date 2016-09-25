@@ -264,21 +264,9 @@
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
 				marker.setPosition(myPositions[values[handle]]);
-				map.panTo(myPositions[values[handle]]);	
-				google.maps.event.addListener(marker, 'click', (function(marker) {
-					return function() {
-						var latitud = marker.getPosition().lat();
-						var longitud = marker.getPosition().lng();
-						longitud = longitud.toFixed(4);
-						var contento = "Tiempos: '\n'" + latitud + ", " + longitud;	
-						infowindow.setContent(contento);
-						infowindow.open(map, marker);			
-				})(marker));
-			};		 
+				map.panTo(myPositions[values[handle]]);				
+			});		 
 			
-			
-			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);			
-			map.fitBounds(bounds);
 			
 		}; //end init map	
 								
