@@ -130,8 +130,8 @@
 		 var hora2;
 		 var myPath;
 		
-		  var slider = document.getElementById('test5');
-		  noUiSlider.create(slider, {
+		 var slider = document.getElementById('test5');
+		 noUiSlider.create(slider, {
 		   start: [20, 80],
 		   connect: true,
 		   step: 1,
