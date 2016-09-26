@@ -258,18 +258,12 @@
 				  icon: 'res/carnavicon.png'
 			 });
 			 		 
-			 var popup = new google.maps.InfoWindow({
-					content: "Posicion:" + marker.getPosition()});
-					popup.open(map, marker);  	
 			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
 				marker.setPosition(myPositions[values[handle]]);
 				map.panTo(myPositions[values[handle]]);	
-				var content = "Posicion:" + marker.getPosition()});	
-				popup.setContent(content);
-				popup.setPosition(marker.getPosition());	
-				popup.open(map);				
+						
 			});		 
 			
 			
