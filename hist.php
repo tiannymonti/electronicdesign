@@ -250,9 +250,7 @@
 			 });
 			 
 			myPath.setMap(map);
-			
-
-			 
+				 
 			 marker = new google.maps.Marker({
 				  map: map,
 				  position:myPositions[0],
@@ -276,10 +274,9 @@
 							
 			});	
 			 	 	 	 
-			map.panTo(myPositions[0]);
-			//var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
+			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			
-			//map.fitBounds(bounds);
+			map.fitBounds(bounds);
 			
 		}; //end init map	
 		
