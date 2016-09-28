@@ -128,6 +128,7 @@
 		 var hora2;
 		 var myPath;
 		 var myTimes = [];
+		 var slider;
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -199,6 +200,20 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');	
 		
+    	slider = document.getElementById('connect');
+		 noUiSlider.create(slider, {
+		   start:  0,
+		   connect: 'lower',
+		   step: 1,
+		   range: {
+			 'min': 0,
+			 'max': 1
+		   },
+		   format: wNumb({
+			 decimals: 0
+		   })
+		 });
+		
 	//GOOGLE MAPS	
 		function initMap() {	
   
@@ -235,20 +250,12 @@
 			 
 			myPath.setMap(map);
 			
-					
-			var slider = document.getElementById('connect');
-			 noUiSlider.create(slider, {
-			   start:  0,
-			   connect: 'lower',
-			   step: 1,
-			   range: {
-				 'min': 0,
-				 'max': myTimes.length - 1
-			   },
-			   format: wNumb({
-				 decimals: 0
-			   })
-			 });
+			slider.noUiSlider.updateOptions({
+				range: {
+					'min': 0,
+					'max': myTimes.length - 1
+				}
+			});	
 			 
 			 var dateValues = document.getElementById('values');
 			 
@@ -258,7 +265,6 @@
 				  icon: 'res/carnavicon.png'
 			 });
 			 
-			 slider.noUiSlider( options, true /* Allow destruction + rebuilding */ );
 			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
