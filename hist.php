@@ -275,12 +275,13 @@
 				dateValues.innerHTML = myTimes[values[handle]];
 				marker.setPosition(myPositions[values[handle]]);
 				map.setCenter(marker.getPosition());	
+				
 							
 			});	
 			 	 	 	 
-			//var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
+			var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
 			
-			//map.fitBounds(bounds);
+			map.fitBounds(bounds);
 			
 		}; //end init map	
 		
