@@ -334,7 +334,6 @@
                 url:   'dbhistoricos.php',
                 type:  'post',
                 beforeSend: function () {	
-						slider = null;
 						myPositions = [];
 						myTimes = [];
                         document.getElementById('preloader').style.display = 'block';
