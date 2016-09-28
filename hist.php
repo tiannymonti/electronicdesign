@@ -276,12 +276,12 @@
 				map.setZoom(16);
 							
 			});	
-			 	 
-			map.setZoom(16);
-				 	 
+			 	 				 	 
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
 			
 			map.fitBounds(bounds);
+			
+			map.setZoom(16);
 			
 		}; //end init map	
 		
