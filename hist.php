@@ -250,12 +250,16 @@
 			 });
 			 
 			myPath.setMap(map);
+			
+
 				 
 			 marker = new google.maps.Marker({
 				  map: map,
 				  position:myPositions[0],
 				  icon: 'res/carnavicon.png'
 			 });
+			 
+			map.setCenter(marker.getPosition());
 
 			
 			slider.noUiSlider.updateOptions({
@@ -274,9 +278,9 @@
 							
 			});	
 			 	 	 	 
-			var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
+			//var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
 			
-			map.fitBounds(bounds);
+			//map.fitBounds(bounds);
 			
 		}; //end init map	
 		
