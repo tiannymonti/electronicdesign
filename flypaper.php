@@ -257,7 +257,8 @@
 				  position:myPositions[0],
 				  icon: 'res/carnavicon.png'
 			 });
-			 		 
+			 
+			 slider.noUiSlider( options, true /* Allow destruction + rebuilding */ );
 			 
 			 slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
