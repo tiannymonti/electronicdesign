@@ -274,7 +274,7 @@
 							
 			});	
 			 	 	 	 
-			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
+			var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
 			
 			map.fitBounds(bounds);
 			
