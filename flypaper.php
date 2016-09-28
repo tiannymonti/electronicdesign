@@ -200,6 +200,20 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');	
 		
+		slider = document.getElementById('connect');
+		 noUiSlider.create(slider, {
+		   start:  0,
+		   connect: 'lower',
+		   step: 1,
+		   range: {
+			 'min': 0,
+			 'max': 1
+		   },
+		   format: wNumb({
+			 decimals: 0
+		   })
+		 });
+		
 	//GOOGLE MAPS	
 		function initMap() {	
   
@@ -238,20 +252,12 @@
 			
 			//AQUI ESTA EL PUTO SLIDER
 			
-					
-			slider = document.getElementById('connect');
-			 noUiSlider.create(slider, {
-			   start:  0,
-			   connect: 'lower',
-			   step: 1,
-			   range: {
-				 'min': 0,
-				 'max': myTimes.length - 1
-			   },
-			   format: wNumb({
-				 decimals: 0
-			   })
-			 });
+			slider.noUiSlider.updateOptions({
+				range: {
+					'min': 0,
+					'max': myTimes.length - 1
+				}
+			});			
 			 
 			 var dateValues = document.getElementById('values');
 			 
