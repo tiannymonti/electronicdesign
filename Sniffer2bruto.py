@@ -9,6 +9,8 @@ Portserver = 5601
 global latitud
 global longitud
 global time
+bandera1=0
+bandera2=0
 SockServer = socket(AF_INET, SOCK_DGRAM) 
 SockServer.bind((IPserver, Portserver))
 
@@ -76,8 +78,8 @@ while True:
         
     if ((bandera1 == 1) & (bandera2 == 1)):
 	print("tiempo")
-		
 	
+
         bd = mysql.connector.connect(user='root', password='1234', host='localhost', database='coordenadas')
         cursor = bd.cursor()
 	
