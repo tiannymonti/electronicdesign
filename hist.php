@@ -259,9 +259,7 @@
 				  icon: 'res/carnavicon.png'
 			 });
 			 
-			map.setCenter(marker.getPosition());
-
-			
+	
 			slider.noUiSlider.updateOptions({
 				range: {
 					'min': 0,
@@ -278,7 +276,9 @@
 				map.setZoom(16);
 							
 			});	
-			 	 	 	 
+			 	 
+			map.setZoom(16);
+				 	 
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
 			
 			map.fitBounds(bounds);
