@@ -251,6 +251,14 @@
 			 
 			myPath.setMap(map);
 			
+
+			 
+			 marker = new google.maps.Marker({
+				  map: map,
+				  position:myPositions[0],
+				  icon: 'res/carnavicon.png'
+			 });
+			 		
 			//AQUI ESTA EL PUTO SLIDER
 			
 			slider.noUiSlider.updateOptions({
@@ -258,15 +266,17 @@
 					'min': 0,
 					'max': myTimes.length - 1
 				}
-			});			
-			 	 
-			 
-			 marker = new google.maps.Marker({
-				  map: map,
-				  position:myPositions[0],
-				  icon: 'res/carnavicon.png'
-			 });
-			 			 	 
+			});		
+			
+			var dateValues = document.getElementById('values');
+		 
+			slider.noUiSlider.on('update', function( values, handle ) {
+				dateValues.innerHTML = myTimes[values[handle]];
+				marker.setPosition(myPositions[values[handle]]);
+				map.panTo(myPositions[values[handle]]);	
+							
+			});	
+			 	 	 	 
 			
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
 			
@@ -274,14 +284,7 @@
 			
 		}; //end init map	
 		
-		var dateValues = document.getElementById('values');
-		 
-		slider.noUiSlider.on('update', function( values, handle ) {
-			dateValues.innerHTML = myTimes[values[handle]];
-			marker.setPosition(myPositions[values[handle]]);
-			map.panTo(myPositions[values[handle]]);	
-						
-		});
+
 								
 		 function toggleFunction() {
 			
