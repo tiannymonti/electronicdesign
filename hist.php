@@ -66,7 +66,7 @@
 			</button>	
 		</div>
 		</div>		
-		<div id="connect" style="display:none; margin:auto;"></div>
+		<div id="connect" style="display:none; margin:auto; width:80%"></div>
 		<div class="row" style="margin:auto;">
 			<div id="values" style="display:none; margin:auto; text-align: center;"></div>
 		</div>
