@@ -275,7 +275,11 @@
 				map.setCenter(marker.getPosition());	
 							
 			});	
-			 	 	 	 			
+			 	 	 	 
+			
+			var bounds = new google.maps.LatLngBounds(myPositions[0], myCenter);
+			
+			map.fitBounds(bounds);
 			
 		}; //end init map	
 		
