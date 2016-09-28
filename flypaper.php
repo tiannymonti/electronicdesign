@@ -258,8 +258,7 @@
 				  position:myPositions[0],
 				  icon: 'res/carnavicon.png'
 			 });
-			 		
-			//AQUI ESTA EL PUTO SLIDER
+
 			
 			slider.noUiSlider.updateOptions({
 				range: {
@@ -274,6 +273,7 @@
 				dateValues.innerHTML = myTimes[values[handle]];
 				marker.setPosition(myPositions[values[handle]]);
 				map.setCenter(marker.getPosition());	
+				map.setZoom(9);
 							
 			});	
 			 	 	 	 
