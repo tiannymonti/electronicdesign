@@ -273,7 +273,7 @@
 				dateValues.innerHTML = myTimes[values[handle]];
 				marker.setPosition(myPositions[values[handle]]);
 				map.setCenter(marker.getPosition());	
-				map.setZoom(16);
+				map.setZoom(20);
 							
 			});	
 			 	 	 	 
