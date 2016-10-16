@@ -105,8 +105,7 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					document.getElementById("time").innerHTML = data.time;
 					myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
 					myPositions.push(myCenter);    				
-					}
-				},
+					}				
 		});
 		
 			var lineSymbol = {
