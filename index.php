@@ -108,6 +108,7 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					}				
 		});
 		
+		
 			var lineSymbol = {
 				path: 'M 0,-1 0,1',
 				strokeOpacity: 1,
