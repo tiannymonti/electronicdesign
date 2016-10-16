@@ -87,6 +87,11 @@ var myCenter;
 var marker;
 var myVal = consulta();
 var myPositions = [];
+function calcDistance (fromLat, fromLng, toLat, toLng) {
+   dist=google.maps.geometry.spherical.computeDistanceBetween(
+   new google.maps.LatLng(fromLat, fromLng), new google.maps.LatLng(toLat, toLng));
+   return dist;       
+};
 	function consulta(){
 		
 		$.ajax({
@@ -98,9 +103,9 @@ var myPositions = [];
 					document.getElementById("latitud").innerHTML = data.latitud;
 					document.getElementById("longitud").innerHTML = data.longitud;
 					document.getElementById("time").innerHTML = data.time;
-
 					myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
 					myPositions.push(myCenter);    				
+					}
 				},
 		});
 		
