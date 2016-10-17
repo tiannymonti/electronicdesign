@@ -84,7 +84,7 @@
             
     </body>
     
-
+   <script src="js/moment.min.js"></script>
    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
 
 <script type="text/javascript">
@@ -113,6 +113,7 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					var d = new Date(a); // The 0 there is the key, which sets the date to the epoch
 					console.log(a);
 					console.log(d);
+					console.log(moment.utc(a).local());
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				
