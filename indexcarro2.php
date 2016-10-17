@@ -110,8 +110,7 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					document.getElementById("longitud").innerHTML = data.kff1005;
 					document.getElementById("time").innerHTML = data.time;
 					var a = parseInt(data.time);
-					var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
-					d.setUTCSeconds(a);
+					var d = new Date(a); // The 0 there is the key, which sets the date to the epoch
 					console.log(a);
 					console.log(d);
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
