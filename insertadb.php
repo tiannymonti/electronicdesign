@@ -13,6 +13,6 @@
     } 
 
 	mysqli_query($link, "UPDATE raw_logs SET tiempob='$timeb' WHERE idt='$idt'");	
-echo "Ha sido insertado correctamente"
-$tion->close();
+	echo "Ha sido insertado correctamente"
+	$tion->close();
 ?>
