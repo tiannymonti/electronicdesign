@@ -12,7 +12,12 @@
         die("Connection failed: " . $tion->connect_error);
     } 
 
-	mysqli_query($link, "UPDATE raw_logs SET tiempob='$timeb' WHERE idt='$idt'");	
-	echo "Ha sido insertado correctamente"
+	$sql = "UPDATE raw_logs SET tiempob='$timeb' WHERE idt='$idt'";
+	
+	if (mysqli_query($tion, $sql)) {
+		echo "Record updated successfully";
+	} else {
+		echo "Error updating record: " . mysqli_error($tion);
+	}	
 	$tion->close();
 ?>
