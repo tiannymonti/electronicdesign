@@ -3,7 +3,5 @@
     session_start();
     $time = $_GET['time'];
     $_SESSION['time'] = $time;
-    $dt = new DateTime("@$time");
-	$dt1 = $dt->format('Y-m-d H:i:s');
-	echo $dt1;
+    echo date('Y-m-d H:i:s', $time);
 ?>
