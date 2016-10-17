@@ -3,5 +3,5 @@
     session_start();
     $time = $_GET['time'];
     $_SESSION['time'] = $time;
-    echo date('Y-m-d H:i:s', $time);
+	echo time("H:i:s", $time);
 ?>
