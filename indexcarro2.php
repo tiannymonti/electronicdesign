@@ -107,12 +107,11 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					//alert(response)
 					var data=JSON.parse(response);
 					document.getElementById("latitud").innerHTML = data.kff1006;
-					document.getElementById("longitud").innerHTML = data.kff1005;
-					document.getElementById("time").innerHTML = data.time;
+					document.getElementById("longitud").innerHTML = data.kff1005;					
 					var a = parseInt(data.time);
-					console.log(a);
 					var d = moment.utc(a).local();
-					console.log(d.format("YYYY-MM-DD H:mm:ss"));
+					var timer = d.format("YYYY-MM-DD H:mm:ss");
+					document.getElementById("time").innerHTML = timer;
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				
