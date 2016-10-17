@@ -33,7 +33,7 @@
 		<div class="nav-wrapper container">
 		<a id="logo-container" href="#!" class="brand-logo right"><span style="font-family: 'Baloo Paaji', cursive; font-size: 1em;">Encuentra tu carro</span></a>        
 		<ul class="left hide-on-med-and-down">
-			<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Ahora<i class="material-icons right">arrow_drop_down</i></a></li>
+			<li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Ahora<i class="material-icons right">arrow_drop_down</i></a></li>
 			<li><a href="hist.php">Historicos</a></li>
 		</ul>
 		
