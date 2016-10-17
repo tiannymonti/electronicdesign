@@ -109,6 +109,8 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					document.getElementById("latitud").innerHTML = data.kff1006;
 					document.getElementById("longitud").innerHTML = data.kff1005;
 					document.getElementById("time").innerHTML = data.time;
+					var a = parseInt(data.time);
+					console.log(a);
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				
