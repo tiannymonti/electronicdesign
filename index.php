@@ -23,11 +23,17 @@
       <script src="js/init.js"></script>
       
        <!--BARRA DE NAVEGACION -->
+       <!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="#!">Carro 1</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">Carro 2</a></li>
+		</ul>
       <nav class ="light-blue darken-4" role="navigation">
 		<div class="nav-wrapper container">
 		<a id="logo-container" href="#!" class="brand-logo right"><span style="font-family: 'Baloo Paaji', cursive; font-size: 1em;">Encuentra tu carro</span></a>        
 		<ul class="left hide-on-med-and-down">
-			<li class="active"><a href="index.php">Ahora</a></li>
+			<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Ahora<i class="material-icons right">arrow_drop_down</i></a></li>
 			<li><a href="hist.php">Historicos</a></li>
 		</ul>
 		
@@ -37,7 +43,7 @@
 		 <li><a href="#division">Acerca de</a></li>
        </ul>
        
-       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>		
+       <a href="#!" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>		
 		</div>
 	</nav>
 	 <main>

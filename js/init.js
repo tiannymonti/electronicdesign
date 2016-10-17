@@ -1,6 +1,9 @@
 (function($){
   $(function(){
-
+	  
+	
+	$(".dropdown-button").dropdown();
+        
     $('.button-collapse').sideNav({
 		edge: 'left', // Choose the horizontal origin
         closeOnClick: true // Closes side-nav on <a> clicks,
