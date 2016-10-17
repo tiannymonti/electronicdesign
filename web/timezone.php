@@ -3,5 +3,6 @@
     session_start();
     $time = $_GET['time'];
     $_SESSION['time'] = $time;
+    ini_set('date.timezone', 'UTC');
 	echo date("H:i:s", $time);
 ?>
