@@ -101,7 +101,7 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 	function consulta(){
 		
 		$.ajax({
-			url:"leebasededatosnew.php",
+			url:"leedbcarro2.php",
 			success:
 				function(response){
 					//alert(response)
