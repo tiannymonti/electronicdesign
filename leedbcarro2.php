@@ -10,7 +10,7 @@
     } 
 
         // Consulta de selección 
-        if ($result = mysqli_query($tion, "SELECT latitud, longitud, time FROM coordenadas.cordenadas ORDER BY id_cordenadas DESC limit 1")) {                            
+        if ($result = mysqli_query($tion, "SELECT time, kff1005, kff1006, kc FROM coordenadas.raw_logs ORDER BY idt DESC limit 1")) {                            
                     $reg = $result->fetch_assoc();
         }
 echo json_encode($reg);

@@ -106,10 +106,10 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 				function(response){
 					//alert(response)
 					var data=JSON.parse(response);
-					document.getElementById("latitud").innerHTML = data.latitud;
-					document.getElementById("longitud").innerHTML = data.longitud;
+					document.getElementById("latitud").innerHTML = data.kff1006;
+					document.getElementById("longitud").innerHTML = data.kff1005;
 					document.getElementById("time").innerHTML = data.time;
-					myCenter = new google.maps.LatLng(data.latitud, data.longitud);	
+					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				
 		});
