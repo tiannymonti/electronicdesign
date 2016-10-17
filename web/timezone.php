@@ -4,5 +4,5 @@
     $time = $_GET['time'];
     $_SESSION['time'] = $time;
     ini_set('date.timezone', 'UTC');
-	echo date("H:i:s", $time);
+	echo date('Y-m-d H:i:s', $time);
 ?>
