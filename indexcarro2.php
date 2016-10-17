@@ -112,7 +112,7 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					var a = parseInt(data.time);
 					console.log(a);
 					var d = moment.utc(a).local();
-					console.log(d.format("YYYY-MM-DD hh:mm:ss"));
+					console.log(d.format("YYYY-MM-DD H:mm:ss"));
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				
