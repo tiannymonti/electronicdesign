@@ -112,6 +112,15 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					var d = moment.utc(a).local();
 					var timer = d.format("YYYY-MM-DD H:mm:ss");
 					document.getElementById("time").innerHTML = timer;
+		            var theData = {
+						"timer" : timer,
+						"idt" : data.idt                
+					};
+					$.ajax({
+						url: "insertadb.php",
+						data: theData,
+						type:  'post'
+					});
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				
