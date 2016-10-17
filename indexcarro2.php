@@ -84,7 +84,7 @@
             
     </body>
     
-   <script src="js/moment.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
 
 <script type="text/javascript">
