@@ -109,6 +109,7 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					var data=JSON.parse(response);
 					document.getElementById("latitud").innerHTML = data.kff1006;
 					document.getElementById("longitud").innerHTML = data.kff1005;					
+					document.getElementById("rpm").innerHTML = data.kc;	
 					var a = parseInt(data.time);
 					var d = moment.utc(a).local();
 					var timer = d.format("YYYY-MM-DD H:mm:ss");
