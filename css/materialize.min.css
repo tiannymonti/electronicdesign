@@ -30,6 +30,17 @@
 				color: #ffffff;
 				background-color: #01579b;
 				text-align: center;
+			}	
+			
+			#dropdown2 li a{
+				color: #01579b;
+				text-align: center;
+			}
+			
+			#dropdown2 li a:hover{
+				color: #ffffff;
+				background-color: #01579b;
+				text-align: center;
 			}			
 			
 			main {
