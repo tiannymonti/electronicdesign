@@ -21,7 +21,7 @@
 				flex-direction: column;
 			}
 			
-			#dropdown1{
+			#dropdown1 li a{
 				color: #e1f5fe;
 				text-align: center;
 			}
