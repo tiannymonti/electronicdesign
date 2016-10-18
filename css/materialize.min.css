@@ -21,6 +21,11 @@
 				flex-direction: column;
 			}
 			
+			#dropdown1{
+				color: #e1f5fe;
+				text-align: center;
+			}
+			
 			main {
 				flex: 1 0 auto;
 			}
