@@ -60,13 +60,21 @@
 		<div class="row">
 		<div id="googleMap" style="width:95%;height:50em;margin:auto; margin-top:0.5em;"></div>
 		<div class="divider"></div>
+		</div>
+		<div class="row">
+		<div class="col s12" id="division"><span class="flow-text">Carro 1</span></div>
+		</div>
+		<div class="row">
 		<div class="col s3" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time">0000-00-00 00:00:00</span></div>
 		<div class="col s3" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud">00000000</span></div>
 		<div class="col s3 push-s3" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud">00000000</span></div>
-		<div class="col s3 pull-s3" id="division"><span class="flow-text">RPM: </span><span class="flow-text" id="rpm">0</span></div>					
+		<div class="col s3 pull-s3" id="division"><span class="flow-text">RPM: </span><span class="flow-text" id="rpm">0</span></div>
+		<div class="divider"></div>					
 		</div>
 		<div class="row">
-		<div class="divider"></div>
+		<div class="col s12" id="division"><span class="flow-text">Carro 2</span></div>
+		</div>
+		<div class="row">
 		<div class="col s4" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time2">0000-00-00 00:00:00</span></div>
 		<div class="col s4 push-s4" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud2">00000000</span></div>
 		<div class="col s4 pull-s4" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud2">00000000</span></div>
