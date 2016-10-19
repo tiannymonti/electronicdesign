@@ -63,7 +63,7 @@
 		<div class="col s3" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time">0000-00-00 00:00:00</span></div>
 		<div class="col s3" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud">00000000</span></div>
 		<div class="col s3 push-s3" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud">00000000</span></div>
-		<div class="col s3 pull-s3" id="division"><span class="flow-text">RPM: </span><span class="flow-text" id="rpm">0 RPM</span></div>
+		<div class="col s3 pull-s3" id="division"><span class="flow-text">RPM: </span><span class="flow-text" id="rpm">0</span></div>
 		</div>
 	  </main>	
 	  
@@ -104,11 +104,7 @@ var myCenter;
 var marker;
 var myVal = consulta();
 var myPositions = [];
-function calcDistance (fromLat, fromLng, toLat, toLng) {
-   dist=google.maps.geometry.spherical.computeDistanceBetween(
-   new google.maps.LatLng(fromLat, fromLng), new google.maps.LatLng(toLat, toLng));
-   return dist;       
-};
+
 	function consulta(){
 		
 		$.ajax({
@@ -124,15 +120,6 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					var d = moment.utc(a).local();
 					var timer = d.format("YYYY-MM-DD H:mm:ss");
 					document.getElementById("time").innerHTML = timer;
-		            var theData = {
-						"timer" : timer,
-						"idt" : data.idt                
-					};
-					$.ajax({
-						url: "insertadb.php",
-						data: theData,
-						type:  'post'
-					});
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				

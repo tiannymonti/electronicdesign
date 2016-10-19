@@ -63,7 +63,11 @@
 		<div class="col s3" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time">0000-00-00 00:00:00</span></div>
 		<div class="col s3" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud">00000000</span></div>
 		<div class="col s3 push-s3" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud">00000000</span></div>
-		<div class="col s3 pull-s3" id="division"><span class="flow-text">RPM: </span><span class="flow-text" id="rpm">0 RPM</span></div>
+		<div class="col s3 pull-s3" id="division"><span class="flow-text">RPM: </span><span class="flow-text" id="rpm">0</span></div>					
+		<div class="divider"></div>
+		<div class="col s4" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time2">0000-00-00 00:00:00</span></div>
+		<div class="col s4 push-s4" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud2">00000000</span></div>
+		<div class="col s4 pull-s4" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud2">00000000</span></div>
 		</div>
 	  </main>	
 	  
@@ -101,14 +105,12 @@
 <script type="text/javascript">
 var map;
 var myCenter;
+var myCenter2;
 var marker;
+var marker2;
 var myVal = consulta();
 var myPositions = [];
-function calcDistance (fromLat, fromLng, toLat, toLng) {
-   dist=google.maps.geometry.spherical.computeDistanceBetween(
-   new google.maps.LatLng(fromLat, fromLng), new google.maps.LatLng(toLat, toLng));
-   return dist;       
-};
+var myPositions2 = [];
 	function consulta(){
 		
 		$.ajax({
@@ -124,19 +126,25 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 					var d = moment.utc(a).local();
 					var timer = d.format("YYYY-MM-DD H:mm:ss");
 					document.getElementById("time").innerHTML = timer;
-		            var theData = {
-						"timer" : timer,
-						"idt" : data.idt                
-					};
-					$.ajax({
-						url: "insertadb.php",
-						data: theData,
-						type:  'post'
-					});
 					myCenter = new google.maps.LatLng(data.kff1006, data.kff1005);	
 					myPositions.push(myCenter);    				
 					}				
 		});
+		
+		$.ajax({
+			url:"leebasededatosnew.php",
+			success:
+				function(response){
+					//alert(response)
+					var data=JSON.parse(response);
+					document.getElementById("latitud2").innerHTML = data.latitud;
+					document.getElementById("longitud2").innerHTML = data.longitud;
+					document.getElementById("time2").innerHTML = data.time;
+					myCenter2 = new google.maps.LatLng(data.latitud, data.longitud);	
+					myPositions2.push(myCenter2);    				
+					}				
+		});
+				
 		
 		
 			var lineSymbol = {
@@ -145,31 +153,49 @@ function calcDistance (fromLat, fromLng, toLat, toLng) {
 				scale: 4
 			};
 		
-				  var myPath = new google.maps.Polyline({
-					path: myPositions,
-					geodesic: true,
-					strokeColor: '#0000FF',
-					strokeOpacity: 0,
-					icons: [{
-						icon: lineSymbol,
-						offset: '0',
-						repeat: '20px'
-					}],
-				});
+			  var myPath = new google.maps.Polyline({
+				path: myPositions,
+				geodesic: true,
+				strokeColor: '#0000FF',
+				strokeOpacity: 0,
+				icons: [{
+					icon: lineSymbol,
+					offset: '0',
+					repeat: '20px'
+				}],
+			});
+			
+			var myPath2 = new google.maps.Polyline({
+				path: myPositions2,
+				geodesic: true,
+				strokeColor: '#FF0000',
+				strokeOpacity: 0,
+				icons: [{
+					icon: lineSymbol,
+					offset: '0',
+					repeat: '20px'
+				}],
+			});
  
   myPath.setMap(map);
+  myPath2.setMap(map);
 		
 	}
 	
 	var refresh = setInterval(function(){
 		consulta();
 		marker.setPosition(myCenter);
+		marker2.setPosition(myCenter2);
 		map.panTo(myCenter);
 		},3000);
 
-function placeMarker(location) {
-    marker = new google.maps.Marker({
+function placeMarker(location, location2) {
+   marker = new google.maps.Marker({
     position: location,
+    map: map,
+  });
+   marker2 = new google.maps.Marker({
+    position: location2,
     map: map,
   });
   var infowindow = new google.maps.InfoWindow({
@@ -193,8 +219,14 @@ marker=new google.maps.Marker({
   position:myCenter,
   icon: 'res/carnavicon.png'
   });
+  
+ marker2=new google.maps.Marker({
+  position:myCenter2,
+  icon: 'res/car2.png'
+  });
 
 marker.setMap(map);
+marker2.setMap(map);
 google.maps.event.addListener(map, 'click', function(event) {
    map.setZoom(9);
    map.setCenter(marker.getPosition());
