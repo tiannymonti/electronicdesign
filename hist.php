@@ -30,6 +30,8 @@
 		  <li><a href="index.php">Carro 1</a></li>
 		  <li class="divider"></li>
 		  <li><a href="indexcarro2.php">Carro 2</a></li>
+		  <li class="divider"></li>
+		  <li><a href="indexcarros.php">Carro 1 & 2</a></li>
 		</ul>
 		
 		<ul id="dropdown2" class="dropdown-content">
