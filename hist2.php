@@ -345,9 +345,9 @@
 				};
 			};
 			
-			var fechaini = fecha1.concat(hora1);
+			var fechaini = fecha1.concat(" ",hora1);
 			
-			var fechafin = fecha2.concat(hora2);
+			var fechafin = fecha2.concat(" ", hora2);
 			
 			console.log(fechaini);
 			console.log(fechafin);
