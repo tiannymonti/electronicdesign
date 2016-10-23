@@ -351,9 +351,9 @@
 			var fechafin = fecha2.concat(" ", hora2);
 			
 			console.log(fechaini);
-			console.log(moment.utc(fechaini).local());
-			
-			
+			var momentoi = moment.utc(fechaini).local();
+			var momentof = moment.utc(fechafin).local();
+			console.log(momentoi.valueOf())
 			
                      
             var parametros = {
