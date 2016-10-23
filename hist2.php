@@ -127,7 +127,9 @@
         </footer>       
     </body>
    
+   
     <script type="text/javascript" src="pickadate.js/lib/picker.time.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
     <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIz0DiW7sx_Ra06WAb9dSm-QURV-WTZGM"></script>
 	<script type="text/javascript" src="noUiSlider.js/nouislider.js"></script>
 	<script type="text/javascript" src="wnumb.js/wNumb.js"></script>
@@ -346,11 +348,13 @@
 			};
 			
 			var fechaini = fecha1.concat(" ",hora1);
-			
 			var fechafin = fecha2.concat(" ", hora2);
 			
 			console.log(fechaini);
-			console.log(fechafin);
+			console.log(moment.utc(fechaini).local());
+			
+			
+			
                      
             var parametros = {
                 "fecha1" : fecha1,
