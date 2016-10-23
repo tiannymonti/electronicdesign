@@ -1,0 +1,38 @@
+<?php
+	ini_set('display_errors', 'On');
+	error_reporting(E_ALL);
+	
+	$fecha1 = $_POST['fecha1'];
+	$hora1 = $_POST['hora1'];
+	$fecha2 = $_POST['fecha2'];
+	$hora2 = $_POST['hora2'];
+	
+	$desde = htmlspecialchars($fecha1 . " " . $hora1);
+	$hasta = htmlspecialchars($fecha2 . " " . $hora2);
+
+    // Create connection
+    $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
+        
+    // Consulta de selección 
+    $querytime = mysqli_query($tion, "SELECT latitud, longitud, time FROM cordenadas WHERE time BETWEEN '$desde' AND '$hasta' ORDER BY time;");                             
+    if (!$querytime) {
+		die('Consulta no válida: ' . mysql_error());
+	}
+	if (mysqli_num_rows($querytime) == 0) { 
+		
+		echo "0";
+		//results are empty, do something here 
+	} else { 
+		//create an array
+		$emparray = array();
+		while($row =mysqli_fetch_assoc($querytime))
+		{
+			$emparray[] = $row;
+		}
+		echo json_encode($emparray);
+    
+    }  
+
+    //close the db connection
+    mysqli_close($tion);	              
+?>
