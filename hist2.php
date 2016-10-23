@@ -349,25 +349,20 @@
 			
 			var fechaini = fecha1.concat(" ",hora1);
 			var fechafin = fecha2.concat(" ", hora2);
-			
-			console.log(fechaini);
 			var momentoi = moment(fechaini);
 			var momentof = moment(fechafin);
 			var epochi = momentoi.valueOf().toString();
 			var epochf = momentof.valueOf().toString();
-			console.log(epochf)
 			
 			
                      
             var parametros = {
-                "fecha1" : fecha1,
-                "hora1" : hora1,
-				"fecha2" : fecha2,
-                "hora2" : hora2                
+                "epochi" : epochi,
+                "epochf" : epochf,
 			};
 			$.ajax({
                 data:  parametros,
-                url:   'dbhistoricos.php',
+                url:   'dbhistoricosdos.php',
                 type:  'post',
                 beforeSend: function () {	
 						myPositions = [];
@@ -389,8 +384,10 @@
 						for (var i = 0; i < arrayOfObjects.length; i++) {
 							var object = arrayOfObjects[i];
 							for (var property in object) {
-								myCenter = new google.maps.LatLng(object.latitud, object.longitud);	
-								mytime = object.time;
+								myCenter = new google.maps.LatLng(object.kff1006, object.kff1005);	
+								var a = parseInt(object.time);
+								var d = moment.utc(a).local();								
+								mytime = d.format("YYYY-MM-DD H:mm:ss");	
 								myPositions.push(myCenter);
 								myTimes.push(mytime);
 							}

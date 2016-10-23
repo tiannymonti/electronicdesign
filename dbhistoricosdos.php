@@ -2,19 +2,15 @@
 	ini_set('display_errors', 'On');
 	error_reporting(E_ALL);
 	
-	$fecha1 = $_POST['fecha1'];
-	$hora1 = $_POST['hora1'];
-	$fecha2 = $_POST['fecha2'];
-	$hora2 = $_POST['hora2'];
+	$epochi = intval($_POST['epochi']);
+	$epochf = intval($_POST['epochf']);
 	
-	$desde = htmlspecialchars($fecha1 . " " . $hora1);
-	$hasta = htmlspecialchars($fecha2 . " " . $hora2);
 
     // Create connection
     $tion = mysqli_connect("localhost", "root", "1234", "coordenadas");
         
     // Consulta de selección 
-    $querytime = mysqli_query($tion, "SELECT latitud, longitud, time FROM cordenadas WHERE time BETWEEN '$desde' AND '$hasta' ORDER BY time;");                             
+    $querytime = mysqli_query($tion, "SELECT idt, time, kff1005, kff1006, kc FROM raw_logs WHERE CAST(time AS UNSIGNED) BETWEEN $epochi AND $epochf ORDER BY CAST(time AS UNSIGNED) ASC;");                             
     if (!$querytime) {
 		die('Consulta no válida: ' . mysql_error());
 	}
