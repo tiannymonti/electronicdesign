@@ -353,7 +353,10 @@
 			console.log(fechaini);
 			var momentoi = moment(fechaini);
 			var momentof = moment(fechafin);
-			console.log(momentoi.valueOf())
+			var epochi = momentoi.valueOf().toString();
+			var epochf = momentof.valueOf().toString();
+			console.log(epochf)
+			
 			
                      
             var parametros = {
