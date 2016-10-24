@@ -83,8 +83,8 @@
 		</div>
 		</div>	
 		<div class="row">
-		<div class="col s6 push-s6 sliders" id="connect" style="display:none; margin:auto; text-align: center; width:40%"></div>
-		<div class="col s6 pull-s6 sliders" id= "connect2" style="display:none; margin:auto; text-align: center; width:40%"></div>
+		<div class="col s6 push-s6 sliders" id="connect" style="display:none; margin-left:5px; text-align: center; width:40%"></div>
+		<div class="col s6 pull-s6 sliders" id= "connect2" style="display:none; margin-left:5px; text-align: center; width:40%"></div>
 		</div>
 		<div class="row" style="margin:auto;">
 			<div class="col s3 push-s3" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
