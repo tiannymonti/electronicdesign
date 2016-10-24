@@ -84,7 +84,8 @@
 		</div>		
 		<div id="connect" style="display:none; margin:auto; width:80%"></div>
 		<div class="row" style="margin:auto;">
-			<div id="values" style="display:none; margin:auto; text-align: center;"></div>
+			<div class="col s6 push-s6" style="display:none; margin:auto; text-align: center;"><span class="flow-text" id = "values"></span></div>
+			<div class="col s6 pull-s6" style="display:none; margin:auto; text-align: center;"><span class="flow-text" id = "velous"></span></div>
 		</div>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -147,6 +148,7 @@
 		 var myPath;
 		 var myTimes = [];
 		 var slider;
+		 var veloa = [];
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -286,9 +288,11 @@
 			});		
 			
 			var dateValues = document.getElementById('values');
+			var rpmValues = document.getElementById('velous');
 		 
 			slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
+				rpmValues.innerHTML = veloa[values[handle]] + "RPM";
 				marker.setPosition(myPositions[values[handle]]);
 				map.setCenter(marker.getPosition());	
 				map.setZoom(16);
@@ -371,6 +375,7 @@
                         document.getElementById('googleMap').style.display = 'none';
                         document.getElementById('connect').style.display = 'none';
                         document.getElementById('values').style.display = 'none';
+                        document.getElementById('velous').style.display = 'none';
                 },
 				success:					
 					function(response){
@@ -388,12 +393,15 @@
 								var a = parseInt(object.time);
 								var d = moment.utc(a).local();								
 								mytime = d.format("YYYY-MM-DD H:mm:ss");	
+								var rpm = object.kc;
+								veloa.push(rpm);  
 								myPositions.push(myCenter);
 								myTimes.push(mytime);
 							}
 						}
 						document.getElementById('connect').style.display = 'block';	
-						document.getElementById('values').style.display = 'block';				
+						document.getElementById('values').style.display = 'block';
+						document.getElementById('velous').style.display = 'block';				
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
