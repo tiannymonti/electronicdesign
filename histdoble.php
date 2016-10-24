@@ -81,6 +81,10 @@
 				<i id="trigger" class="material-icons right">send</i>
 			</button>	
 		</div>
+		</div>
+		<div class="row">
+			<div class="col s3 push-s3" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
+			<div class="col s3 pull-s3" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
 		</div>	
 		<div class="row">
 		<div class="col s6 push-s6 sliders" id="connect" style="display:none; margin:auto; width:50%"></div>
