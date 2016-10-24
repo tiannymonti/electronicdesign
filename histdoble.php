@@ -83,12 +83,13 @@
 		</div>
 		</div>	
 		<div class="row">
-		<div class="col s6 push-s6 sliders" id="connect" style="display:none; margin:auto; width:50%"></div>
-		<div class="col s6 pull-s6 sliders" id= "connect2" style="display:none; margin:auto; width:50%"></div>
+		<div class="col s6 push-s6 sliders" id="connect" style="display:none; margin:auto; width:40%"></div>
+		<div class="col s6 pull-s6 sliders" id= "connect2" style="display:none; margin:auto; width:40%"></div>
 		</div>
 		<div class="row" style="margin:auto;">
-			<div class="col s6 push-s6" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
-			<div class="col s6 pull-s6" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
+			<div class="col s3 push-s3" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
+			<div class="col s3 pull-s3" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
+			<div class="col s6" style="display:none; margin:auto; text-align: center;" id = "hue"><span class="flow-text"></span></div>
 		</div>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -382,6 +383,7 @@
                         document.getElementById('connect2').style.display = 'none';
                         document.getElementById('values').style.display = 'none';
                         document.getElementById('velous').style.display = 'none';
+                        document.getElementById('hue').style.display = 'none';
                 },
 				success:					
 					function(response){
@@ -408,7 +410,8 @@
 						document.getElementById('connect').style.display = 'block';	
 						document.getElementById('connect2').style.display = 'block';
 						document.getElementById('values').style.display = 'block';
-						document.getElementById('velous').style.display = 'block';				
+						document.getElementById('velous').style.display = 'block';
+						document.getElementById('hue').style.display = 'block';				
 						initMap();				
 					}  //fin de la funcion de response					
 				}); //fin del ajax          
