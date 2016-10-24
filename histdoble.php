@@ -82,7 +82,7 @@
 			</button>	
 		</div>
 		</div>	
-		<div class="row" style="margin:auto;">
+		<div class="row">
 		<div class="col s6" id="connect" style="display:none; margin:auto; width:80%"></div>
 		</div>
 		<div class="row" style="margin:auto;">
