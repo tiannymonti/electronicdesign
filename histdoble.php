@@ -89,7 +89,8 @@
 		<div class="row" style="margin:auto;">
 			<div class="col s3 push-s3" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
 			<div class="col s3 pull-s3" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
-			<div class="col s6" style="display:none; margin:auto; text-align: center;" id = "hue"><span class="flow-text"></span></div>
+			<div class="col s3" style="display:block; margin:auto; text-align: center;" id = "hue"><span class="flow-text"></span>!!!!!</div>
+			<div class="col s3" style="display:block; margin:auto; text-align: center;" id = "hue"><span class="flow-text"></span>!!!!!</div>
 		</div>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -364,12 +365,19 @@
 			var epochi = momentoi.valueOf().toString();
 			var epochf = momentof.valueOf().toString();
 			
-			
+		    var otrosparametros = {
+                "fecha1" : fecha1,
+                "hora1" : hora1,
+				"fecha2" : fecha2,
+                "hora2" : hora2                
+			};
                      
             var parametros = {
                 "epochi" : epochi,
                 "epochf" : epochf,
 			};
+			
+			
 			$.ajax({
                 data:  parametros,
                 url:   'dbhistoricosdos.php',
@@ -390,7 +398,7 @@
 						document.getElementById('preloader').style.display = 'none';
 						document.getElementById('googleMap').style.display = 'block';
 						if (response == 0) {
-							alert("No había datos con las condiciones establecidas");
+							alert("Carro 1: No había datos con las condiciones establecidas");
 							return;	
 						};
 						var arrayOfObjects = eval(response);						
