@@ -82,7 +82,7 @@
 			</button>	
 		</div>
 		</div>		
-		<div id="connect" style="display:none; margin:auto; width:80%"></div>
+		<div class="col s6 push-s6" id="connect" style="display:none; margin:auto; width:80%"></div>
 		<div class="row" style="margin:auto;">
 			<div class="col s6 push-s6" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
 			<div class="col s6 pull-s6" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
