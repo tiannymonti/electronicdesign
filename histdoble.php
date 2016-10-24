@@ -84,7 +84,7 @@
 		</div>	
 		<div class="row">
 		<div class="col s6 push-s6" id="connect" style="display:none; margin:auto; width:50%"></div>
-		<div class="col s6 pull-s6" style="display:none; margin:auto; width:50%">LOOOL</div>
+		<div class="col s6 pull-s6" id= "connect2" style="display:none; margin:auto; width:50%"></div>
 		</div>
 		<div class="row" style="margin:auto;">
 			<div class="col s6 push-s6" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
@@ -236,7 +236,20 @@
 			 decimals: 0
 		   })
 		 });	
-		 
+
+		var slidero = document.getElementById('connect2');
+		 noUiSlider.create(slider, {
+		   start:  0,
+		   connect: 'lower',
+		   step: 1,
+		   range: {
+			 'min': 0,
+			 'max': 5
+		   },
+		   format: wNumb({
+			 decimals: 0
+		   })
+		 });
 		
 	//GOOGLE MAPS	
 		function initMap() {	
