@@ -87,7 +87,7 @@
 	background: #FAFAFA;
 	box-shadow: inset 0 1px 1px #f0f0f0;
 }
-.noUi-connect{
+#connect .noUi-connect{
 	background: #01579b;
 	box-shadow: inset 0 0 3px rgba(51,51,51,0.45);
 	-webkit-transition: background 450ms;
@@ -97,7 +97,7 @@
 .noUi-origin {
 	border-radius: 10px;
 }
-#connect .noUi-target {
+.noUi-target {
 	border-radius: 10px;
 	border: 1px solid #D3D3D3;
 	box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
