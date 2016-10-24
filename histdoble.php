@@ -295,7 +295,7 @@
 			var dateValues = document.getElementById('values');
 			var rpmValues = document.getElementById('velous');
 		 
-			slider.noUiSlider.on('update', function( values, handle ) {
+			slider[1].noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
 				rpmValues.innerHTML = veloa[values[handle]] + "RPM";
 				marker.setPosition(myPositions[values[handle]]);
