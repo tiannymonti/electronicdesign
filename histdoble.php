@@ -225,7 +225,7 @@
 		
 		slider = document.getElementsByClassName('sliders');
 		
-		for ( var i = 0; i < sliders.length; i++ ) { 
+		for ( var i = 0; i < slider.length; i++ ) { 
 			 noUiSlider.create(slider[i], {
 			   start:  0,
 			   connect: 'lower',
