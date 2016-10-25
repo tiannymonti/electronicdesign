@@ -37,7 +37,7 @@
 		  <li class="divider"></li>
 		  <li><a href="hist2.php">Carro 2</a></li>
 		  <li class="divider"></li>
-		  <li><a href="#">Carro 1 & 2</a></li>
+		  <li><a href="histdoble.php">Carro 1 & 2</a></li>
 		</ul>
       <nav class ="light-blue darken-4" role="navigation">
 		<div class="nav-wrapper container">
