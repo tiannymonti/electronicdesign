@@ -242,6 +242,8 @@
 			 });	
 		}
 		
+		document.getElementById("connect2").style.background = "red";
+		
 	//GOOGLE MAPS	
 		function initMap() {	
   
