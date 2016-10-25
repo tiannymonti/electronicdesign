@@ -144,14 +144,19 @@
 		 var respuesta;
 		 var map;
 		 var myCenter;
-		 var myPositions = [];	
+		 var myCenter2;
+		 var myPositions = [];
+		 var myPositions2 = [];	
 		 var marker;
+		 var marker2;
 		 var fecha1;
 		 var fecha2;
 		 var hora1;
 		 var hora2;
 		 var myPath;
+		 var myPath2;
 		 var myTimes = [];
+		 var myTimes2 = [];
 		 var slider;
 		 var veloa = [];
 		
@@ -379,12 +384,13 @@
                 "epochf" : epochf,
 			};
 			
-			
-			$.ajax({
-                data:  parametros,
-                url:   'dbhistoricosdos.php',
-                type:  'post',
-                beforeSend: function () {	
+			//Dos ajaxxx
+			$.when(
+				$.ajax({ // First Request
+					data:  parametros,
+					url:   'dbhistoricosdos.php',
+					type:  'post',
+					beforeSend: function () {	
 						myPositions = [];
 						myTimes = [];
                         document.getElementById('preloader').style.display = 'block';
@@ -394,14 +400,12 @@
                         document.getElementById('values').style.display = 'none';
                         document.getElementById('velous').style.display = 'none';
                         document.getElementById('hue').style.display = 'none';
-                },
-				success:					
-					function(response){
+					},
+					success: function(response){ 
 						document.getElementById('preloader').style.display = 'none';
 						document.getElementById('googleMap').style.display = 'block';
 						if (response == 0) {
-							alert("Carro 1: No había datos con las condiciones establecidas");
-							return;	
+							alert("Carro 1: No había datos con las condiciones establecidas");	
 						};
 						var arrayOfObjects = eval(response);						
 						for (var i = 0; i < arrayOfObjects.length; i++) {
@@ -416,15 +420,90 @@
 								myPositions.push(myCenter);
 								myTimes.push(mytime);
 							}
-						}
+						}    
+							                  
+					}           
+				}),
+
+				$.ajax({ //Seconds Request
+					data:  otrosparametros,
+					url:   'dbhistoricos.php',
+					type:  'post', 
+					beforeSend: function () {	
+						myPositions2 = [];
+						myTimes2 = [];
+					},
+					success: function(response){                          
+						if (response == 0) {
+							alert("Carro 2: No había datos con las condiciones establecidas");	
+						};
+						var arrayOfObjects = eval(response);						
+						for (var i = 0; i < arrayOfObjects.length; i++) {
+							var object = arrayOfObjects[i];
+							for (var property in object) {
+								myCenter2 = new google.maps.LatLng(object.latitud, object.longitud);	
+								mytime = object.time;
+								myPositions2.push(myCenter2);
+								myTimes2.push(mytime);
+							}
+						}     
+					}           
+				})
+
+			).then(function() {
 						document.getElementById('connect').style.display = 'block';	
 						document.getElementById('connect2').style.display = 'block';
 						document.getElementById('values').style.display = 'block';
 						document.getElementById('velous').style.display = 'block';
 						document.getElementById('hue').style.display = 'block';				
-						initMap();				
-					}  //fin de la funcion de response					
-				}); //fin del ajax          
+						initMap();;
+			});
+					
+			//$.ajax({
+                //data:  parametros,
+                //url:   'dbhistoricosdos.php',
+                //type:  'post',
+                //beforeSend: function () {	
+						//myPositions = [];
+						//myTimes = [];
+                        //document.getElementById('preloader').style.display = 'block';
+                        //document.getElementById('googleMap').style.display = 'none';
+                        //document.getElementById('connect').style.display = 'none';
+                        //document.getElementById('connect2').style.display = 'none';
+                        //document.getElementById('values').style.display = 'none';
+                        //document.getElementById('velous').style.display = 'none';
+                        //document.getElementById('hue').style.display = 'none';
+                //},
+				//success:					
+					//function(response){
+						//document.getElementById('preloader').style.display = 'none';
+						//document.getElementById('googleMap').style.display = 'block';
+						//if (response == 0) {
+							//alert("Carro 1: No había datos con las condiciones establecidas");
+							//return;	
+						//};
+						//var arrayOfObjects = eval(response);						
+						//for (var i = 0; i < arrayOfObjects.length; i++) {
+							//var object = arrayOfObjects[i];
+							//for (var property in object) {
+								//myCenter = new google.maps.LatLng(object.kff1006, object.kff1005);	
+								//var a = parseInt(object.time);
+								//var d = moment.utc(a).local();								
+								//mytime = d.format("YYYY-MM-DD H:mm:ss");	
+								//var rpm = object.kc;
+								//veloa.push(rpm);  
+								//myPositions.push(myCenter);
+								//myTimes.push(mytime);
+							//}
+						//}
+						//document.getElementById('connect').style.display = 'block';	
+						//document.getElementById('connect2').style.display = 'block';
+						//document.getElementById('values').style.display = 'block';
+						//document.getElementById('velous').style.display = 'block';
+						//document.getElementById('hue').style.display = 'block';				
+						//initMap();				
+					//}  //fin de la funcion de response					
+				//}); //fin del ajax          
 	  };  //end toggle	
 
    </script>
