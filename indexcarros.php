@@ -229,7 +229,6 @@ var myPositions2 = [];
 		consulta();
 		marker.setPosition(myCenter);
 		marker2.setPosition(myCenter2);
-		map.panTo(myCenter);
 		},3000);
 
 function placeMarker(location, location2) {
