@@ -242,7 +242,7 @@
 			 });	
 		}
 		
-		document.getElementById("connect2").style.background = "red";
+		document.getElementById("connect").style.background = "red";
 		
 	//GOOGLE MAPS	
 		function initMap() {	
