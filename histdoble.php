@@ -267,6 +267,18 @@
 				strokeColor: '#0000FF',
 				strokeOpacity: 1.0
 			  };
+			  
+			  var symbolShapes = {
+				path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+				strokeColor: '#FF0000',
+				strokeOpacity: 1.0
+			  };
+			  
+			  var symbolDestinations = {
+				path: google.maps.SymbolPath.BACKWARD_OPEN_ARROW,
+				strokeColor: '#FF0000',
+				strokeOpacity: 1.0
+			  };
 			
 			myPath = new google.maps.Polyline({
 			path: myPositions,
@@ -283,13 +295,34 @@
 					}],
 			 });
 			 
+			myPath2 = new google.maps.Polyline({
+			path: myPositions2,
+			geodesic: true,
+			strokeColor: '#FF0000',
+			strokeOpacity: 1.0,
+			strokeWeight: 3,
+			icons: [{
+					icon: symbolShapes,
+					offset: '0%'
+				}, {
+					icon: symbolDestinations,
+					offset: '100%'
+					}],
+			 });
+			 
 			myPath.setMap(map);
+			myPath2.setMap(map);
 			
 
 				 
 			 marker = new google.maps.Marker({
 				  map: map,
 				  position:myPositions[0],
+				  icon: 'res/carnavicon.png'
+			 });
+			 marker2 = new google.maps.Marker({
+				  map: map,
+				  position:myPositions2[0],
 				  icon: 'res/carnavicon.png'
 			 });
 			 
@@ -300,15 +333,32 @@
 					'max': myTimes.length - 1
 				}
 			});		
+			slider[0].noUiSlider.updateOptions({
+				range: {
+					'min': 0,
+					'max': myTimes2.length - 1
+				}
+			});
 			
 			var dateValues = document.getElementById('values');
 			var rpmValues = document.getElementById('velous');
+			var dateValues2 = document.getElementById('values2');
+			//var otroValues = document.getElementById('velous2');
 		 
 			slider[1].noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
 				rpmValues.innerHTML = veloa[values[handle]] + "RPM";
 				marker.setPosition(myPositions[values[handle]]);
 				map.setCenter(marker.getPosition());	
+				map.setZoom(16);
+							
+			});	
+			
+			slider[0].noUiSlider.on('update', function( values, handle ) {
+				dateValues2.innerHTML = myTimes2[values[handle]];
+				//otherValues.innerHTML = veloa[values[handle]] + "RPM";
+				marker2.setPosition(myPositions2[values[handle]]);
+				map.setCenter(marker2.getPosition());	
 				map.setZoom(16);
 							
 			});	
@@ -460,52 +510,7 @@
                         document.getElementById('velous2').style.display = 'block';			
 						initMap();;
 			});
-					
-			//$.ajax({
-                //data:  parametros,
-                //url:   'dbhistoricosdos.php',
-                //type:  'post',
-                //beforeSend: function () {	
-						//myPositions = [];
-						//myTimes = [];
-                        //document.getElementById('preloader').style.display = 'block';
-                        //document.getElementById('googleMap').style.display = 'none';
-                        //document.getElementById('connect').style.display = 'none';
-                        //document.getElementById('connect2').style.display = 'none';
-                        //document.getElementById('values').style.display = 'none';
-                        //document.getElementById('velous').style.display = 'none';
-                        //document.getElementById('hue').style.display = 'none';
-                //},
-				//success:					
-					//function(response){
-						//document.getElementById('preloader').style.display = 'none';
-						//document.getElementById('googleMap').style.display = 'block';
-						//if (response == 0) {
-							//alert("Carro 1: No había datos con las condiciones establecidas");
-							//return;	
-						//};
-						//var arrayOfObjects = eval(response);						
-						//for (var i = 0; i < arrayOfObjects.length; i++) {
-							//var object = arrayOfObjects[i];
-							//for (var property in object) {
-								//myCenter = new google.maps.LatLng(object.kff1006, object.kff1005);	
-								//var a = parseInt(object.time);
-								//var d = moment.utc(a).local();								
-								//mytime = d.format("YYYY-MM-DD H:mm:ss");	
-								//var rpm = object.kc;
-								//veloa.push(rpm);  
-								//myPositions.push(myCenter);
-								//myTimes.push(mytime);
-							//}
-						//}
-						//document.getElementById('connect').style.display = 'block';	
-						//document.getElementById('connect2').style.display = 'block';
-						//document.getElementById('values').style.display = 'block';
-						//document.getElementById('velous').style.display = 'block';
-						//document.getElementById('hue').style.display = 'block';				
-						//initMap();				
-					//}  //fin de la funcion de response					
-				//}); //fin del ajax          
+					      
 	  };  //end toggle	
 
    </script>
