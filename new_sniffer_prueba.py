@@ -12,7 +12,7 @@ SockServer.bind((IPserver, Portserver))
 #data1 = '>RTX\\3EholA\\3C\\0A;EV001477366110+0000000+0000000000000090;ID=GRUPO1<\r\n'
 while True:
     print("A la espera de paquete...")
-    data1, addr = SockServer.recvfrom(1024)
+    data1, addr = SockServer.recvfrom(2048)
     data1 = str(data1)
     #data1=data1.decode('utf-8')
     print("Paquete recibido desde " + str(addr))
