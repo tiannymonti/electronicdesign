@@ -147,7 +147,7 @@ var myPositions2 = [];
 	  controlText.innerHTML = 'Cambiar centro';
 	  controlUI.appendChild(controlText);
 
-	  // Setup the click event listeners: simply set the map to Chicago.
+	  // Setup the click event listeners: simply set the map...
 	  controlUI.addEventListener('click', function() {
 		var centro = map.getCenter()
 		if (centro == myCenter) {
