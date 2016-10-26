@@ -75,7 +75,7 @@ while True:
             cursor.close()
             bd.close()
 
-    SockServer.close()
+SockServer.close()
 
 
 
