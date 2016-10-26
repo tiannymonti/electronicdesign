@@ -5,14 +5,14 @@ import mysql.connector
 import mysql
 from socket import*
 IPserver = "172.31.21.200"
-Portserver = 5602
+Portserver = 5601
 SockServer = socket(AF_INET, SOCK_DGRAM) 
 SockServer.bind((IPserver, Portserver))
 #data1 = '>RTX\\3EholA\\3C\\0A;EV481477366110+2578391-0802945201228512;ID=GRUPO1<\r\n'
 #data1 = '>RTX\\3EholA\\3C\\0A;EV001477366110+0000000+0000000000000090;ID=GRUPO1<\r\n'
 while True:
     print("A la espera de paquete...")
-    data1, addr = SockServer.recvfrom(2048)
+    data1, addr = SockServer.recvfrom(1024)
     data1 = str(data1)
     #data1=data1.decode('utf-8')
     print("Paquete recibido desde " + str(addr))
