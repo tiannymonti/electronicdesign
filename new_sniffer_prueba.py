@@ -24,7 +24,7 @@ while True:
     print(data1[0:4],n2)
     if n >= 0:
         if data1[0:4] == ">RTX":
-            sensor = data1[n:n2-6]
+            sensor = data1[4:n2-6]
             print("medida en cm",sensor)
             
             print("laInt",data1[n2+15:n2+18])
