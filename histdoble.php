@@ -511,6 +511,7 @@
                         
                         var doblearr = myTimes.concat(myTimes2);
                         doblearr.sort();
+                        console.log(doblearr[1])
                         console.log(doblearr[doblearr.length() -1])
                         		
 						initMap();
