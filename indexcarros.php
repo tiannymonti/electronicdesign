@@ -75,9 +75,10 @@
 		<div class="col s12" id="division"><span class="flow-text">Carro 2</span></div>
 		</div>
 		<div class="row">
-		<div class="col s4" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time2">0000-00-00 00:00:00</span></div>
-		<div class="col s4 push-s4" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud2">00000000</span></div>
-		<div class="col s4 pull-s4" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud2">00000000</span></div>
+		<div class="col s3" id="division"><span class="flow-text">Tiempo: </span><span class="flow-text" id="time2">0000-00-00 00:00:00</span></div>
+		<div class="col s3" id="division"><span class="flow-text">Distancia: </span><span class="flow-text" id="sensor">0000</span></div>		
+		<div class="col s3 push-s3" id="division"><span class="flow-text">Latitud: </span><span class="flow-text" id="latitud2">00000000</span></div>
+		<div class="col s3 pull-s3" id="division"><span class="flow-text">Longitud: </span><span class="flow-text" id="longitud2">00000000</span></div>
 		</div>
 	  </main>	
 	  
@@ -188,6 +189,7 @@ var myPositions2 = [];
 					document.getElementById("latitud2").innerHTML = data.latitud;
 					document.getElementById("longitud2").innerHTML = data.longitud;
 					document.getElementById("time2").innerHTML = data.time;
+					document.getElementById("sensor").innerHTML = data.sensor;
 					myCenter2 = new google.maps.LatLng(data.latitud, data.longitud);	
 					myPositions2.push(myCenter2);    				
 					}				
