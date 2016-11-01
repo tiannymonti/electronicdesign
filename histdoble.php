@@ -509,6 +509,7 @@
 						document.getElementById('values2').style.display ='block';
                         document.getElementById('velous2').style.display = 'block';			
 						initMap();;
+						
 			});
 					      
 	  };  //end toggle	
