@@ -86,8 +86,7 @@
 		<div class="row" style="margin:auto;">
 			<div class="col s3 push-s3" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
 			<div class="col s3 pull-s3" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
-			<div class="col s3" style="display:none; margin:auto; text-align: center;" id = "values2"><span class="flow-text"></span>!!!!!</div>
-			<div class="col s3" style="display:none; margin:auto; text-align: center;" id = "velous2"><span class="flow-text"></span>!!!!!</div>
+			<div class="col s3" style="display:none; margin:auto; text-align: center;" id = "velous2"><span class="flow-text"></span>0</div>
 		</div>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
@@ -325,7 +324,7 @@
 			slider.noUiSlider.updateOptions({
 				range: {
 					'min': 0,
-					'max': myTimes.length - 1
+					'max': losTiempos.length - 1
 				}
 			});		
 
@@ -336,7 +335,7 @@
 			//var otroValues = document.getElementById('velous2');
 		 
 			slider.noUiSlider.on('update', function( values, handle ) {
-				dateValues.innerHTML = myTimes[values[handle]];
+				dateValues.innerHTML = losTiempos[values[handle]];
 				rpmValues.innerHTML = veloa[values[handle]] + "RPM";
 				marker.setPosition(myPositions[values[handle]]);
 				map.setCenter(marker.getPosition());	
@@ -429,7 +428,6 @@
                         document.getElementById('connect').style.display = 'none';
                         document.getElementById('values').style.display = 'none';
                         document.getElementById('velous').style.display = 'none';
-						document.getElementById('values2').style.display = 'none';
                         document.getElementById('velous2').style.display = 'none';
 					},
 					success: function(response){ 
@@ -485,7 +483,6 @@
 						document.getElementById('connect').style.display = 'block';	
 						document.getElementById('values').style.display = 'block';
 						document.getElementById('velous').style.display = 'block';	
-						document.getElementById('values2').style.display ='block';
                         document.getElementById('velous2').style.display = 'block';	
                         
                         losTiempos = myTimes.concat(myTimes2);
