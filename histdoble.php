@@ -83,10 +83,10 @@
 		</div>
 		</div>	
 		<div id="connect" style="display:none; margin:auto; width:80%"></div>
-		<div class="row" style="margin:auto;">
-			<div class="col s3 push-s3" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
-			<div class="col s3 pull-s3" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
-			<div class="col s3" style="display:none; margin:auto; text-align: center;" id = "velous2"><span class="flow-text"></span>0</div>
+		<div class="row" style="margin: auto;">
+			<div class="col s4" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
+			<div class="col s4 push-s4" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
+			<div class="col s4 pull-s4" style="display:none; margin:auto; text-align: center;" id = "velous2"><span class="flow-text"></span>0</div>
 		</div>
 		  <div class="preloader-wrapper big active" style="display:none; margin:auto;" id="preloader">
 			<div class="spinner-layer spinner-blue-only">
