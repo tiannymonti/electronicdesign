@@ -507,8 +507,12 @@
 						document.getElementById('values').style.display = 'block';
 						document.getElementById('velous').style.display = 'block';	
 						document.getElementById('values2').style.display ='block';
-                        document.getElementById('velous2').style.display = 'block';			
-						initMap();;
+                        document.getElementById('velous2').style.display = 'block';	
+                        
+                        var doblearr = myTimes.concat(myTimes2);
+                        doblearr.sort();
+                        		
+						initMap();
 						
 			});
 					      
