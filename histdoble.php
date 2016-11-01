@@ -156,6 +156,7 @@
 		 var losTiempos = [];
 		 var slider;
 		 var veloa = [];
+		 var dista = [];
 		
 		 var $input1 = $('.start-datepicker').pickadate({
 			today: '',
@@ -336,6 +337,7 @@
 		 
 			slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = losTiempos[values[handle]];
+				
 				rpmValues.innerHTML = veloa[values[handle]] + "RPM";
 				marker.setPosition(myPositions[values[handle]]);
 				map.setCenter(marker.getPosition());	
@@ -472,6 +474,8 @@
 							for (var property in object) {
 								myCenter2 = new google.maps.LatLng(object.latitud, object.longitud);	
 								mytime = object.time;
+								var distance = object.sensor;
+								dista.push(distance); 
 								myPositions2.push(myCenter2);
 								myTimes2.push(mytime);
 							}
