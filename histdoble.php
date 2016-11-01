@@ -228,7 +228,7 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');	
 		
-		slider = document.getElementsByClassName('connect');
+		slider = document.getElementsById('connect');
 		
 		 noUiSlider.create(slider, {
 		   start:  0,
