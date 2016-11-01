@@ -427,7 +427,6 @@
                         document.getElementById('preloader').style.display = 'block';
                         document.getElementById('googleMap').style.display = 'none';
                         document.getElementById('connect').style.display = 'none';
-                        document.getElementById('connect2').style.display = 'none';
                         document.getElementById('values').style.display = 'none';
                         document.getElementById('velous').style.display = 'none';
 						document.getElementById('values2').style.display = 'none';
@@ -484,7 +483,6 @@
 
 			).then(function() {
 						document.getElementById('connect').style.display = 'block';	
-						document.getElementById('connect2').style.display = 'block';
 						document.getElementById('values').style.display = 'block';
 						document.getElementById('velous').style.display = 'block';	
 						document.getElementById('values2').style.display ='block';
