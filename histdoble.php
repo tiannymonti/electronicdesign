@@ -82,10 +82,7 @@
 			</button>	
 		</div>
 		</div>	
-		<div class="row">
-		<div class="col s6 push-s6 sliders" id="connect" style="display:none; margin:auto; width:50%"></div>
-		<div class="col s6 pull-s6 sliders" id= "connect2" style="display:none; margin:auto; width:50%"></div>
-		</div>
+		<div id="connect" style="display:none; margin:auto; width:80%"></div>
 		<div class="row" style="margin:auto;">
 			<div class="col s3 push-s3" style="display:none; margin:auto; text-align: center;" id = "values"><span class="flow-text"></span></div>
 			<div class="col s3 pull-s3" style="display:none; margin:auto; text-align: center;" id = "velous"><span class="flow-text"></span></div>
@@ -157,6 +154,7 @@
 		 var myPath2;
 		 var myTimes = [];
 		 var myTimes2 = [];
+		 var losTiempos = [];
 		 var slider;
 		 var veloa = [];
 		
@@ -230,24 +228,21 @@
 			});
 		var pickert2 = $tinput2.pickatime('picker');	
 		
-		slider = document.getElementsByClassName('sliders');
+		slider = document.getElementsByClassName('connect');
 		
-		for ( var i = 0; i < slider.length; i++ ) { 
-			 noUiSlider.create(slider[i], {
-			   start:  0,
-			   connect: 'lower',
-			   step: 1,
-			   range: {
-				 'min': 0,
-				 'max': 1
-			   },
-			   format: wNumb({
-				 decimals: 0
-			   })
-			 });	
-		}
+		 noUiSlider.create(slider, {
+		   start:  0,
+		   connect: 'lower',
+		   step: 1,
+		   range: {
+			 'min': 0,
+			 'max': 1
+		   },
+		   format: wNumb({
+			 decimals: 0
+		   })
+		 });	
 		
-		document.getElementById("connect").style.background = "red";
 		
 	//GOOGLE MAPS	
 		function initMap() {	
@@ -327,25 +322,20 @@
 			 });
 			 
 	
-			slider[1].noUiSlider.updateOptions({
+			slider.noUiSlider.updateOptions({
 				range: {
 					'min': 0,
 					'max': myTimes.length - 1
 				}
 			});		
-			slider[0].noUiSlider.updateOptions({
-				range: {
-					'min': 0,
-					'max': myTimes2.length - 1
-				}
-			});
+
 			
 			var dateValues = document.getElementById('values');
 			var rpmValues = document.getElementById('velous');
 			var dateValues2 = document.getElementById('values2');
 			//var otroValues = document.getElementById('velous2');
 		 
-			slider[1].noUiSlider.on('update', function( values, handle ) {
+			slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = myTimes[values[handle]];
 				rpmValues.innerHTML = veloa[values[handle]] + "RPM";
 				marker.setPosition(myPositions[values[handle]]);
@@ -354,14 +344,6 @@
 							
 			});	
 			
-			slider[0].noUiSlider.on('update', function( values, handle ) {
-				dateValues2.innerHTML = myTimes2[values[handle]];
-				//otherValues.innerHTML = veloa[values[handle]] + "RPM";
-				marker2.setPosition(myPositions2[values[handle]]);
-				map.setCenter(marker2.getPosition());	
-				map.setZoom(16);
-							
-			});	
 			 	 				 	 
 			var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
 			
@@ -371,7 +353,6 @@
 			
 		}; //end init map	
 		
-
 								
 		 function toggleFunction() {
 			
@@ -509,10 +490,8 @@
 						document.getElementById('values2').style.display ='block';
                         document.getElementById('velous2').style.display = 'block';	
                         
-                        var doblearr = myTimes.concat(myTimes2);
-                        doblearr.sort();
-                        console.log(doblearr[1])
-                        console.log(doblearr[doblearr.length -1])
+                        losTiempos = myTimes.concat(myTimes2);
+                        losTiempos.sort();
                         		
 						initMap();
 						
