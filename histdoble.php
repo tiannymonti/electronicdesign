@@ -388,7 +388,6 @@
 							rpmValues.innerHTML = veloa[i] + "RPM";
 							marker.setPosition(myPositions[i]);
 							myCenter = marker.getPosition();
-							map.setCenter(myCenter);
 							map.setZoom(16);
 							break;							
 					}					
@@ -398,7 +397,6 @@
 							distValues.innerHTML = dista[i] + "cm";
 							marker2.setPosition(myPositions2[i]);
 							myCenter2 = marker2.getPosition();
-							map.setCenter(myCenter2);
 							map.setZoom(16);
 							break;							
 					}					
