@@ -63,8 +63,8 @@ while True:
             segundos = datetime.timedelta(seconds=segonds)
             ajuste_horario = datetime.timedelta(hours=5)
             fecha_final = str(fecha_inicial + semanas + dias + segundos - ajuste_horario)
-            print (fecha_final)
-            time = datetime.datetime.fromtimestamp(int(Tstamp)).strftime('%Y-%m-%d %H:%M:%S')
+            
+            time = fecha_final
             print(time)
 
             
