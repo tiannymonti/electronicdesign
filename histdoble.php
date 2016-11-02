@@ -307,7 +307,6 @@
 			 
 			myPath.setMap(map);
 			myPath2.setMap(map);
-			
 
 				 
 			 marker = new google.maps.Marker({
@@ -318,7 +317,7 @@
 			 marker2 = new google.maps.Marker({
 				  map: map,
 				  position:myPositions2[0],
-				  icon: 'res/carnavicon.png'
+				  icon: 'res/car2.png'
 			 });
 			 
 	
@@ -348,7 +347,7 @@
 				}	
 				for (var i = 0; i < myTimes2.length; i++) {
 					if (myTimes2[i] == losTiempos[values[handle]]){
-							distValues.innerHTML = dista[values[handle]] + "RPM";
+							distValues.innerHTML = dista[values[handle]] + "cm";
 							marker2.setPosition(myPositions2[values[handle]]);
 							map.setCenter(marker2.getPosition());
 							map.setZoom(16);
