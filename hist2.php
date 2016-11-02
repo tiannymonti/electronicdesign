@@ -50,9 +50,19 @@
 		</ul>
 		
 	   <ul id="nav-mobile" class="side-nav">
-         <li><a href="index.php">Ahora</a></li>
-		 <li class="active"><a href="hist.php">Historicos</a></li>
-		 <li><a href="#final">Acerca de</a></li>
+         <li><a href="#"><strong>Ahora</strong></a></li>
+         <li class="divider"></li>
+		  <li><a href="index.php">Carro 1</a></li>		  
+		  <li><a href="indexcarro2.php">Carro 2</a></li>
+		  <li><a href="indexcarros.php">Carro 1 & 2</a></li>
+		  <li class="divider"></li>
+		 <li><a href="#"><strong>Historicos</strong></a></li>
+		  <li class="divider"></li>
+		  <li><a href="hist.php">Carro 1</a></li>
+		  <li><a href="hist2.php">Carro 2</a></li>
+		  <li><a href="histdoble.php">Carro 1 & 2</a></li>
+		  <li class="divider"></li>
+		 <li><a href="#division">Acerca de</a></li>
        </ul>
        
        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>		
