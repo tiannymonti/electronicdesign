@@ -332,7 +332,7 @@
 			
 			var dateValues = document.getElementById('values');
 			var rpmValues = document.getElementById('velous');
-			var distValues2 = document.getElementById('velous2');
+			var distValues = document.getElementById('velous2');
 			//var otroValues = document.getElementById('velous2');
 		 
 			slider.noUiSlider.on('update', function( values, handle ) {
