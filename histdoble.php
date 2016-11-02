@@ -345,7 +345,16 @@
 							map.setZoom(16);
 							break;							
 					}					
-				}								
+				}	
+				for (var i = 0; i < myTimes2.length; i++) {
+					if (myTimes2[i] == losTiempos[values[handle]]){
+							distValues.innerHTML = dista[values[handle]] + "RPM";
+							marker2.setPosition(myPositions2[values[handle]]);
+							map.setCenter(marker2.getPosition());
+							map.setZoom(16);
+							break;							
+					}					
+				}							
 											
 			});	
 			
