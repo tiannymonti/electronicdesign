@@ -368,15 +368,16 @@
 			});	
 			
 			 	 				 	 
-			var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
+			//var bounds = new google.maps.LatLngBounds(myPositions[0], myPositions[1]);
 			
-			map.fitBounds(bounds);
+			//map.fitBounds(bounds);
+			
+			map.setCenter(myPositions[0]);
 			
 			map.setZoom(16);
 			
 		}; //end init map	
-		
-								
+									
 		 function toggleFunction() {
 			
             picker1.open();
