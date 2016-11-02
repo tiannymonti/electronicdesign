@@ -1,18 +1,14 @@
-
 ## sensor
-
 import RPi.GPIO as GPIO
 import time
 import serial
 
-#syrus = serial.Serial('/dev/ttyUSB0',baudrate=115200)
+syrus = serial.Serial('/dev/ttyUSB0',baudrate=115200)
 def medidas():
     GPIO.setmode(GPIO.BCM)
 
     TRIG = 2
     ECHO = 3
-
-    print "Distance Measurement In Progress"
 
     GPIO.setup(TRIG,GPIO.OUT)
     GPIO.setup(ECHO,GPIO.IN)
@@ -43,9 +39,7 @@ def medidas():
 
 while True:
     m = medidas()
-    #syrus.write(m)
+    syrus.write(str(m))
     print(m)
     time.sleep(0.5)
-
-
 
