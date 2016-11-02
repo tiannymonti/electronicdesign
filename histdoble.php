@@ -332,17 +332,21 @@
 			
 			var dateValues = document.getElementById('values');
 			var rpmValues = document.getElementById('velous');
-			var dateValues2 = document.getElementById('values2');
+			var distValues2 = document.getElementById('velous2');
 			//var otroValues = document.getElementById('velous2');
 		 
 			slider.noUiSlider.on('update', function( values, handle ) {
 				dateValues.innerHTML = losTiempos[values[handle]];
-				
-				rpmValues.innerHTML = veloa[values[handle]] + "RPM";
-				marker.setPosition(myPositions[values[handle]]);
-				map.setCenter(marker.getPosition());	
-				map.setZoom(16);
-							
+				for (var i = 0; i < myTimes.length; i++) {
+					if (myTimes[i] == losTiempos[values[handle]]){
+							rpmValues.innerHTML = veloa[values[handle]] + "RPM";
+							marker.setPosition(myPositions[values[handle]]);
+							map.setCenter(marker.getPosition());
+							map.setZoom(16);
+							break;							
+					}					
+				}								
+											
 			});	
 			
 			 	 				 	 
