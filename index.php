@@ -49,8 +49,8 @@
 		</ul>
 		
 	   <ul id="nav-mobile" class="side-nav">
-         <li class="active"><a href="index.php">Ahora</a></li>
-		 <li><a href="hist.php">Historicos</a></li>
+         <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Ahora<i class="material-icons right">arrow_drop_down</i></a></li>
+		 <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown2">Historicos<i class="material-icons right">arrow_drop_down</i></a></li>
 		 <li><a href="#division">Acerca de</a></li>
        </ul>
        
