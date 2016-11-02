@@ -338,8 +338,8 @@
 				dateValues.innerHTML = losTiempos[values[handle]];
 				for (var i = 0; i < myTimes.length; i++) {
 					if (myTimes[i] == losTiempos[values[handle]]){
-							rpmValues.innerHTML = veloa[values[handle]] + "RPM";
-							marker.setPosition(myPositions[values[handle]]);
+							rpmValues.innerHTML = veloa[i] + "RPM";
+							marker.setPosition(myPositions[i]);
 							map.setCenter(marker.getPosition());
 							map.setZoom(16);
 							break;							
@@ -347,8 +347,8 @@
 				}	
 				for (var i = 0; i < myTimes2.length; i++) {
 					if (myTimes2[i] == losTiempos[values[handle]]){
-							distValues.innerHTML = dista[values[handle]] + "cm";
-							marker2.setPosition(myPositions2[values[handle]]);
+							distValues.innerHTML = dista[i] + "cm";
+							marker2.setPosition(myPositions2[i]);
 							map.setCenter(marker2.getPosition());
 							map.setZoom(16);
 							break;							
