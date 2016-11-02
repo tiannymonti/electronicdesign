@@ -49,8 +49,18 @@
 		</ul>
 		
 	   <ul id="nav-mobile" class="side-nav">
-         <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Ahora<i class="material-icons right">arrow_drop_down</i></a></li>
-		 <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown2">Historicos<i class="material-icons right">arrow_drop_down</i></a></li>
+         <li><a href="#"><strong>Ahora</strong></a></li>
+		  <li><a href="index.php">Carro 1</a></li>
+		  <li class="divider"></li>
+		  <li><a href="indexcarro2.php">Carro 2</a></li>
+		  <li class="divider"></li>
+		  <li><a href="indexcarros.php">Carro 1 & 2</a></li>
+		 <li><a href="#"><strong>Historicos</strong></a></li>
+		  <li><a href="hist.php">Carro 1</a></li>
+		  <li class="divider"></li>
+		  <li><a href="hist2.php">Carro 2</a></li>
+		  <li class="divider"></li>
+		  <li><a href="histdoble.php">Carro 1 & 2</a></li>
 		 <li><a href="#division">Acerca de</a></li>
        </ul>
        
