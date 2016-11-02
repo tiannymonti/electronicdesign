@@ -66,7 +66,7 @@ while True:
             cursor = bd.cursor()
             
             add_coordinate = ("INSERT INTO cordenadas (latitud, longitud, time,sensor) VALUES (%s, %s, %s, %s)")
-            data_coordinate = (latitud, longitud, sensor)
+            data_coordinate = (latitud, longitud, time, sensor)
             
             cursor.execute(add_coordinate, data_coordinate)
             bd.commit()
